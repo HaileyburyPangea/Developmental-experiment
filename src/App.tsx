@@ -1,6 +1,12 @@
 import { useMemo, useState } from "react"
 import { studies, type Study } from "./studies"
-import { compareStudyWindows, getTargetDate } from "./timeline"
+import {
+  calendarDaysBetween,
+  compareStudyWindows,
+  getTargetDate,
+  isCurrentlyRelevant,
+  isStartingNow,
+} from "./timeline"
 
 type IconName = "calendar" | "chevron" | "clock" | "search" | "spark" | "check"
 
@@ -166,30 +172,31 @@ export default function App() {
 
   const [birthDate, setBirthDate] = useState(dateInputValue(defaultBirthDate))
   const [query, setQuery] = useState("")
-  const [view, setView] = useState<"upcoming" | "all">("upcoming")
+  const [view, setView] = useState<"upcoming" | "current" | "all">("upcoming")
   const [openId, setOpenId] = useState<number | null>(null)
   const [showMore, setShowMore] = useState(false)
 
+  const today = dateInputValue(new Date())
   const scheduled = useMemo<ScheduledStudy[]>(() => {
     if (!birthDate) return []
-    const now = new Date()
-    now.setHours(12, 0, 0, 0)
+    const now = new Date(`${today}T12:00:00`)
     return studies
       .map((study, id) => {
         const targetDate = getTargetDate(birthDate, study.startAge)
         const endDate = getTargetDate(birthDate, study.endAge ?? study.startAge)
-        const daysAway = Math.round(
-          (endDate.getTime() - now.getTime()) / 86_400_000,
-        )
+        const daysAway = calendarDaysBetween(now, endDate)
         return { ...study, id, targetDate, endDate, daysAway }
       })
       .sort(compareStudyWindows)
-  }, [birthDate])
+  }, [birthDate, today])
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase()
+    const now = new Date(`${today}T12:00:00`)
     return scheduled.filter((study) => {
-      const matchesView = view === "all" || study.daysAway >= -30
+      const matchesView = view === "all" ||
+        (view === "upcoming" && study.daysAway >= -30) ||
+        (view === "current" && isCurrentlyRelevant(study.targetDate, study.endDate, now))
       const matchesQuery =
         !needle ||
         `${study.name} ${study.concept} ${study.age}`
@@ -197,7 +204,11 @@ export default function App() {
           .includes(needle)
       return matchesView && matchesQuery
     })
-  }, [query, scheduled, view])
+  }, [query, scheduled, today, view])
+
+  const startingNow = filtered.filter((study) =>
+    isStartingNow(study.targetDate, new Date(`${today}T12:00:00`)),
+  )
 
   const visible = showMore ? filtered : filtered.slice(0, 14)
   const groups = visible.reduce<Array<{
@@ -357,6 +368,15 @@ export default function App() {
                   Upcoming
                 </button>
                 <button
+                  className={view === "current" ? "active" : ""}
+                  onClick={() => {
+                    setView("current")
+                    setShowMore(false)
+                  }}
+                >
+                  Currently relevant
+                </button>
+                <button
                   className={view === "all" ? "active" : ""}
                   onClick={() => {
                     setView("all")
@@ -378,6 +398,23 @@ export default function App() {
               />
               <span>{filtered.length} results</span>
             </div>
+
+            {birthDate && startingNow.length > 0 && (
+              <section className="starting-now" aria-labelledby="starting-now-title">
+                <h3 id="starting-now-title">Starting now</h3>
+                <p>Studies whose age window began in the last two weeks. They also appear in the timeline below.</p>
+                <div className="month-studies">
+                  {startingNow.map((study) => (
+                    <StudyCard
+                      key={study.id}
+                      study={study}
+                      isOpen={openId === study.id}
+                      onToggle={() => setOpenId(openId === study.id ? null : study.id)}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
 
             {!birthDate ? (
               <div className="empty-state">

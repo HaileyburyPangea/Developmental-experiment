@@ -36,7 +36,26 @@ export function compareStudyWindows(
   a: { targetDate: Date; endDate: Date },
   b: { targetDate: Date; endDate: Date },
 ): number {
-  return a.endDate.getTime() - b.endDate.getTime()
+  return calendarDaysBetween(b.endDate, a.endDate)
     || a.targetDate.getTime() - b.targetDate.getTime()
+}
+
+/** Compare local calendar dates without daylight-saving time shifts. */
+export function calendarDaysBetween(from: Date, to: Date): number {
+  const dayNumber = (date: Date) =>
+    Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 86_400_000
+  return dayNumber(to) - dayNumber(from)
+}
+
+/** Highlight the first 14 calendar days after a study window begins. */
+export function isStartingNow(start: Date, today: Date): boolean {
+  const daysSinceStart = calendarDaysBetween(start, today)
+  return daysSinceStart >= 0 && daysSinceStart < 14
+}
+
+/** Include both boundary dates in the current age window. */
+export function isCurrentlyRelevant(start: Date, end: Date, today: Date): boolean {
+  return calendarDaysBetween(start, today) >= 0
+    && calendarDaysBetween(today, end) >= 0
 }
 

@@ -302,8 +302,8 @@ export const studies: Study[] = [
     source: "The Baby Human: To Talk",
   },
   {
-    age: "12 weeks (3 months)",
-    startAge: { value: 12, unit: "weeks" },
+    age: "3 months (originally 12 weeks)",
+    startAge: { value: 3, unit: "months" },
     name: "EEG Mother-Infant Synchronicity Study (McMaster University, Louis Schmidt's Lab)",
     experiment:
       "Electroencephalogram (EEG) machines measure the brain electrocortical activity and heart rates of mothers and their 12-week-old infants while playing joyful (Vivaldi) and fearful (Peter and the Wolf) music passages.",
@@ -552,8 +552,8 @@ export const studies: Study[] = [
     source: "CDE Baby Human to Feel 1 Facial Reactions",
   },
   {
-    age: "12 to 18 weeks (3–4.5 months)",
-    startAge: { value: 12, unit: "weeks" },
+    age: "3 months to 18 weeks (originally 12–18 weeks)",
+    startAge: { value: 3, unit: "months" },
     endAge: { value: 18, unit: "weeks" },
     name: "Intermodal Emotion Matching (Albert Einstein College of Medicine) & Temperament Stimulation Response (Nathan Fox's Lab)",
     experiment:

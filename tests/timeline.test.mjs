@@ -1,6 +1,9 @@
 import assert from "node:assert/strict"
 import test from "node:test"
-import { addMonths, compareStudyWindows, getTargetDate } from "../src/timeline.ts"
+import {
+  addMonths, calendarDaysBetween, compareStudyWindows, getTargetDate,
+  isCurrentlyRelevant, isStartingNow,
+} from "../src/timeline.ts"
 import { studies } from "../src/studies.ts"
 
 function localDate(date) {
@@ -28,7 +31,7 @@ test("mixed units use explicit starting ages", () => {
 
 test("week and neonatal offsets retain their units", () => {
   assert.deepEqual(localDate(targetFor("6 weeks")), [2026, 2, 12])
-  assert.deepEqual(localDate(targetFor("12 weeks (3 months)")), [2026, 3, 26])
+  assert.deepEqual(localDate(targetFor("3 months (originally 12 weeks)")), [2026, 4, 1])
   assert.deepEqual(localDate(targetFor("Under 24 hours")), [2026, 1, 1])
   const birth = new Date("2026-01-01T12:00:00")
   assert.equal(targetFor("12 hours").getTime() - birth.getTime(), 12 * 3_600_000)
@@ -91,7 +94,50 @@ test("study windows have valid end dates, including mixed units and prenatal ran
   assert.deepEqual(byAge("10 days to 3 months").endAge, { value: 3, unit: "months" })
   assert.deepEqual(byAge("6 months to 2.5 years").endAge, { value: 30, unit: "months" })
   assert.deepEqual(byAge("24 weeks gestation–birth").endAge, { value: 0, unit: "days" })
-  assert.deepEqual(byAge("12 to 18 weeks (3–4.5 months)").endAge, { value: 18, unit: "weeks" })
+  assert.deepEqual(byAge("3 months to 18 weeks (originally 12–18 weeks)").endAge, { value: 18, unit: "weeks" })
   assert.deepEqual(byAge("6 and 9 months").endAge, { value: 9, unit: "months" })
+})
+
+test("equal end dates prioritise the earlier starting study", () => {
+  const birth = "2026-01-01"
+  const selected = [
+    studies.find((study) => study.age === "3 months (originally 12 weeks)"),
+    studies.find((study) => study.age === "1 to 3 months"),
+  ].map((study) => ({
+    name: study.age,
+    targetDate: getTargetDate(birth, study.startAge),
+    endDate: getTargetDate(birth, study.endAge ?? study.startAge),
+  }))
+  assert.deepEqual(selected.sort(compareStudyWindows).map((study) => study.name), [
+    "1 to 3 months", "3 months (originally 12 weeks)",
+  ])
+  const sameDay = [
+    { targetDate: new Date("2026-01-03T12:00:00"), endDate: new Date("2026-01-10T08:00:00") },
+    { targetDate: new Date("2026-01-01T12:00:00"), endDate: new Date("2026-01-10T16:00:00") },
+  ]
+  sameDay.sort(compareStudyWindows)
+  assert.equal(sameDay[0].targetDate.getDate(), 1)
+})
+
+test("starting now includes the first 14 calendar days and excludes future starts", () => {
+  const start = new Date("2026-03-01T12:00:00")
+  assert.equal(isStartingNow(start, new Date("2026-02-28T12:00:00")), false)
+  assert.equal(isStartingNow(start, start), true)
+  assert.equal(isStartingNow(start, new Date("2026-03-14T12:00:00")), true)
+  assert.equal(isStartingNow(start, new Date("2026-03-15T12:00:00")), false)
+  assert.equal(calendarDaysBetween(start, new Date("2026-03-15T12:00:00")), 14)
+})
+
+test("current age windows include both endpoints and long ranges", () => {
+  const birth = "2026-01-01"
+  const study = studies.find((item) => item.age === "0 to 24 months")
+  const start = getTargetDate(birth, study.startAge)
+  const end = getTargetDate(birth, study.endAge)
+  assert.equal(isStartingNow(start, start), true)
+  assert.equal(isCurrentlyRelevant(start, end, start), true)
+  assert.equal(isCurrentlyRelevant(start, end, new Date("2027-01-01T12:00:00")), true)
+  assert.equal(isCurrentlyRelevant(start, end, end), true)
+  assert.equal(isCurrentlyRelevant(start, end, new Date("2028-01-02T12:00:00")), false)
+  assert.equal(isCurrentlyRelevant(start, end, new Date("2025-12-31T12:00:00")), false)
 })
 
