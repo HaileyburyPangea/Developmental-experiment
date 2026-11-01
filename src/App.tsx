@@ -1,9 +1,10 @@
 import { useMemo, useState } from "react"
 import { studies, type Study } from "./studies"
+import { getTargetDate } from "./timeline"
 
 type IconName = "calendar" | "chevron" | "clock" | "search" | "spark" | "check"
 
-function Icon({ name, className = "" }: { name: IconName className?: string }) {
+function Icon({ name, className = "" }: { name: IconName; className?: string }) {
   const paths: Record<IconName, React.ReactNode> = {
     calendar: (
       <>
@@ -50,23 +51,6 @@ function Icon({ name, className = "" }: { name: IconName className?: string }) {
   )
 }
 
-function getStartMonths(age: string) {
-  const normalized = age.toLowerCase().replace(/[–—]/g, "-")
-  if (normalized.includes("gestation")) return -4
-  if (normalized.includes("hour") || normalized.includes("day")) return 0
-
-  const firstNumber = Number(normalized.match(/\d+(?:\.\d+)?/)?.[0] ?? 0)
-  if (normalized.includes("week")) return firstNumber / 4.345
-  if (normalized.includes("year")) return firstNumber * 12
-  return firstNumber
-}
-
-function addMonths(dateString: string, months: number) {
-  const date = new Date(`${dateString}T12:00:00`)
-  date.setDate(date.getDate() + Math.round(months * 30.4375))
-  return date
-}
-
 function dateInputValue(date: Date) {
   const local = new Date(date.getTime() - date.getTimezoneOffset() * 60_000)
   return local.toISOString().slice(0, 10)
@@ -89,7 +73,6 @@ const monthYear = new Intl.DateTimeFormat("en-US", {
 type ScheduledStudy = Study & {
   id: number
   targetDate: Date
-  months: number
   daysAway: number
 }
 
@@ -182,12 +165,11 @@ export default function App() {
     now.setHours(12, 0, 0, 0)
     return studies
       .map((study, id) => {
-        const months = getStartMonths(study.age)
-        const targetDate = addMonths(birthDate, months)
+        const targetDate = getTargetDate(birthDate, study.startAge)
         const daysAway = Math.round(
           (targetDate.getTime() - now.getTime()) / 86_400_000,
         )
-        return { ...study, id, months, targetDate, daysAway }
+        return { ...study, id, targetDate, daysAway }
       })
       .sort((a, b) => a.targetDate.getTime() - b.targetDate.getTime())
   }, [birthDate])
