@@ -1,6 +1,7 @@
 export type Study = {
   age: string
   startAge: { value: number; unit: "days" | "weeks" | "months" }
+  endAge?: { value: number; unit: "days" | "weeks" | "months" }
   name: string
   experiment: string
   findings: string
@@ -13,6 +14,7 @@ export const studies: Study[] = [
   {
     age: "24 weeks gestation–birth",
     startAge: { value: -16, unit: "weeks" },
+    endAge: { value: 0, unit: "days" },
     name: "Prenatal auditory observations",
     experiment:
       "Fetal heart rate measured in response to parental speech. Inner ear fully developed by 24 weeks.",
@@ -37,6 +39,7 @@ export const studies: Study[] = [
   {
     age: "Under 24 hours",
     startAge: { value: 0, unit: "days" },
+    endAge: { value: 1, unit: "days" },
     name: "Rushen Shi's Lab",
     experiment:
       "Pacifier sucking responses to function words versus content words.",
@@ -69,6 +72,7 @@ export const studies: Study[] = [
   {
     age: "3–6 months",
     startAge: { value: 3, unit: "months" },
+    endAge: { value: 6, unit: "months" },
     name: "Disrupted Eye Gaze",
     experiment:
       "Mother speaks while deliberately looking away from the infant.",
@@ -103,6 +107,7 @@ export const studies: Study[] = [
   {
     age: "5–6 months",
     startAge: { value: 5, unit: "months" },
+    endAge: { value: 6, unit: "months" },
     name: "Cross-Modal Emotion Matching",
     experiment:
       "Happy and sad faces paired with matching or mismatching vocal tones.",
@@ -157,6 +162,7 @@ export const studies: Study[] = [
   {
     age: "9–10.5 months",
     startAge: { value: 9, unit: "months" },
+    endAge: { value: 10.5, unit: "months" },
     name: "Mandarin Exposure Study",
     experiment:
       "English-reared infants receive 12 live Mandarin play/story sessions; EEG measures phoneme responses.",
@@ -190,6 +196,7 @@ export const studies: Study[] = [
   {
     age: "12–18 months",
     startAge: { value: 12, unit: "months" },
+    endAge: { value: 18, unit: "months" },
     name: "Early Lexicon Observations",
     experiment:
       "Vocabulary expands; early words predominantly name objects, food and body parts.",
@@ -243,6 +250,7 @@ export const studies: Study[] = [
   {
     age: "18–24 months",
     startAge: { value: 18, unit: "months" },
+    endAge: { value: 24, unit: "months" },
     name: "Language Development Observations",
     experiment:
       'Toddlers begin combining words into short phrases, such as "green eggs".',
@@ -254,6 +262,7 @@ export const studies: Study[] = [
   {
     age: "18–24 months",
     startAge: { value: 18, unit: "months" },
+    endAge: { value: 24, unit: "months" },
     name: "Vocabulary Explosion Observations",
     experiment: "Rapid vocabulary acquisition and bedtime speech rehearsal.",
     findings:
@@ -306,6 +315,7 @@ export const studies: Study[] = [
   {
     age: "24 to 36 months",
     startAge: { value: 24, unit: "months" },
+    endAge: { value: 36, unit: "months" },
     name: "Delay of Gratification Study (Rutgers University, Michael Lewis's Lab) & Intentional Cooperation Task (Max Planck Institute, Michael Tomasello's Lab)",
     experiment:
       "1) Children are instructed not to peek at a hidden present or eat a cake while an adult leaves the room. 2) 24-month-olds participate in cooperative cylinder-lifting and block-dropping games requiring partner coordination.",
@@ -317,6 +327,7 @@ export const studies: Study[] = [
   {
     age: "6 to 36 months",
     startAge: { value: 6, unit: "months" },
+    endAge: { value: 36, unit: "months" },
     name: "Development of Play (NYU Infant Action Lab, Catherine Thomas-Lamanda) & Peer Collaboration/Sharing (University of Maryland, Nathan Fox's Lab)",
     experiment:
       "1) Play behaviors are observed with pretend food items across ages. 2) Pairs of 2-year-olds versus 3-year-olds are given tasks requiring joint assembly of a toy or sharing a single tricycle.",
@@ -328,6 +339,7 @@ export const studies: Study[] = [
   {
     age: "14 to 30 months",
     startAge: { value: 14, unit: "months" },
+    endAge: { value: 30, unit: "months" },
     name: "Shopping Cart Body Awareness Study (Dalhousie University, Chris Moore's Lab) & Scale Errors Study (University of Virginia, Judy DeLoache's Lab)",
     experiment:
       "1) Toddlers attempt to push a shopping cart anchored to a mat they stand on. 2) 2.5-year-olds play with life-sized toys, which are then swapped with exact miniature replicas.",
@@ -339,6 +351,7 @@ export const studies: Study[] = [
   {
     age: "8 to 18 months",
     startAge: { value: 8, unit: "months" },
+    endAge: { value: 18, unit: "months" },
     name: "Strange Situation Attachment Test (University of Illinois, Sarah Mangelsdorf's Lab) & Slope Social Referencing (NYU, Karen Adolph's Lab)",
     experiment:
       "1) 14-month and 17-month-olds undergo stranger introduction, parental separation, and reunion. 2) 18-month-olds encounter safe, steep, and impossible slopes while receiving motherly encouragement or caution.",
@@ -350,6 +363,7 @@ export const studies: Study[] = [
   {
     age: "9 to 18 months",
     startAge: { value: 9, unit: "months" },
+    endAge: { value: 18, unit: "months" },
     name: "Goal Tracking (University of Illinois, Renée Baillargeon's Lab), Unwilling vs. Unable Test (Max Planck Institute, Michael Tomasello's Lab), & Intentional vs. Accidental Action (Concordia University, Diane Poulin-Dubois' Lab)",
     experiment:
       '1) 14-month-olds watch researchers select specific toys across position changes. 2) 18-month-olds and chimps interact with a researcher who either clumsily drops a ball (unable) or deliberately teases (unwilling). 3) 14-month-olds observe button presses performed intentionally versus accidentally ("oops").',
@@ -372,6 +386,7 @@ export const studies: Study[] = [
   {
     age: "6 to 9 months",
     startAge: { value: 6, unit: "months" },
+    endAge: { value: 9, unit: "months" },
     name: "Visual Cliff & Joystick Motorized Car Experience (UC Berkeley, Joseph Campos & David Anderson's Lab)",
     experiment:
       "1) Novice crawlers versus experienced crawlers are placed on the Visual Cliff. 2) Pre-crawlers receive 8 training sessions in a joystick-operated toy car before being tested on the Visual Cliff.",
@@ -383,6 +398,7 @@ export const studies: Study[] = [
   {
     age: "2 to 5 months",
     startAge: { value: 2, unit: "months" },
+    endAge: { value: 5, unit: "months" },
     name: "Motor Pattern Reaching & Limb Coordination (Esther Thelen's Infant Action Lab)",
     experiment:
       "4-month and 5-month infants are attached to motion sensors while presented with enticing toys; testing arm reaching versus foot reaching, and cross-body reaching with one hand restrained.",
@@ -394,6 +410,7 @@ export const studies: Study[] = [
   {
     age: "0 to 6 months",
     startAge: { value: 0, unit: "months" },
+    endAge: { value: 6, unit: "months" },
     name: "Stepping Reflex Water Buoyancy & Mobile Reinforcement (Esther Thelen's Lab)",
     experiment:
       "1) The stepping reflex is tested in air, submerged in water, and on a treadmill at 6 months. 2) A 3-month-old's leg is connected to an overhead mobile via a ribbon.",
@@ -416,6 +433,7 @@ export const studies: Study[] = [
   {
     age: "8, 18, and 36 months",
     startAge: { value: 8, unit: "months" },
+    endAge: { value: 36, unit: "months" },
     name: "California Infant/Toddler Social-Emotional Learning Foundations",
     experiment:
       "Observational assessment of social-emotional milestones across three developmental age benchmarks (8m, 18m, 36m).",
@@ -427,6 +445,7 @@ export const studies: Study[] = [
   {
     age: "8, 18, and 36 months",
     startAge: { value: 8, unit: "months" },
+    endAge: { value: 36, unit: "months" },
     name: "Adult Relationship Foundations Framework",
     experiment:
       "Observational assessment of child-caregiver interactions during drop-off, routine play, and distress across age groups.",
@@ -438,6 +457,7 @@ export const studies: Study[] = [
   {
     age: "0 to 2 months",
     startAge: { value: 0, unit: "months" },
+    endAge: { value: 2, unit: "months" },
     name: "Neonatal Primitive Reflex Assessment",
     experiment:
       "Clinical elicitation of primitive reflexes in newborns up to 2 months (rooting, sucking, swallowing, stepping, Babinski, palmar grasp, Moro).",
@@ -449,6 +469,7 @@ export const studies: Study[] = [
   {
     age: "Toddler (~12 to 18 months)",
     startAge: { value: 12, unit: "months" },
+    endAge: { value: 18, unit: "months" },
     name: "Open-ended Chair Exploration Observation",
     experiment:
       "Observational study of toddlers engaging with two chairs under passive, non-interfering caregiver supervision.",
@@ -460,6 +481,7 @@ export const studies: Study[] = [
   {
     age: "9 to 24 months",
     startAge: { value: 9, unit: "months" },
+    endAge: { value: 24, unit: "months" },
     name: "Manual Babbling & Sign Language Acquisition (McGill University, Laura-Ann Petito's Lab)",
     experiment:
       "Micro-analysis of manual movements in deaf infants (Remy, Vance, Isabelle) exposed to sign language versus hearing infants, and tracking a bilingual sign/speech toddler (Simone).",
@@ -471,6 +493,7 @@ export const studies: Study[] = [
   {
     age: "1 to 2 years",
     startAge: { value: 12, unit: "months" },
+    endAge: { value: 24, unit: "months" },
     name: "Fine Motor Persistence & Adult Praise Observation",
     experiment:
       "Observational assessment of toddlers performing fine motor tasks (balancing a ball on a tube, pretend cooking, shape sorting with praise).",
@@ -482,6 +505,7 @@ export const studies: Study[] = [
   {
     age: "7 to 20 months",
     startAge: { value: 7, unit: "months" },
+    endAge: { value: 20, unit: "months" },
     name: "Gaze Following & Pointing Comprehension in Humans vs. Chimps (Chris Moore, Michael Tomasello, Diane Poulin-Dubois)",
     experiment:
       "1) 7m, 10m, and 12m infants tested on head-turn gaze following around solid barriers. 2) Hidden toy pointing task comparing human infants and chimps. 3) 14m and 20m toddlers matching human versus animal activities with toys.",
@@ -494,6 +518,7 @@ export const studies: Study[] = [
   {
     age: "6 to 11 months",
     startAge: { value: 6, unit: "months" },
+    endAge: { value: 11, unit: "months" },
     name: "Biological Motion Perception & Action Parsing (Renée Baillargeon & University of Oregon)",
     experiment:
       "1) 7.5-month-olds view a self-moving box versus a human girl floating in mid-air. 2) 11-month-olds watch light-point displays of household routines paused at natural boundaries versus mid-action.",
@@ -505,6 +530,7 @@ export const studies: Study[] = [
   {
     age: "5 to 10 months",
     startAge: { value: 5, unit: "months" },
+    endAge: { value: 10, unit: "months" },
     name: "Statistical Probability in Action Sequences (University of Oregon Infant Studies Lab)",
     experiment:
       "10-month-olds watch repeated 3-step action sequences (blow, feel, rattle), followed by test trials presenting expected versus scrambled action orders.",
@@ -516,6 +542,7 @@ export const studies: Study[] = [
   {
     age: "1 to 3 months",
     startAge: { value: 1, unit: "months" },
+    endAge: { value: 3, unit: "months" },
     name: "Emergence of Social Smile & Arm-String Agency (Michael Lewis's Lab, Rutgers)",
     experiment:
       "3-month-olds pull a wrist string to activate a monitor image; researchers then disconnect the string or randomize activation.",
@@ -527,6 +554,7 @@ export const studies: Study[] = [
   {
     age: "12 to 18 weeks (3–4.5 months)",
     startAge: { value: 12, unit: "weeks" },
+    endAge: { value: 18, unit: "weeks" },
     name: "Intermodal Emotion Matching (Albert Einstein College of Medicine) & Temperament Stimulation Response (Nathan Fox's Lab)",
     experiment:
       "1) 12–18 week olds view happy/sad faces of mother, father, or stranger paired with happy/sad audio. 2) 4-month-olds are exposed to a Jack-in-the-Box stimulus.",
@@ -538,6 +566,7 @@ export const studies: Study[] = [
   {
     age: "9 to 35 months",
     startAge: { value: 9, unit: "months" },
+    endAge: { value: 35, unit: "months" },
     name: "Longitudinal Frontal EEG & Risk Room Assessment (Nathan Fox's Lab & Peter Marshall)",
     experiment:
       "1) 9-month-olds undergo barrier frustration, puppet joy, and scary mask trials during EEG recording. 2) 24–35 month-olds enter a Risk Room with a stranger, Toby the Robot, and jumping stairs.",
@@ -549,6 +578,7 @@ export const studies: Study[] = [
   {
     age: "9 to 10 months",
     startAge: { value: 9, unit: "months" },
+    endAge: { value: 10, unit: "months" },
     name: "Parenting Compliance Interaction (Amy Hayne / Maryland Lab) & Visual Cliff Social Referencing (Joe Campos' Lab)",
     experiment:
       "1) 9-month-olds are forbidden from touching a dangerous plant. 2) 10-month-olds on a visual cliff read mother's facial expression (fear vs. smile).",
@@ -560,6 +590,7 @@ export const studies: Study[] = [
   {
     age: "6 to 30 months",
     startAge: { value: 6, unit: "months" },
+    endAge: { value: 30, unit: "months" },
     name: "Infant Arm Restraint Self-Comfort (University of Pennsylvania) & Toddler Stress Coping (Sarah Mangelsdorf's Lab)",
     experiment:
       "1) 6m and 9m infants have arms restrained. 2) 2-year-olds face a moving tarantula toy while father ignores them. 3) 2.5-year-olds try opening a sealed cracker bag while mother reads.",
@@ -571,6 +602,7 @@ export const studies: Study[] = [
   {
     age: "14 to 36 months",
     startAge: { value: 14, unit: "months" },
+    endAge: { value: 36, unit: "months" },
     name: "Mirror Rouge Test & Rigged Task Pride/Shame (Michael Lewis's Lab, Rutgers)",
     experiment:
       "1) Mirror rouge test conducted on 14m, 17m, 22m, and 24m toddlers. 2) Pointing/praising to elicit embarrassment. 3) 3-year-olds complete timed puzzles rigged to succeed or fail before timer rings.",
@@ -582,6 +614,7 @@ export const studies: Study[] = [
   {
     age: "3 to 5 years",
     startAge: { value: 36, unit: "months" },
+    endAge: { value: 60, unit: "months" },
     name: "Creative Curriculum for Preschool Implementation Study",
     experiment:
       "Qualitative classroom observation of 11 interest areas, intentional teaching strategies, interest-area setup, and integrated assessment.",
@@ -593,6 +626,7 @@ export const studies: Study[] = [
   {
     age: "0 to 24 months",
     startAge: { value: 0, unit: "months" },
+    endAge: { value: 24, unit: "months" },
     name: "Locomotor Posture Specificity (Karen Adolph), Object Permanence A-not-B Error (Piagetian Tasks), & Universal Grammar (Chomsky)",
     experiment:
       "1) Reaching over precipices in sitting versus crawling versus walking postures. 2) Hiding toys under cloths (A-not-B search error at 10m). 3) Tracking Piaget's 6 sensorimotor substages.",
@@ -605,6 +639,7 @@ export const studies: Study[] = [
   {
     age: "3 to 6 years",
     startAge: { value: 36, unit: "months" },
+    endAge: { value: 72, unit: "months" },
     name: "Egocentric Space Station Task, Piagetian Conservation of Liquid, & Guided Participation in Mayan Community (Barbara Rogoff)",
     experiment:
       "1) 4-year-olds in separate rooms describe tools to fix a space station. 2) Liquid volume conservation in tall versus wide glasses. 3) Comparing Mayan versus American guided participation.",
@@ -616,6 +651,7 @@ export const studies: Study[] = [
   {
     age: "2 to 6 years",
     startAge: { value: 24, unit: "months" },
+    endAge: { value: 72, unit: "months" },
     name: "Body Proportion Slimming & Myelination Assessment",
     experiment:
       "1) Reaching arm over head to touch opposite ear. 2) Observational assessment of fine motor drawing/painting across preschool ages.",
@@ -627,6 +663,7 @@ export const studies: Study[] = [
   {
     age: "2 to 6 years",
     startAge: { value: 24, unit: "months" },
+    endAge: { value: 72, unit: "months" },
     name: "Parenting Styles Model (Baumrind), Gender Role Development Interview, & Play Typology (Parten)",
     experiment:
       "1) Evaluation of authoritative, authoritarian, and permissive parenting. 2) Interviewing preschoolers on gender stereotypes (doctors vs. nurses). 3) Observing parallel, mastery, and sociodramatic play.",
@@ -638,6 +675,7 @@ export const studies: Study[] = [
   {
     age: "10 days to 3 months",
     startAge: { value: 10, unit: "days" },
+    endAge: { value: 3, unit: "months" },
     name: "Visual Face Tracking & Contrast Perception (Daphne Maurer's Lab, Terry Lewis)",
     experiment:
       "10-day-old (Dylan) versus 6-week-old (Devon) are shown cards featuring face-like versus inverted blobs and blurry faces versus high-contrast patterns.",
@@ -649,6 +687,7 @@ export const studies: Study[] = [
   {
     age: "2.5 to 8 months",
     startAge: { value: 2.5, unit: "months" },
+    endAge: { value: 8, unit: "months" },
     name: "Violation of Expectation Object Permanence (Renée Baillargeon, Andrea Aguiar, Andrew Meltzoff)",
     experiment:
       "1) 2.5m and 3.5m infants watch tall/short dolls/rabbits pass behind solid versus cut-out screens. 2) 6m versus 8m infants tested on retrieving hidden objects under blankets. 3) 18m infants tested on hand-displacement shell games.",
@@ -660,6 +699,7 @@ export const studies: Study[] = [
   {
     age: "6 to 9 months",
     startAge: { value: 6, unit: "months" },
+    endAge: { value: 9, unit: "months" },
     name: "Multi-Law Physics Integration (Rachel Clifton/Keane's Lab) & Infant Addition/Subtraction (Karen Wynn's Lab)",
     experiment:
       "1) 9-month-olds track a ball rolling down a ramp behind a screen with a solid barrier wall. 2) 6-month-olds watch 1+1=2 versus 1+1=1 and 2-1=1 versus 2-1=2 doll stage events.",
@@ -671,6 +711,7 @@ export const studies: Study[] = [
   {
     age: "6 months to 2.5 years",
     startAge: { value: 6, unit: "months" },
+    endAge: { value: 30, unit: "months" },
     name: "Numerical Ratio Discrimination, Counting Comprehension, & Cloth-as-Tool Retrieval (Amanda Woodward's Lab)",
     experiment:
       "1) 6-month-olds compare visual quantities/lines of objects. 2) 2.5-year-olds are asked to count and pass 3 crackers. 3) 8m versus 11m infants tested on pulling a cloth tool to retrieve a toy.",
@@ -682,6 +723,7 @@ export const studies: Study[] = [
   {
     age: "9 to 19 months",
     startAge: { value: 9, unit: "months" },
+    endAge: { value: 19, unit: "months" },
     name: "Spoon Handle Orientation Problem Solving (Rachel Keane's Lab) & Handrail Support Assessment (Karen Adolph's Lab)",
     experiment:
       "1) 9m, 14m, and 19m infants are offered food on spoons with handles alternating left/right. 2) 16m toddlers cross narrow bridges using solid wooden versus squishy rubber handrails.",
@@ -693,6 +735,7 @@ export const studies: Study[] = [
   {
     age: "5 to 18 months",
     startAge: { value: 5, unit: "months" },
+    endAge: { value: 18, unit: "months" },
     name: "Intention Attribution from Partial Gestures (Amanda Woodward) & Diversity of Desires Study (Betty Repacholi & Alison Gopnik's Lab)",
     experiment:
       "1) 11-month-olds watch a researcher touch a cloth to pick a toy. 2) 14-month-olds versus 18-month-olds are offered food choice (crackers vs. broccoli) after a researcher expresses delight for broccoli.",
@@ -705,6 +748,7 @@ export const studies: Study[] = [
   {
     age: "2 to 7.25 months",
     startAge: { value: 2, unit: "months" },
+    endAge: { value: 7.25, unit: "months" },
     name: "Mobile Memory and Reminders (Rovee-Collier, Hartshorn & DiRubbo, 1999)",
     experiment: "The same infants learned to move a mobile by kicking. In one experiment, researchers gave reminders every three weeks and tested retention over subsequent months.",
     findings: "With reminders, infants showed evidence of retaining the association for several months. This extends the mobile-contingency task to memory over time.",
@@ -715,6 +759,7 @@ export const studies: Study[] = [
   {
     age: "3 to 4 months",
     startAge: { value: 3, unit: "months" },
+    endAge: { value: 4, unit: "months" },
     name: "Sticky Mittens and Object Exploration (Needham and colleagues, 2002)",
     experiment: "Pre-reaching infants played over 10–14 sessions wearing mittens that attached to specially prepared toys. Researchers compared their exploration with that of infants without the sessions.",
     findings: "The experienced group showed more object engagement and exploration in the original study. Later studies reported mixed findings about motor benefits.",
@@ -745,6 +790,7 @@ export const studies: Study[] = [
   {
     age: "6 and 9 months",
     startAge: { value: 6, unit: "months" },
+    endAge: { value: 9, unit: "months" },
     name: "Human and Monkey Face Discrimination (Pascalis, de Haan & Nelson, 2002)",
     experiment: "Different age groups were familiarised with human or monkey faces, then shown a familiar face alongside a new one.",
     findings: "Six-month-olds discriminated individual faces of both species in this study; nine-month-olds showed stronger discrimination of human faces.",
@@ -765,6 +811,7 @@ export const studies: Study[] = [
   {
     age: "9 to 15 months",
     startAge: { value: 9, unit: "months" },
+    endAge: { value: 15, unit: "months" },
     name: "Joint Attention and Communication (Carpenter, Nagell & Tomasello, 1998)",
     experiment: "Longitudinal studies observed infants and mothers over time, including shared engagement, caregiver language, gestures, and early communication.",
     findings: "Time spent jointly engaged and caregiver language following the infant’s attention predicted early gestural and linguistic skills; these associations do not by themselves prove causation.",

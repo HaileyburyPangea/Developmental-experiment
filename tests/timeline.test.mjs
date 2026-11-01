@@ -1,6 +1,6 @@
 import assert from "node:assert/strict"
 import test from "node:test"
-import { addMonths, getTargetDate } from "../src/timeline.ts"
+import { addMonths, compareStudyWindows, getTargetDate } from "../src/timeline.ts"
 import { studies } from "../src/studies.ts"
 
 function localDate(date) {
@@ -65,5 +65,33 @@ test("whole weeks preserve local time across daylight saving transitions", () =>
   const date = getTargetDate("2026-03-01", { value: 6, unit: "weeks" })
   assert.deepEqual(localDate(date), [2026, 4, 12])
   assert.equal(date.getHours(), 12)
+})
+
+test("studies are ordered by the end of their window, then by its start", () => {
+  const day = (value) => getTargetDate("2026-01-01", { value, unit: "days" })
+  const windows = [
+    { name: "range 1–10", targetDate: day(1), endDate: day(10) },
+    { name: "day 3", targetDate: day(3), endDate: day(3) },
+    { name: "range 0–3", targetDate: day(0), endDate: day(3) },
+    { name: "range 0–45", targetDate: day(0), endDate: day(45) },
+    { name: "day 15", targetDate: day(15), endDate: day(15) },
+  ]
+  assert.deepEqual(windows.sort(compareStudyWindows).map((item) => item.name), [
+    "range 0–3", "day 3", "range 1–10", "day 15", "range 0–45",
+  ])
+})
+
+test("study windows have valid end dates, including mixed units and prenatal ranges", () => {
+  const byAge = (age) => studies.find((study) => study.age === age)
+  for (const study of studies) {
+    const start = getTargetDate("2026-01-31", study.startAge)
+    const end = getTargetDate("2026-01-31", study.endAge ?? study.startAge)
+    assert.ok(Number.isFinite(end.getTime()) && end >= start, study.age)
+  }
+  assert.deepEqual(byAge("10 days to 3 months").endAge, { value: 3, unit: "months" })
+  assert.deepEqual(byAge("6 months to 2.5 years").endAge, { value: 30, unit: "months" })
+  assert.deepEqual(byAge("24 weeks gestation–birth").endAge, { value: 0, unit: "days" })
+  assert.deepEqual(byAge("12 to 18 weeks (3–4.5 months)").endAge, { value: 18, unit: "weeks" })
+  assert.deepEqual(byAge("6 and 9 months").endAge, { value: 9, unit: "months" })
 })
 
