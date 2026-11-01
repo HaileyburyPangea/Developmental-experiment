@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react"
 import { studies, type Study } from "./studies"
-import { getTargetDate } from "./timeline"
+import { compareStudyWindows, getTargetDate } from "./timeline"
 
 type IconName = "calendar" | "chevron" | "clock" | "search" | "spark" | "check"
 
@@ -56,6 +56,12 @@ function dateInputValue(date: Date) {
   return local.toISOString().slice(0, 10)
 }
 
+function formatWindow(start: Date, end: Date) {
+  if (start.toDateString() === end.toDateString()) return shortDate.format(start)
+  const formatter = start.getFullYear() === end.getFullYear() ? shortDate : longDate
+  return `${formatter.format(start)} – ${formatter.format(end)}`
+}
+
 const longDate = new Intl.DateTimeFormat("en-US", {
   month: "long",
   day: "numeric",
@@ -73,6 +79,7 @@ const monthYear = new Intl.DateTimeFormat("en-US", {
 type ScheduledStudy = Study & {
   id: number
   targetDate: Date
+  endDate: Date
   daysAway: number
 }
 
@@ -111,7 +118,7 @@ function StudyCard({
           <p className="study-concept">{study.concept}</p>
         </div>
         <div className="date-block">
-          <span>{shortDate.format(study.targetDate)}</span>
+          <span>{formatWindow(study.targetDate, study.endDate)}</span>
           <Icon
             name="chevron"
             className={`chevron ${isOpen ? "rotate-180" : ""}`}
@@ -170,12 +177,13 @@ export default function App() {
     return studies
       .map((study, id) => {
         const targetDate = getTargetDate(birthDate, study.startAge)
+        const endDate = getTargetDate(birthDate, study.endAge ?? study.startAge)
         const daysAway = Math.round(
-          (targetDate.getTime() - now.getTime()) / 86_400_000,
+          (endDate.getTime() - now.getTime()) / 86_400_000,
         )
-        return { ...study, id, targetDate, daysAway }
+        return { ...study, id, targetDate, endDate, daysAway }
       })
-      .sort((a, b) => a.targetDate.getTime() - b.targetDate.getTime())
+      .sort(compareStudyWindows)
   }, [birthDate])
 
   const filtered = useMemo(() => {
@@ -196,7 +204,7 @@ export default function App() {
     label: string
     studies: ScheduledStudy[]
   }>>((all, study) => {
-    const label = monthYear.format(study.targetDate)
+    const label = monthYear.format(study.endDate)
     const last = all.at(-1)
     if (last?.label === label) last.studies.push(study)
     else all.push({ label, studies: [study] })
@@ -249,8 +257,8 @@ export default function App() {
             <p>
               Enter a birth date to turn developmental research into a clear,
               practical timeline of the ages studied. These are research ages,
-              not developmental deadlines or diagnostic tests. Age ranges appear
-              at their first age, with one calendar date per study.
+              not developmental deadlines or diagnostic tests. Studies are
+              ordered by the end of their age window.
             </p>
           </div>
           <div className="hero-orbit" aria-hidden="true">
@@ -307,9 +315,9 @@ export default function App() {
                 <strong>{upcomingCount}</strong>
               </div>
               <div className="snapshot-row">
-                <span>Next target</span>
+                <span>Next window ends</span>
                 <strong>
-                  {nextStudy ? shortDate.format(nextStudy.targetDate) : "—"}
+                  {nextStudy ? shortDate.format(nextStudy.endDate) : "—"}
                 </strong>
               </div>
             </div>
@@ -389,7 +397,7 @@ export default function App() {
                   <div className="month-group" key={group.label}>
                     <div className="month-marker">
                       <span />
-                      <p>{group.label}</p>
+                      <p>Ends {group.label}</p>
                     </div>
                     <div className="month-studies">
                       {group.studies.map((study) => (
