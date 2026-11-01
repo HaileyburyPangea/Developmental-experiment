@@ -124,8 +124,8 @@
   .schedule-head h2 { @apply text-3xl font-extrabold tracking-[-0.04em] text-[#19312b]; }
   .schedule-head > div:first-child > p:last-child { @apply mt-2 text-xs text-[#7b8783]; }
 
-  .view-toggle { @apply flex self-start rounded-xl border border-[#d9ddd8] bg-white p-1 sm:self-auto; }
-  .view-toggle button { @apply rounded-lg px-4 py-2 text-[11px] font-extrabold text-[#75807c] transition; }
+  .view-toggle { @apply flex flex-wrap self-start rounded-xl border border-[#d9ddd8] bg-white p-1 sm:self-auto; }
+  .view-toggle button { @apply rounded-lg px-3 py-2 text-[11px] font-extrabold text-[#75807c] transition; }
   .view-toggle button.active { @apply bg-[#1d463d] text-white shadow-sm; }
 
   .search-wrap { @apply mb-8 flex items-center gap-3 rounded-xl border border-[#d9ddd8] bg-white px-4 text-[#8b9692]; }
@@ -139,6 +139,9 @@
   .month-marker span { @apply relative z-10 block h-[15px] w-[15px] shrink-0 rounded-full border-[4px] border-[#f5f4ef] bg-[#e06b45] shadow-[0_0_0_1px_#e06b45]; }
   .month-marker p { @apply text-[10px] font-extrabold uppercase tracking-[0.13em] text-[#66746f] md:absolute md:left-7 md:top-0.5; }
   .month-studies { @apply space-y-3; }
+  .starting-now { @apply mb-8; }
+  .starting-now h3 { @apply text-lg font-extrabold text-[#19312b]; }
+  .starting-now > p { @apply mb-4 mt-1 text-xs text-[#687a73]; }
 
   .study-card { @apply overflow-hidden rounded-2xl border border-[#daddd8] bg-white transition-shadow duration-200; }
   .study-card:hover, .study-card-open { @apply shadow-[0_12px_35px_rgba(26,52,45,0.08)]; }
@@ -193,3 +196,4 @@
     transition-duration: 0.01ms !important;
   }
 }
+
