@@ -105,7 +105,7 @@ function StudyCard({
         <div className="min-w-0 flex-1 text-left">
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span className="age-pill">{study.age}</span>
-            {isSoon && <span className="due-pill">Due soon</span>}
+            {isSoon && <span className="due-pill">Around this age</span>}
           </div>
           <h3 className="study-title">{study.name}</h3>
           <p className="study-concept">{study.concept}</p>
@@ -140,7 +140,11 @@ function StudyCard({
             </div>
             <div className="source">
               <span>Source</span>
-              {study.source}
+              {study.sourceUrl ? (
+                <a href={study.sourceUrl} target="_blank" rel="noopener noreferrer">
+                  {study.source}
+                </a>
+              ) : study.source}
             </div>
           </div>
         </div>
@@ -238,13 +242,15 @@ export default function App() {
           <div className="hero-copy">
             <p className="eyebrow">Personalized research calendar</p>
             <h1>
-              Every milestone,
+              Explore development,
               <br />
-              <em>right on time.</em>
+              <em>one study at a time.</em>
             </h1>
             <p>
               Enter a birth date to turn developmental research into a clear,
-              practical schedule—so you always know what to prepare for next.
+              practical timeline of the ages studied. These are research ages,
+              not developmental deadlines or diagnostic tests. Age ranges appear
+              at their first age, with one calendar date per study.
             </p>
           </div>
           <div className="hero-orbit" aria-hidden="true">
@@ -426,3 +432,4 @@ export default function App() {
     </div>
   )
 }
+
