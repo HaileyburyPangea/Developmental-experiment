@@ -30,3 +30,13 @@ export function getTargetDate(dateString: string, age: StartAge): Date {
   date.setTime(date.getTime() + (days - wholeDays) * 86_400_000)
   return date
 }
+
+/** Order windows by their end, then by their start, keeping exact ties stable. */
+export function compareStudyWindows(
+  a: { targetDate: Date; endDate: Date },
+  b: { targetDate: Date; endDate: Date },
+): number {
+  return a.endDate.getTime() - b.endDate.getTime()
+    || a.targetDate.getTime() - b.targetDate.getTime()
+}
+
