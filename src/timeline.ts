@@ -47,15 +47,20 @@ export function calendarDaysBetween(from: Date, to: Date): number {
   return dayNumber(to) - dayNumber(from)
 }
 
-/** Highlight the first 14 calendar days after a study window begins. */
-export function isStartingNow(start: Date, today: Date): boolean {
+/** Highlight up to 14 calendar days after the start, only while the window is open. */
+export function isStartingNow(start: Date, end: Date, today: Date): boolean {
   const daysSinceStart = calendarDaysBetween(start, today)
-  return daysSinceStart >= 0 && daysSinceStart < 14
+  return daysSinceStart >= 0 && daysSinceStart < 14 && isUpcoming(end, today)
+}
+
+/** Date-only input uses inclusive local calendar days, with no expiry grace period. */
+export function isUpcoming(end: Date, today: Date): boolean {
+  return calendarDaysBetween(today, end) >= 0
 }
 
 /** Include both boundary dates in the current age window. */
 export function isCurrentlyRelevant(start: Date, end: Date, today: Date): boolean {
   return calendarDaysBetween(start, today) >= 0
-    && calendarDaysBetween(today, end) >= 0
+    && isUpcoming(end, today)
 }
 

@@ -140,6 +140,10 @@
   .month-marker p { @apply text-[10px] font-extrabold uppercase tracking-[0.13em] text-[#66746f] md:absolute md:left-7 md:top-0.5; }
   .month-studies { @apply space-y-3; }
   .starting-now { @apply mb-8; }
+  .protocol { @apply mt-5 space-y-3 text-sm leading-relaxed text-[#53665f]; }
+  .protocol ul { @apply list-disc space-y-1 pl-5; }
+  .protocol ol { @apply list-decimal space-y-2 pl-5; }
+  .source a { @apply block underline underline-offset-2; }
   .starting-now h3 { @apply text-lg font-extrabold text-[#19312b]; }
   .starting-now > p { @apply mb-4 mt-1 text-xs text-[#687a73]; }
 

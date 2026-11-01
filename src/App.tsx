@@ -1,4 +1,7 @@
 import { useMemo, useState } from "react"
+import { loadBirthDate, saveBirthDate } from "./birthDateStorage"
+import { useCurrentDate } from "./useCurrentDate"
+import { localDateString } from "./localClock"
 import { studies, type Study } from "./studies"
 import {
   calendarDaysBetween,
@@ -68,19 +71,19 @@ function formatWindow(start: Date, end: Date) {
   return `${formatter.format(start)} – ${formatter.format(end)}`
 }
 
-const longDate = new Intl.DateTimeFormat("en-US", {
+const longDate = { format: (date: Date) => new Intl.DateTimeFormat("en-US", {
   month: "long",
   day: "numeric",
   year: "numeric",
-})
-const shortDate = new Intl.DateTimeFormat("en-US", {
+}).format(date) }
+const shortDate = { format: (date: Date) => new Intl.DateTimeFormat("en-US", {
   month: "short",
   day: "numeric",
-})
-const monthYear = new Intl.DateTimeFormat("en-US", {
+}).format(date) }
+const monthYear = { format: (date: Date) => new Intl.DateTimeFormat("en-US", {
   month: "long",
   year: "numeric",
-})
+}).format(date) }
 
 type ScheduledStudy = Study & {
   id: number
@@ -98,8 +101,8 @@ function StudyCard({
   isOpen: boolean
   onToggle: () => void
 }) {
-  const isPast = study.daysAway < -30
-  const isSoon = study.daysAway >= -30 && study.daysAway <= 30
+  const isPast = study.daysAway < 0
+  const isSoon = study.daysAway >= 0 && study.daysAway <= 30
 
   return (
     <article className={`study-card ${isOpen ? "study-card-open" : ""}`}>
@@ -118,6 +121,7 @@ function StudyCard({
         <div className="min-w-0 flex-1 text-left">
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <span className="age-pill">{study.age}</span>
+            <span className="age-pill">{study.kind}</span>
             {isSoon && <span className="due-pill">Around this age</span>}
           </div>
           <h3 className="study-title">{study.name}</h3>
@@ -144,6 +148,16 @@ function StudyCard({
               <p className="detail-copy">{study.findings}</p>
             </div>
           </div>
+          <div className="protocol">
+            <p className="detail-label">Materials and setup</p>
+            <ul>{study.materials.map((item, i) => <li key={i}>{item}</li>)}</ul>
+            <p className="detail-label">Procedure</p>
+            <ol>{study.procedure.map((step, i) => <li key={i}>{step}</li>)}</ol>
+            <p className="detail-label">What to record</p>
+            <p className="detail-copy">{study.measure}</p>
+            <p className="detail-label">Interpretation and limitations</p>
+            <p className="detail-copy">{study.limitations}</p>
+          </div>
           <div className="detail-footer">
             <div>
               <p className="detail-label">Developmental concept</p>
@@ -153,11 +167,11 @@ function StudyCard({
             </div>
             <div className="source">
               <span>Source</span>
-              {study.sourceUrl ? (
-                <a href={study.sourceUrl} target="_blank" rel="noopener noreferrer">
-                  {study.source}
+              {study.references.length ? study.references.map((reference) => (
+                <a key={reference.url} href={reference.url} target="_blank" rel="noopener noreferrer">
+                  {reference.title}
                 </a>
-              ) : study.source}
+              )) : study.source}
             </div>
           </div>
         </div>
@@ -170,13 +184,14 @@ export default function App() {
   const defaultBirthDate = new Date()
   defaultBirthDate.setMonth(defaultBirthDate.getMonth() - 6)
 
-  const [birthDate, setBirthDate] = useState(dateInputValue(defaultBirthDate))
+  const [birthDate, setBirthDate] = useState(() => loadBirthDate(dateInputValue(defaultBirthDate)))
   const [query, setQuery] = useState("")
   const [view, setView] = useState<"upcoming" | "current" | "all">("upcoming")
   const [openId, setOpenId] = useState<number | null>(null)
   const [showMore, setShowMore] = useState(false)
 
-  const today = dateInputValue(new Date())
+  const currentDate = useCurrentDate()
+  const today = localDateString(currentDate)
   const scheduled = useMemo<ScheduledStudy[]>(() => {
     if (!birthDate) return []
     const now = new Date(`${today}T12:00:00`)
@@ -188,14 +203,14 @@ export default function App() {
         return { ...study, id, targetDate, endDate, daysAway }
       })
       .sort(compareStudyWindows)
-  }, [birthDate, today])
+  }, [birthDate, today, currentDate])
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase()
     const now = new Date(`${today}T12:00:00`)
     return scheduled.filter((study) => {
       const matchesView = view === "all" ||
-        (view === "upcoming" && study.daysAway >= -30) ||
+        (view === "upcoming" && study.daysAway >= 0) ||
         (view === "current" && isCurrentlyRelevant(study.targetDate, study.endDate, now))
       const matchesQuery =
         !needle ||
@@ -207,7 +222,7 @@ export default function App() {
   }, [query, scheduled, today, view])
 
   const startingNow = filtered.filter((study) =>
-    isStartingNow(study.targetDate, new Date(`${today}T12:00:00`)),
+    isStartingNow(study.targetDate, study.endDate, currentDate),
   )
 
   const visible = showMore ? filtered : filtered.slice(0, 14)
@@ -223,9 +238,9 @@ export default function App() {
   }, [])
 
   const upcomingCount = scheduled.filter(
-    (study) => study.daysAway >= -30,
+    (study) => study.daysAway >= 0,
   ).length
-  const nextStudy = scheduled.find((study) => study.daysAway >= -30)
+  const nextStudy = scheduled.find((study) => study.daysAway >= 0)
   const ageInMonths = birthDate
     ? Math.max(
         0,
@@ -303,11 +318,15 @@ export default function App() {
                 value={birthDate}
                 onChange={(event) => {
                   setBirthDate(event.target.value)
+                  saveBirthDate(event.target.value)
                   setShowMore(false)
                 }}
               />
               <p className="privacy-note">
-                Used only to calculate this timeline.
+                Saved on this browser to restore your timeline. Clear the date to forget it.
+              </p>
+              <p className="privacy-note">
+                Dates follow this device’s local calendar day. Hour-based ages are approximate because no birth time is entered.
               </p>
             </div>
 
