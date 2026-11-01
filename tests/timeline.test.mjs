@@ -40,7 +40,7 @@ test("prenatal scheduling uses 24 weeks relative to a 40-week due date", () => {
 
 test("fractional months and every study produce valid targets", () => {
   assert.deepEqual(localDate(targetFor("2.5 to 8 months")), [2026, 3, 17])
-  assert.equal(studies.length, 63)
+  assert.equal(studies.length, 73)
   for (const study of studies) {
     assert.ok(Number.isFinite(study.startAge.value), study.age)
     assert.ok(["days", "weeks", "months"].includes(study.startAge.unit), study.age)
@@ -49,8 +49,21 @@ test("fractional months and every study produce valid targets", () => {
   }
 })
 
+test("new research entries link to sources and schedule at their starting ages", () => {
+  const linkedStudies = studies.filter((study) => study.sourceUrl)
+  assert.equal(linkedStudies.length, 10)
+  for (const study of linkedStudies) {
+    assert.equal(new URL(study.sourceUrl).protocol, "https:")
+    assert.ok(study.experiment && study.findings && study.concept, study.name)
+    assert.ok(Number.isFinite(getTargetDate("2026-01-01", study.startAge).getTime()))
+  }
+  assert.deepEqual(localDate(targetFor("2 to 7.25 months")), [2026, 3, 1])
+  assert.deepEqual(localDate(targetFor("6 and 9 months")), [2026, 7, 1])
+})
+
 test("whole weeks preserve local time across daylight saving transitions", () => {
   const date = getTargetDate("2026-03-01", { value: 6, unit: "weeks" })
   assert.deepEqual(localDate(date), [2026, 4, 12])
   assert.equal(date.getHours(), 12)
 })
+
