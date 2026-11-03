@@ -140,27 +140,27 @@ function StudyCard({
         <div className="study-details">
           <div className="detail-grid">
             <div>
-              <p className="detail-label">Experiment</p>
+              <p className="detail-label">What this explores</p>
               <p className="detail-copy">{study.experiment}</p>
             </div>
             <div>
-              <p className="detail-label">Key findings</p>
+              <p className="detail-label">What was observed</p>
               <p className="detail-copy">{study.findings}</p>
             </div>
           </div>
           <div className="protocol">
             <p className="detail-label">Materials and setup</p>
             <ul>{study.materials.map((item, i) => <li key={i}>{item}</li>)}</ul>
-            <p className="detail-label">Procedure</p>
+            <p className="detail-label">How it works</p>
             <ol>{study.procedure.map((step, i) => <li key={i}>{step}</li>)}</ol>
-            <p className="detail-label">What to record</p>
+            <p className="detail-label">What to notice</p>
             <p className="detail-copy">{study.measure}</p>
-            <p className="detail-label">Interpretation and limitations</p>
+            <p className="detail-label">What to keep in mind</p>
             <p className="detail-copy">{study.limitations}</p>
           </div>
           <div className="detail-footer">
             <div>
-              <p className="detail-label">Developmental concept</p>
+              <p className="detail-label">Area of development</p>
               <p className="text-sm font-semibold text-[#263b36]">
                 {study.concept}
               </p>

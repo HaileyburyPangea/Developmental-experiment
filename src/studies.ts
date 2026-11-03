@@ -28,24 +28,24 @@ export const studies: Study[] = [
       "unit": "days"
     },
     "name": "Prenatal responses to familiar voices",
-    "experiment": "Research description: compare fetal heart-rate responses to recordings of the pregnant parent and an unfamiliar speaker.",
-    "findings": "Near-term fetuses showed different heart-rate responses to the two voices; this supports prenatal experience with voice characteristics.",
-    "concept": "Prenatal auditory familiarity",
+    "experiment": "To explore whether babies recognise a familiar voice before birth, researchers compare changes in fetal heart rate while playing recordings of the pregnant parent and an unfamiliar speaker.",
+    "findings": "Babies near their due date responded differently to the familiar and unfamiliar voices. This suggests that experience before birth influences how they respond to voices.",
+    "concept": "Recognising familiar voices before birth",
     "source": "Effects of experience on fetal voice recognition (2003)",
     "kind": "experiment",
     "materials": [
-      "Clinical fetal-heart-rate monitor",
+      "Clinical equipment that records fetal heart rate",
       "Matched recordings of a passage",
-      "Calibrated research playback equipment"
+      "Research playback equipment set to the study’s sound specifications"
     ],
     "procedure": [
-      "Recruit near-term pregnancies through a clinical research setting; the linked study does not establish a 24-week milestone.",
-      "In the published research protocol, monitor three consecutive two-minute periods: baseline without playback, voice playback, then recovery without playback.",
-      "Use matched speech content and playback conditions, with voice condition assigned between participants.",
-      "Compare baseline-adjusted heart-rate trajectories by condition; use the paper for approved sound calibration and monitoring details."
+      "In a clinical research setting, enrol pregnancies near the due date.",
+      "Record fetal heart rate during three two-minute periods: before playback, during voice playback and after playback.",
+      "Use the same passage and matched playback conditions for familiar and unfamiliar voices, assigning the recording type across participants.",
+      "Compare changes from the initial heart-rate measurement between the voice groups. Use the paper’s clinical monitoring and sound specifications."
     ],
-    "measure": "Heart-rate change relative to baseline, during and following playback.",
-    "limitations": "Not a home protocol. Existing 24-weeks-to-birth calendar range is a broad planning range; the cited experiment studied near-term fetuses. Removed the unsupported claim that the inner ear is fully developed at exactly 24 weeks.",
+    "measure": "Change in heart rate during and after playback compared with the initial measurement.",
+    "limitations": "This study needs clinical monitoring and carefully controlled sound playback. It studied babies near their due date; the broader calendar range does not mean the same result has been demonstrated at 24 weeks.",
     "references": [
       {
         "title": "Effects of experience on fetal voice recognition (2003)",
@@ -61,24 +61,24 @@ export const studies: Study[] = [
       "unit": "days"
     },
     "name": "Newborn language-rhythm preference",
-    "experiment": "Research description: newborns control playback of English or Tagalog speech through a non-nutritive sucking apparatus.",
-    "findings": "Prenatal English-only exposure was associated with English preference; English–Tagalog exposure was associated with preference for both. Separate tests showed language discrimination.",
-    "concept": "Prenatal language exposure and rhythm",
+    "experiment": "To find out whether speech heard during pregnancy influences newborn listening preferences, researchers let babies control whether they hear English or Tagalog by changing how they suck on a special pacifier.",
+    "findings": "Newborns exposed to English during pregnancy preferred English. Those exposed to both English and Tagalog showed a preference for both languages. A separate test showed that babies could tell the languages apart.",
+    "concept": "Early familiarity with language sounds",
     "source": "The roots of bilingualism in newborns (2010)",
     "kind": "experiment",
     "materials": [
-      "Pressure-sensitive non-nutritive nipple",
+      "Special pacifier that measures sucking pressure",
       "Recorded speech in two languages",
-      "Playback controller and sucking-event recording"
+      "Equipment that controls playback and records sucking"
     ],
     "procedure": [
-      "Document languages spoken during pregnancy before assigning exposure groups.",
-      "Measure each alert newborn’s sucking pattern and set the playback contingency using the published apparatus.",
-      "Make different sucking patterns produce the alternative speech samples; counterbalance the response-to-language assignment.",
-      "Compare the relative responses producing each language, and analyse discrimination separately from preference."
+      "Record the languages spoken during pregnancy and group the newborns by that exposure.",
+      "With the study’s pacifier equipment, measure each alert baby’s sucking and set the link between sucking and playback.",
+      "Let different sucking patterns produce each language, varying which response produces each language across babies.",
+      "Compare how often babies produce the responses linked to each language. Analyse the separate test of telling the languages apart independently of preference."
     ],
-    "measure": "Sucking responses associated with each language; recovery after a language change in the separate discrimination task.",
-    "limitations": "Related published study; the exact documentary source and 12-hour cutoff were not identified. Specialist newborn apparatus and full response-contingency methods are required. This measures auditory preference, not bilingual fluency or comprehension.",
+    "measure": "How often each sucking pattern occurs, and whether sucking increases when the language changes in the separate language-discrimination test.",
+    "limitations": "This requires specialist equipment for recording sucking and controlling playback. The 12-hour displayed age is approximate; the linked study does not establish an exact 12-hour cutoff. Listening preference does not demonstrate understanding or fluency.",
     "references": [
       {
         "title": "The roots of bilingualism in newborns (2010)",
@@ -97,25 +97,25 @@ export const studies: Study[] = [
       "value": 3,
       "unit": "days"
     },
-    "name": "Newborn discrimination of lexical and grammatical word sounds",
-    "experiment": "Research description: a high-amplitude sucking habituation task compares lists of lexical and grammatical words taken from natural maternal speech.",
-    "findings": "Newborns discriminated the sound patterns of the two word classes. The result does not show that they understand the words’ meanings or grammatical functions.",
-    "concept": "Acoustic and phonological word-class discrimination",
+    "name": "Telling apart the sounds of content and function words",
+    "experiment": "To find out whether newborns notice differences between kinds of words, researchers play lists of content words, such as nouns and verbs, and function words, such as articles and prepositions. A special pacifier records changes in sucking as babies get used to one list and hear a different one.",
+    "findings": "Babies aged one to three days could tell the two groups apart by their sound patterns. This does not show that they understood the words or knew their grammatical roles.",
+    "concept": "Noticing patterns in speech sounds",
     "source": "Newborn infants’ sensitivity to perceptual cues to lexical and grammatical words (1999)",
     "kind": "experiment",
     "materials": [
-      "High-amplitude sucking apparatus",
-      "Matched word-list recordings",
-      "Infant-controlled habituation software"
+      "Pacifier equipment that measures sucking pressure",
+      "Matched recordings of content and function words",
+      "Software that controls playback and tracks responses to repeated sounds"
     ],
     "procedure": [
-      "Test healthy, alert newborns aged 1–3 days in an appropriate research setting.",
-      "Present repeated examples from one word class while recording high-amplitude sucking.",
-      "After the published habituation criterion, switch either to the other class or to a control list from the same class.",
-      "Compare recovery of sucking across switch and control conditions; balance word class and list assignment."
+      "Test healthy, alert babies aged one to three days in a suitable research setting.",
+      "Play repeated examples from one word group while the pacifier records strong sucking responses.",
+      "When sucking has decreased to the level specified in the paper, switch to the other word group or to a new list from the same group.",
+      "Compare renewed sucking after these changes, varying the word group and recording list across babies."
     ],
-    "measure": "Recovery of high-amplitude sucking after the stimulus-category change.",
-    "limitations": "Corrected the former under-24-hour age: the published study tested 1–3-day-olds. Exact stimulus lists and habituation criterion must be taken from the full paper. No semantic knowledge is inferred.",
+    "measure": "Whether strong sucking responses increase after a change in the word list.",
+    "limitations": "The study tested babies aged one to three days. Repeating it requires the original recordings, pacifier equipment and rules for deciding when a baby has become used to a list. The task measures responses to sound, not understanding of word meanings.",
     "references": [
       {
         "title": "Newborn infants’ sensitivity to perceptual cues to lexical and grammatical words (1999)",
@@ -135,9 +135,9 @@ export const studies: Study[] = [
       "unit": "weeks"
     },
     "name": "Listening to a familiar voice",
-    "experiment": "Adapted observation: note an awake infant’s responses to familiar speech, without startling or repeatedly testing them.",
-    "findings": "Newborn research supports preference for a familiar maternal voice, but does not establish a new ability appearing precisely at six weeks.",
-    "concept": "Familiar-voice attention",
+    "experiment": "To observe how a baby pays attention to a familiar voice, watch their responses during ordinary, comfortable conversation. This everyday observation draws on research about newborn voice preferences.",
+    "findings": "Research shows that newborns can prefer a familiar maternal voice. It does not identify six weeks as the moment when this ability first appears.",
+    "concept": "Paying attention to a familiar voice",
     "source": "Of human bonding: newborns prefer their mothers’ voices (1980)",
     "kind": "observation",
     "materials": [
@@ -151,7 +151,7 @@ export const studies: Study[] = [
       "Repeat on another day and record state and competing sounds; do not treat absence of a head turn as failure."
     ],
     "measure": "Descriptive notes on attention during naturally occurring speech.",
-    "limitations": "This is an adapted observation, not a replication of the linked newborn sucking experiment or a hearing screen. Six weeks is the retained planning age, not an experimental threshold.",
+    "limitations": "This everyday observation differs from the linked laboratory study, which measured newborn sucking. It is not a hearing test. Six weeks is a suggested time to observe, not a deadline for a particular response.",
     "references": [
       {
         "title": "Of human bonding: newborns prefer their mothers’ voices (1980)",
@@ -166,22 +166,22 @@ export const studies: Study[] = [
       "value": 3,
       "unit": "months"
     },
-    "name": "Growth of the infant vocal tract",
-    "experiment": "Anatomical research description: MRI measurements chart growth of oral and pharyngeal structures across early childhood.",
-    "findings": "Growth is continuous and non-uniform, with rapid change in early life; there is no single three-month larynx-lowering event that explains vocal development.",
-    "concept": "Vocal-tract growth",
+    "name": "How the mouth and throat grow for speech",
+    "experiment": "To understand how the structures used for speech grow, researchers measure the mouth and throat in MRI images taken across early childhood. You can explore the published images and, separately, note changes in a baby’s ordinary cooing.",
+    "findings": "The mouth and throat grow at different rates, with rapid change in early life. Vocal development cannot be explained by a single change in the voice box at three months.",
+    "concept": "Growth of the structures used for speech",
     "source": "Development of vocal tract length during early childhood: a magnetic resonance imaging study (2005)",
     "kind": "observation",
     "materials": [
-      "Published anatomical images and measurement definitions"
+      "Published MRI images and definitions of the structures measured"
     ],
     "procedure": [
       "Read the linked imaging study’s age-group and measurement definitions.",
-      "Compare age-related measurements of structures such as tongue, palate, pharynx and larynx in the published data.",
+      "Compare age-related measurements of structures such as tongue, palate, throat and voice box in the published data.",
       "For an informal learning activity, simply record naturally occurring coos over time; do not attempt anatomical measurement at home."
     ],
-    "measure": "Anatomical dimensions in imaging research; optional descriptive vocal observations are a separate activity.",
-    "limitations": "Not an experiment to perform on a baby. MRI requires clinical research infrastructure. The three-month calendar slot is illustrative; it is not a deadline or a discrete anatomical transition.",
+    "measure": "Sizes of mouth and throat structures in the imaging study. Notes on cooing are a separate observation.",
+    "limitations": "MRI measurements require a clinical research setting. Observing coos at home does not measure the underlying anatomy. The three-month displayed age is a time to learn about ongoing growth, not a date when a single anatomical change occurs.",
     "references": [
       {
         "title": "Development of vocal tract length during early childhood: a magnetic resonance imaging study (2005)",
@@ -201,24 +201,24 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Sensitivity to a partner’s eye direction",
-    "experiment": "Research description: vary an adult’s eye contact while maintaining otherwise responsive interaction.",
-    "findings": "In the published task, smiling declined when the adult looked away. Reduced attention alone did not uniquely identify the eye-contact manipulation.",
-    "concept": "Eye direction during social interaction",
+    "experiment": "To find out whether a baby notices where a partner is looking, researchers compare interaction with eye contact against equally responsive interaction while the adult looks away.",
+    "findings": "Babies smiled less when the adult looked away. Looking time alone did not clearly distinguish the eye-contact conditions.",
+    "concept": "Noticing a partner’s eye direction",
     "source": "Infant sensitivity to adult eye direction (1996)",
     "kind": "experiment",
     "materials": [
-      "Live or closed-circuit interaction setup",
+      "Live interaction or a two-way video link",
       "Video recording",
-      "Blind behaviour coding"
+      "Behaviour scoring by someone unaware of the test condition"
     ],
     "procedure": [
-      "The published study included 3–6-month-olds and four one-minute interaction periods.",
-      "In the experimental condition maintain eye contact in periods 1 and 3 and avert eyes in periods 2 and 4 while keeping interaction responsive.",
+      "Use four one-minute interaction periods, as in the study of three- to six-month-olds.",
+      "Maintain eye contact in periods 1 and 3, then look away in periods 2 and 4 while continuing to respond to the baby.",
       "Use a comparison group receiving eye contact throughout; in the televised setup the adult can monitor the infant without direct eye contact.",
-      "Code infant smiling and gaze independently and compare changes across periods and groups."
+      "Record smiling and looking separately, then compare their duration across periods and groups."
     ],
     "measure": "Time smiling and time looking during each interaction period.",
-    "limitations": "Research description rather than an activity to provoke distress. Exact adult behaviour, camera setup and stopping rules require the paper. Gaze aversion by an infant can be ordinary regulation.",
+    "limitations": "The study used carefully controlled adult behaviour, camera arrangements and rules for stopping. Consult the paper for these details. Babies often look away as part of ordinary interaction; this alone is not a sign of a problem.",
     "references": [
       {
         "title": "Infant sensitivity to adult eye direction (1996)",
@@ -234,24 +234,24 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Response to an unresponsive social partner",
-    "experiment": "Research description: compare normal face-to-face interaction, a brief unresponsive still-face episode, and reunion.",
-    "findings": "Infants typically reduce positive engagement and may show distress when expected social responses stop. Responses differ across infants and procedural variants.",
-    "concept": "Social reciprocity",
+    "experiment": "To explore babies’ expectations of social responses, researchers compare ordinary interaction, a brief period when the adult becomes expressionless and unresponsive, and a return to responsive interaction.",
+    "findings": "Babies often smile and engage less, and may become distressed, when the adult stops responding. Responses vary between babies and between versions of the task.",
+    "concept": "Expecting a social partner to respond",
     "source": "The infant’s response to entrapment between contradictory messages in face-to-face interaction (1978)",
     "kind": "experiment",
     "materials": [
       "Trained research staff",
       "Video-recorded interaction",
-      "Predefined stopping and reunion procedure"
+      "Agreed rules for ending the episode and restoring normal interaction"
     ],
     "procedure": [
-      "Begin with ordinary responsive caregiver–infant interaction and code baseline behaviour.",
-      "Within an approved research protocol, introduce the brief nonresponsive episode using the paper’s instructions.",
-      "End promptly under the protocol’s stopping criteria and restore responsive interaction.",
-      "Compare gaze, smiling, bids and negative affect across baseline, still face and reunion, including a control condition where possible."
+      "Begin with ordinary responsive caregiver–infant interaction and record the baby’s behaviour.",
+      "In an approved research setting, introduce the brief unresponsive episode using the paper’s instructions.",
+      "End the episode according to the study’s stopping rules and return to responsive interaction.",
+      "Compare looking, smiling, attempts to engage the adult and signs of distress across the three episodes. Include a group receiving ordinary interaction throughout where possible."
     ],
-    "measure": "Coded social bids, looking, smiling and negative affect by episode.",
-    "limitations": "This manipulation can cause distress and is described for understanding research, not as a home developmental test. No inference about attachment or parenting follows from one response. Duration varies across studies; the original full protocol is needed.",
+    "measure": "Recorded attempts to engage the adult, looking, smiling and signs of distress during each episode.",
+    "limitations": "The unresponsive episode can cause distress and belongs in a supervised research setting. A single response cannot establish attachment quality or judge parenting. Exact episode lengths and stopping rules must come from the study protocol.",
     "references": [
       {
         "title": "The infant’s response to entrapment between contradictory messages in face-to-face interaction (1978)",
@@ -266,24 +266,24 @@ export const studies: Study[] = [
       "value": 5,
       "unit": "months"
     },
-    "name": "Acoustic features of infant-directed speech",
-    "experiment": "Adapted comparison: record how the same adult speaks to a baby and to another adult, then compare vocal features.",
-    "findings": "The cited cross-language study found more expanded vowel articulations in infant-directed speech. It did not by itself test a five-month-old’s learning gain.",
-    "concept": "Properties of infant-directed speech",
+    "name": "How speech changes when adults talk to babies",
+    "experiment": "To explore what makes baby-directed speech distinctive, record the same adult talking to a baby and to another adult, then compare features such as pitch and vowel length. This is an everyday adaptation of an acoustic research study.",
+    "findings": "The linked study found more distinct vowel sounds in speech addressed to babies across the languages studied. It did not directly measure a learning benefit for five-month-olds.",
+    "concept": "Features of speech addressed to babies",
     "source": "Cross-language analysis of phonetic units in language addressed to infants (1997)",
     "kind": "observation",
     "materials": [
-      "Consented speech recordings",
+      "Speech recordings made with the speaker’s permission",
       "Same target words in both contexts",
-      "Optional acoustic-analysis software"
+      "Optional software for measuring sound features"
     ],
     "procedure": [
-      "Record the same speaker using comparable words in natural infant-directed and adult-directed contexts.",
+      "Record the same speaker using comparable words when talking naturally to the baby and to another adult.",
       "Keep microphone placement similar and note the language and recording conditions.",
-      "Compare pitch, vowel duration and, with appropriate training, vowel formant values; analyse multiple examples rather than a single token."
+      "Compare pitch and vowel duration across several examples. A trained sound analyst can also compare the resonances that distinguish vowels."
     ],
-    "measure": "Acoustic measures of speech addressed to infants versus adults.",
-    "limitations": "Adapted observation. A speech style does not guarantee a particular developmental result, and languages and speakers vary. Five months is a planning slot rather than a study-specific threshold.",
+    "measure": "Differences in speech features, such as pitch and vowel length, between the two settings.",
+    "limitations": "The observation is adapted from research, and speech styles vary across languages and speakers. A particular speaking style does not guarantee a learning result. Five months is a suggested time to observe, not a threshold established by this study.",
     "references": [
       {
         "title": "Cross-language analysis of phonetic units in language addressed to infants (1997)",
@@ -303,24 +303,24 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Matching facial and vocal emotion",
-    "experiment": "Research description: show two different facial expressions while playing a voice that matches one expression, then compare visual attention.",
-    "findings": "Matching depends on age, familiarity and stimulus design; looking toward the sound-matching face can indicate sensitivity to cross-modal emotional information.",
-    "concept": "Audiovisual affect matching",
+    "experiment": "To find out whether babies connect an emotional voice with a matching facial expression, researchers show two faces expressing different emotions while playing a voice that matches one of them.",
+    "findings": "Looking toward the matching face can suggest that a baby connects information from the face and voice. Results depend on age, familiarity with the person and the recordings used.",
+    "concept": "Connecting emotion in faces and voices",
     "source": "The role of person familiarity in young infants’ perception of emotional expressions (2001)",
     "kind": "experiment",
     "materials": [
-      "Controlled paired-expression videos",
-      "Emotion-matched voice recordings",
-      "Eye-gaze recording"
+      "Matched videos showing two facial expressions",
+      "Voice recordings expressing the same emotions as the faces",
+      "Video or equipment for recording where the baby looks"
     ],
     "procedure": [
       "Use the same actor and comparable recording conditions for both facial expressions.",
-      "Present paired expressions with a voice corresponding to one expression; balance left–right location and voice condition.",
-      "Record looking to each face without a caregiver cueing the infant.",
+      "Show both expressions with a voice matching one of them; vary which expression appears on each side and which voice is played.",
+      "Record how long the baby looks at each face while the caregiver avoids giving clues about where to look.",
       "Compare attention toward matching versus mismatching expressions and report familiarity with the actor."
     ],
-    "measure": "Proportion of looking to the sound-matching expression.",
-    "limitations": "The linked study concerns person familiarity and younger infants; the exact happy/sad documentary display at 5–6 months was not independently matched. This outline is an adaptation, not a verbatim replication or proof of understanding emotion words.",
+    "measure": "The share of looking time spent on the face whose expression matches the voice.",
+    "limitations": "The linked study includes younger infants, so this outline is an adaptation for the displayed age range. Matching expressions does not show understanding of emotion words.",
     "references": [
       {
         "title": "The role of person familiarity in young infants’ perception of emotional expressions (2001)",
@@ -335,25 +335,25 @@ export const studies: Study[] = [
       "value": 6,
       "unit": "months"
     },
-    "name": "Upright and inverted familiar faces",
-    "experiment": "Related research description: compare responses to upright and inverted pictures of the mother and an unfamiliar person.",
-    "findings": "Infant responses to orientation and familiarity can differ; the original assertion that inversion necessarily stops smiling is not established by the identified paper.",
-    "concept": "Face orientation and familiarity",
+    "name": "Recognising familiar faces upright and upside down",
+    "experiment": "To explore how a baby processes familiar faces, researchers compare responses to upright and upside-down photographs of the mother and an unfamiliar person.",
+    "findings": "Familiarity and picture orientation can affect how infants process faces. Turning a face upside down does not necessarily stop a baby smiling.",
+    "concept": "Recognising faces in different orientations",
     "source": "Personal familiarity influences the processing of upright and inverted faces in infants (2009)",
     "kind": "experiment",
     "materials": [
       "Matched face photographs",
       "Controlled screen presentation",
-      "Research eye-gaze or ERP recording"
+      "Equipment for recording looking or small electrical brain responses to pictures"
     ],
     "procedure": [
       "Obtain matched photographs with neutral background, size and expression.",
-      "Present upright and inverted versions in balanced order; include both familiar and unfamiliar faces.",
-      "Record gaze and, in the linked specialist protocol, event-related brain responses.",
-      "Compare responses within orientation and familiarity conditions rather than diagnosing a single infant."
+      "Show upright and upside-down pictures in a balanced order, including familiar and unfamiliar faces.",
+      "Record gaze and, in the linked specialist protocol, small electrical brain responses to each picture.",
+      "Compare responses across picture orientation and familiarity; do not use one baby’s response as a diagnosis."
     ],
-    "measure": "Looking responses and/or ERP components, depending on the protocol.",
-    "limitations": "The linked study used six-month-old infants and static pictures with ERP measures. It is related evidence, not a verified match to the documentary’s inverted live television display. Exact trial and electrode specifications require the paper.",
+    "measure": "Where the baby looks and, with specialist equipment, electrical brain responses to each picture.",
+    "limitations": "The linked study used still photographs and recordings of brain responses in six-month-olds. This differs from watching an upside-down live video. Exact picture timing and equipment settings require the full paper.",
     "references": [
       {
         "title": "Personal familiarity influences the processing of upright and inverted faces in infants (2009)",
@@ -368,25 +368,25 @@ export const studies: Study[] = [
       "value": 6,
       "unit": "months"
     },
-    "name": "Earlier non-native speech-sound discrimination",
-    "experiment": "Research description: train a head turn to a change in speech sound, reinforced by an illuminated toy.",
-    "findings": "Sensitivity to some non-native contrasts declines during the latter part of the first year in infants without relevant language exposure; this is contrast- and experience-dependent.",
-    "concept": "Experience-dependent speech perception",
+    "name": "Telling apart unfamiliar speech sounds at an earlier age",
+    "experiment": "To find out whether a baby can hear a difference between unfamiliar speech sounds, researchers teach them to turn toward a light-up toy when a repeated syllable changes.",
+    "findings": "For some sound differences, sensitivity declines later in the first year when babies have little experience hearing them. The pattern depends on the sounds and the baby’s language experience.",
+    "concept": "How language experience shapes listening",
     "source": "Cross-language speech perception: Evidence for perceptual reorganization during the first year of life (1984)",
     "kind": "experiment",
     "materials": [
-      "Calibrated speech tokens",
-      "Speaker and visual toy reinforcer",
-      "Blind observer and trial controller"
+      "Speech-sound recordings prepared to the study’s specifications",
+      "Speaker and a light-up toy used as a reward",
+      "Observer unaware of the trial type and equipment controlling the trials"
     ],
     "procedure": [
-      "Seat an alert infant with a caregiver while an assistant keeps attention near the midline.",
-      "Repeat a background syllable; pair a change to the comparison syllable with a visual reward until the infant learns the association.",
-      "Intermix change and no-change trials using the study’s schedule, keeping the scorer unaware of trial type.",
-      "Compare correct turns and false alarms across age and language-exposure groups."
+      "Seat an alert infant with a caregiver while an assistant keeps attention straight ahead.",
+      "Repeat one syllable, then pair a change to another syllable with the light-up toy until the baby learns the link.",
+      "Mix trials where the sound changes with trials where it stays the same, following the study’s schedule. Keep the observer unaware of the trial type.",
+      "Compare correct turns and turns when the sound did not change across age and language-exposure groups."
     ],
-    "measure": "Conditioned head-turn discrimination, accounting for false alarms.",
-    "limitations": "Specialist research requires calibrated contrasts and objective scoring. Original studies compared age groups rather than proving that every infant gains or loses an ability at exactly six or ten months. The full paper supplies tokens and inclusion criteria.",
+    "measure": "Turning toward the reward when the speech sound changes, accounting for turns when the sound did not change.",
+    "limitations": "This laboratory task requires carefully prepared sounds and independent scoring. The research compared age groups; it does not show that every baby gains or loses an ability at an exact age. The paper specifies the recordings and participation criteria.",
     "references": [
       {
         "title": "Cross-language speech perception: Evidence for perceptual reorganization during the first year of life (1984)",
@@ -401,25 +401,25 @@ export const studies: Study[] = [
       "value": 9,
       "unit": "months"
     },
-    "name": "Understanding pointing as directed toward an object",
-    "experiment": "Research description: habituate infants to an adult pointing at one toy, swap toy locations, then test changed target versus changed pointing path.",
-    "findings": "In the identified study 12-month-olds, but not 9-month-olds, looked longer at a change of referent than a change of path.",
-    "concept": "Pointing referents",
+    "name": "Following which object a person points to",
+    "experiment": "To find out whether babies track the object a person points to, researchers repeatedly point to one toy, swap the toys’ positions, then point either toward the same toy in a new place or a different toy in the old place.",
+    "findings": "Twelve-month-olds looked longer when the pointed-to object changed than when only the direction changed. Nine-month-olds did not show that difference in this study.",
+    "concept": "Connecting a pointing gesture with its target",
     "source": "Infants’ understanding of the point gesture as an object-directed action (2002)",
     "kind": "experiment",
     "materials": [
       "Two visually distinct toys",
-      "Standardised adult pointing display",
-      "Video looking-time measurement"
+      "Consistent adult pointing demonstration",
+      "Video for measuring looking time"
     ],
     "procedure": [
-      "Present the adult pointing to one of two objects repeatedly until the study’s habituation criterion.",
-      "Swap the objects’ positions so that target identity and pointing direction can be separated.",
-      "Present test trials that preserve the object but change the path, or preserve the path but change the object.",
-      "Counterbalance objects, side and test order; compare coded looking times."
+      "Repeatedly show an adult pointing to one of two toys until looking decreases to the level specified in the paper.",
+      "Swap the toys’ positions so that toy identity and pointing direction can be tested separately.",
+      "Show the adult pointing to the same toy in its new position or to the different toy in the original position.",
+      "Vary toy identity, side and test order across babies, and compare recorded looking times."
     ],
-    "measure": "Looking time to changed-referent versus changed-path events.",
-    "limitations": "Corrected age range to 9–12 months based on the published study; the original eight-month success claim was unsupported. Looking-time differences do not independently establish adult-like intention attribution.",
+    "measure": "Looking time when the toy changes compared with looking time when only the pointing direction changes.",
+    "limitations": "The study compared nine- and twelve-month-olds. Looking-time differences alone cannot establish that babies understand another person’s intentions in the same way adults do.",
     "references": [
       {
         "title": "Infants’ understanding of the point gesture as an object-directed action (2002)",
@@ -439,23 +439,23 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Patterns in babbling over time",
-    "experiment": "Adapted observation: collect comparable recordings of spontaneous babbling and describe how sound patterns change.",
-    "findings": "Cross-language longitudinal recordings suggest both shared and language-related patterns in babbling.",
+    "experiment": "To explore how babbling changes with language experience, record a baby’s spontaneous sounds during comparable play sessions over several weeks. This is an everyday adaptation of a study that followed babies over time.",
+    "findings": "Recordings across languages show both shared babbling patterns and patterns related to the language babies hear.",
     "concept": "Babbling and language experience",
     "source": "Patterns in babbling: a cross-linguistic study (1992)",
     "kind": "observation",
     "materials": [
       "Audio/video recording",
       "Consistent play setting",
-      "Optional phonetic transcription"
+      "Optional written notation of the speech sounds"
     ],
     "procedure": [
       "Record a comfortable parent–infant interaction without asking for specific sounds.",
       "Repeat comparable recordings over several weeks and note languages heard, age and recording duration.",
-      "Separate words from babbled syllables and count examples by consonant and vowel pattern; specialist analysis needs trained transcription."
+      "Separate meaningful words from babbled syllables and group examples by consonant and vowel pattern. Detailed sound analysis needs trained transcription."
     ],
-    "measure": "Rates and phonetic patterns of spontaneous babbled utterances.",
-    "limitations": "Adapted observation, not an experimental manipulation. The linked longitudinal study included small English/French groups beginning around 9 or 11 months; it does not imply every nine-month-old has a recognisable accent.",
+    "measure": "How often the baby babbles and which speech-sound patterns occur.",
+    "limitations": "This is observation rather than an experimental test. The linked study followed small English- and French-language groups starting around nine or eleven months. It does not mean every nine-month-old has a recognisable accent.",
     "references": [
       {
         "title": "Patterns in babbling: a cross-linguistic study (1992)",
@@ -475,25 +475,25 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Live versus recorded unfamiliar-language exposure",
-    "experiment": "Research description: compare short-term live Mandarin sessions with control language exposure and with recorded Mandarin presentations.",
-    "findings": "Live exposure improved discrimination of the tested Mandarin contrast; the corresponding recorded exposure did not show the same learning in these conditions.",
-    "concept": "Social interaction and phonetic learning",
+    "experiment": "To find out how social interaction affects learning unfamiliar speech sounds, researchers give babies short Mandarin sessions with live speakers or recordings, then test whether they can distinguish a Mandarin sound difference.",
+    "findings": "Babies who met live Mandarin speakers improved at telling apart the tested sounds. Babies given the corresponding recorded exposure did not show the same learning under these conditions.",
+    "concept": "Social interaction and learning speech sounds",
     "source": "Foreign-language experience in infancy: Effects of short-term exposure and social interaction on phonetic learning (2003)",
     "kind": "experiment",
     "materials": [
       "Native-language speakers",
       "Books and toys",
       "Matched audiovisual/audio recordings",
-      "Conditioned head-turn testing apparatus"
+      "Equipment that measures learned head turns when speech sounds change"
     ],
     "procedure": [
       "Recruit infants around nine months and document prior language exposure.",
       "Provide twelve approximately 25-minute sessions over about four weeks, using native speakers, books and toys.",
       "Use live English as a control and matched recorded Mandarin conditions to evaluate social presentation.",
-      "Test the selected Mandarin contrast using the published conditioned head-turn procedure and compare discrimination between groups."
+      "Test whether babies distinguish the selected Mandarin sounds, using the published task in which they learn to turn when a sound changes. Compare the groups’ results."
     ],
-    "measure": "Behavioural phonetic discrimination after exposure, with change and control trials.",
-    "limitations": "Corrected the prior claim that this outcome was EEG. Generalisation is limited to the exposure and contrasts tested; ordinary bilingual interaction is not a standardised diagnostic task.",
+    "measure": "Ability to tell speech sounds apart, measured through head turns after exposure, with change and control trials.",
+    "limitations": "The result concerns the particular exposure sessions and speech sounds tested. Repeating the study requires its original recordings and scoring method. Ordinary bilingual interaction is not a standardised developmental test.",
     "references": [
       {
         "title": "Foreign-language experience in infancy: Effects of short-term exposure and social interaction on phonetic learning (2003)",
@@ -508,25 +508,25 @@ export const studies: Study[] = [
       "value": 10,
       "unit": "months"
     },
-    "name": "Later non-native speech-sound discrimination",
-    "experiment": "Research description: train a head turn to a change in speech sound, reinforced by an illuminated toy.",
-    "findings": "Sensitivity to some non-native contrasts declines during the latter part of the first year in infants without relevant language exposure; this is contrast- and experience-dependent.",
-    "concept": "Experience-dependent speech perception",
+    "name": "Telling apart unfamiliar speech sounds at a later age",
+    "experiment": "To explore changes in listening during the first year, researchers test older babies with the same task used for younger babies: a turn toward a light-up toy is rewarded when a repeated syllable changes.",
+    "findings": "For some sound differences, sensitivity declines later in the first year when babies have little experience hearing them. The pattern depends on the sounds and the baby’s language experience.",
+    "concept": "How language experience shapes listening",
     "source": "Cross-language speech perception: Evidence for perceptual reorganization during the first year of life (1984)",
     "kind": "experiment",
     "materials": [
-      "Calibrated speech tokens",
-      "Speaker and visual toy reinforcer",
-      "Blind observer and trial controller"
+      "Speech-sound recordings prepared to the study’s specifications",
+      "Speaker and a light-up toy used as a reward",
+      "Observer unaware of the trial type and equipment controlling the trials"
     ],
     "procedure": [
-      "Seat an alert infant with a caregiver while an assistant keeps attention near the midline.",
-      "Repeat a background syllable; pair a change to the comparison syllable with a visual reward until the infant learns the association.",
-      "Intermix change and no-change trials using the study’s schedule, keeping the scorer unaware of trial type.",
-      "Compare correct turns and false alarms across age and language-exposure groups."
+      "Seat an alert infant with a caregiver while an assistant keeps attention straight ahead.",
+      "Repeat one syllable, then pair a change to another syllable with the light-up toy until the baby learns the link.",
+      "Mix trials where the sound changes with trials where it stays the same, following the study’s schedule. Keep the observer unaware of the trial type.",
+      "Compare correct turns and turns when the sound did not change across age and language-exposure groups."
     ],
-    "measure": "Conditioned head-turn discrimination, accounting for false alarms.",
-    "limitations": "Specialist research requires calibrated contrasts and objective scoring. Original studies compared age groups rather than proving that every infant gains or loses an ability at exactly six or ten months. The full paper supplies tokens and inclusion criteria.",
+    "measure": "Turning toward the reward when the speech sound changes, accounting for turns when the sound did not change.",
+    "limitations": "This laboratory task requires carefully prepared sounds and independent scoring. It compares age groups rather than identifying an exact age when an individual baby loses an ability. The paper specifies the recordings and participation criteria.",
     "references": [
       {
         "title": "Cross-language speech perception: Evidence for perceptual reorganization during the first year of life (1984)",
@@ -541,25 +541,25 @@ export const studies: Study[] = [
       "value": 10,
       "unit": "months"
     },
-    "name": "Rhythmic manual activity before first signs",
-    "experiment": "Adapted longitudinal observation of infants with natural exposure to a signed language; distinguish gestures, repetitive manual forms and meaningful signs.",
-    "findings": "Manual babbling has been reported in deaf infants exposed to signing, supporting comparison of language development across modalities.",
-    "concept": "Language across signed and spoken modalities",
+    "name": "Repeated hand movements before first signs",
+    "experiment": "To explore early language development in signing babies, record everyday interaction with a fluent signer and distinguish repeated hand patterns, communicative gestures and meaningful signs. This observation is adapted from research on manual babbling.",
+    "findings": "Researchers have reported repeated, language-like hand patterns in deaf infants exposed to signing. This allows comparison with the babbling of babies learning spoken languages.",
+    "concept": "Early language patterns in hand movements",
     "source": "Babbling in the manual mode: evidence for the ontogeny of language (1991)",
     "kind": "observation",
     "materials": [
-      "Consented natural-play videos",
-      "Fluent signer for coding",
+      "Videos of ordinary play made with permission",
+      "Fluent signer to identify and record the hand movements",
       "Notes on language exposure"
     ],
     "procedure": [
       "Record ordinary interaction with a familiar fluent signer, keeping samples comparable in duration.",
-      "Annotate repetitive hand forms separately from communicative gestures and conventional signs.",
-      "Ask a second fluent coder to independently classify examples; record ambiguous forms rather than forcing a category.",
-      "Repeat over time and compare the same child’s repertoire in context."
+      "Label and record repetitive hand forms separately from communicative gestures and conventional signs.",
+      "Ask a second fluent observer to independently classify examples; record ambiguous forms rather than forcing a category.",
+      "Repeat over time and compare the same child’s range of signs and gestures in context."
     ],
-    "measure": "Coded manual forms, conventional signs and communicative uses over repeated observations.",
-    "limitations": "Adapted observation, not an imitation test or a claim that all movements are linguistic. The cited paper concerns manual babbling; it does not independently establish the documentary’s specific 20-month vocabulary examples.",
+    "measure": "Recorded hand patterns, conventional signs and communicative uses over repeated observations.",
+    "limitations": "Not every hand movement is part of language. Reliable interpretation requires knowledge of the signed language and the interaction’s context. This observation does not reproduce a standardised imitation test.",
     "references": [
       {
         "title": "Babbling in the manual mode: evidence for the ontogeny of language (1991)",
@@ -579,24 +579,24 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Early vocabulary in everyday contexts",
-    "experiment": "Adapted language diary or structured caregiver report, rather than a simple laboratory experiment.",
-    "findings": "Vocabulary and word-combination skills vary widely at the same age; production and comprehension require separate measures.",
-    "concept": "Individual differences in early language",
+    "experiment": "To build a picture of a child’s early vocabulary, keep a diary of words they use spontaneously during everyday routines. Record words they appear to understand separately from words they say.",
+    "findings": "Children of the same age can differ widely in vocabulary. Saying a word and understanding it are separate abilities and need separate records.",
+    "concept": "Differences in early vocabulary development",
     "source": "Variability in early communicative development (1994)",
     "kind": "observation",
     "materials": [
       "Language diary",
       "Consistent observation intervals",
-      "Optional validated language inventory"
+      "Optional language questionnaire tested for the child’s age and language"
     ],
     "procedure": [
-      "Record spontaneous words or combinations in ordinary routines over several days.",
-      "Use consistent definitions: count a word form once, distinguish comprehension from production, and record meaningful use rather than prompted repetition.",
-      "If formal comparison is required, use a validated inventory appropriate for the child’s language and age, following its manual.",
+      "Record unprompted words or combinations in ordinary routines over several days.",
+      "Use consistent definitions: count a word form once, distinguish understanding from speaking, and record meaningful use rather than prompted repetition.",
+      "For a formal comparison, use a language questionnaire validated for the child’s age and language, following its manual.",
       "Compare repeated observations with the child’s earlier samples rather than setting a single pass/fail word target."
     ],
-    "measure": "Counts and examples of spontaneously produced words or word combinations; comprehension recorded separately.",
-    "limitations": "The linked normative research supports variation, not the original fixed claims of 50–100 words, 70% nouns, or 300 spoken/1,000 understood words for every child. Diary instructions here are adapted; formal inventory scoring requires the appropriate manual.",
+    "measure": "Counts and examples of words or word combinations the child uses without prompting, with understanding recorded separately.",
+    "limitations": "This diary is adapted for everyday observation. Formal comparisons require a validated questionnaire for the child’s language and age, used according to its manual. There is no single vocabulary count that every child should reach at this age.",
     "references": [
       {
         "title": "Variability in early communicative development (1994)",
@@ -611,26 +611,26 @@ export const studies: Study[] = [
       "value": 13,
       "unit": "months"
     },
-    "name": "Learning an object label during shared attention",
-    "experiment": "Adapted research outline: introduce novel objects and spoken labels during shared attention, then test label–object selection without giving gaze cues.",
-    "findings": "One-year-olds can learn some novel word–object mappings in supportive joint-attention settings; the exact documentary gaze/pointing comparison was not verified.",
-    "concept": "Shared attention in early word learning",
+    "name": "Learning a new word while sharing attention",
+    "experiment": "To explore how shared attention supports word learning, introduce unfamiliar objects with invented names while the child and adult attend to them together. Later, ask the child to choose an object by name without pointing or looking toward the answer.",
+    "findings": "One-year-olds can learn some new word–object links when the interaction supports shared attention.",
+    "concept": "Learning words through shared attention",
     "source": "Infants’ learning about words and sounds in relation to objects (1999)",
     "kind": "experiment",
     "materials": [
       "Two unfamiliar infant-safe objects",
       "Two invented labels",
-      "Standardised naming and test script",
+      "Consistent script for naming objects and asking for them",
       "Video recording"
     ],
     "procedure": [
-      "Allow equal familiarisation with two objects and note any initial preference.",
-      "During a short naming phase, establish shared attention and use one novel label consistently for each object; balance label–object assignments across children.",
-      "At test, place both objects within reach and request one label while looking centrally; alternate sides and avoid praise that reveals the correct object.",
-      "Count first selections and compare with chance and an appropriate no-training or control condition."
+      "Give equal time to explore each object and note any initial preference.",
+      "During naming, ensure the adult and child are attending to the same object. Use one invented name consistently for each object, varying the name–object pairings across children.",
+      "At test, place both objects within reach and ask for one by name while looking straight ahead. Alternate sides and avoid praise that reveals the answer.",
+      "Count which object is chosen first and compare results with chance and with a group that did not receive the naming practice."
     ],
-    "measure": "First object selected on label-comprehension trials.",
-    "limitations": "Adapted outline, not a verified replication of the Toma/Dax documentary demonstration. The linked study tested 13-month-olds learning words versus nonverbal sounds; exact naming counts and gaze manipulation require a matched publication.",
+    "measure": "Which object the child chooses first when asked for an invented name.",
+    "limitations": "This is an adapted task. The linked study compared learning words and nonverbal sounds in thirteen-month-olds; it does not provide an exact match for this gaze-and-pointing demonstration. An exact replication needs a publication specifying the naming repetitions and attention conditions.",
     "references": [
       {
         "title": "Infants’ learning about words and sounds in relation to objects (1999)",
@@ -645,26 +645,26 @@ export const studies: Study[] = [
       "value": 14,
       "unit": "months"
     },
-    "name": "Social responsiveness to an unfamiliar puppet",
-    "experiment": "Related research outline: vary a novel agent’s face and contingent interaction, then observe whether infants follow its orientation.",
-    "findings": "In a published 12-month study, orientation following depended on combinations of facial appearance and responsive behaviour.",
-    "concept": "Cues to social agency",
+    "name": "Following the attention of an unfamiliar puppet",
+    "experiment": "To explore which cues make babies respond to an unfamiliar toy as a social partner, researchers vary whether it has a face and responds to interaction. They then observe whether babies look where it turns.",
+    "findings": "In a study of twelve-month-olds, following the toy’s direction depended on the combination of facial features and responsive behaviour.",
+    "concept": "Cues that invite a social response",
     "source": "Whose gaze will infants follow? The elicitation of gaze-following in 12-month-olds (1998)",
     "kind": "experiment",
     "materials": [
-      "Novel movable agent",
-      "Face/no-face versions",
-      "Contingent/noncontingent scripts",
-      "Targets and video recording"
+      "Unfamiliar movable toy",
+      "Versions with and without a face",
+      "Scripts for responsive and unresponsive interaction",
+      "Two targets and video recording"
     ],
     "procedure": [
-      "Present an unfamiliar agent under a predetermined combination of facial features and contingent response.",
-      "Keep movement and exposure similar across conditions and manipulate responsiveness using the published design.",
-      "After familiarisation, orient the agent toward one of two targets and code the infant’s first look.",
-      "Compare following across conditions, balancing target side."
+      "Present an unfamiliar toy with or without facial features and with responsive or unresponsive behaviour, following the study’s assigned conditions.",
+      "Keep movement and exposure similar across groups so that the intended differences can be compared.",
+      "After the baby has had time to get used to the toy, turn it toward one of two targets and record where the baby looks first.",
+      "Compare following across groups, varying which side contains the target."
     ],
-    "measure": "First look or orientation following toward the agent’s target.",
-    "limitations": "Exact green-puppet conversational demonstration at 14 months remains unmatched. This is a related paradigm at 12 months, not evidence that a particular child believes a puppet is alive or understands conversation. Retained 14-month slot is illustrative.",
+    "measure": "Whether the baby first looks toward the target the toy faces.",
+    "limitations": "This outline draws on a study of twelve-month-olds; the displayed fourteen-month age is approximate. The linked study uses a different setup, so its full methods are needed for replication. Following the puppet does not establish that a baby thinks it is alive or understands conversation.",
     "references": [
       {
         "title": "Whose gaze will infants follow? The elicitation of gaze-following in 12-month-olds (1998)",
@@ -679,10 +679,10 @@ export const studies: Study[] = [
       "value": 17,
       "unit": "months"
     },
-    "name": "Learning shape-based object categories",
-    "experiment": "Research description: repeated naming of unfamiliar object categories organised by shape, followed by tests with new shape, colour and material matches.",
-    "findings": "A nine-week study beginning at 17 months found increased shape-based label generalisation and vocabulary growth during training.",
-    "concept": "Experience in learning object names",
+    "name": "Learning to group named objects by shape",
+    "experiment": "To find out whether naming practice helps toddlers use shape to learn new words, researchers repeatedly name unfamiliar objects with shared shapes. They then test whether toddlers extend a new name to another object with the same shape.",
+    "findings": "In a nine-week study beginning at seventeen months, children receiving this training increasingly used shape to extend object names and showed vocabulary growth during training.",
+    "concept": "Learning which object features matter for naming",
     "source": "Object name learning provides on-the-job training for attention (2002)",
     "kind": "experiment",
     "materials": [
@@ -692,13 +692,13 @@ export const studies: Study[] = [
       "Vocabulary records"
     ],
     "procedure": [
-      "Assign children to labelled shape-organised training or the study’s comparison conditions.",
-      "Across repeated weekly visits, play with named category examples that share shape while other properties vary.",
-      "Test extension of a newly introduced label to new examples matching shape versus other features.",
-      "Record outside-laboratory vocabulary consistently before and during training; compare change across conditions."
+      "Assign children to practice naming objects grouped by shape or to the study’s comparison groups.",
+      "During repeated weekly visits, play with named examples that share a shape while colour or material varies.",
+      "Introduce a new object name, then test whether the child gives that name to other objects matching its shape or other features.",
+      "Use the same method to record vocabulary outside the laboratory before and during training, then compare changes between groups."
     ],
-    "measure": "Shape-based label-extension choices and reported object-name vocabulary growth.",
-    "limitations": "The publication describes a nine-week study, not a verified independent 24-month follow-up. The exact eight-session account, test schedule and claim of more than threefold growth were not established from the accessible methods summary. A complete replication requires the full stimuli and protocol.",
+    "measure": "Choices of objects to give the same name, and growth in object names reported outside the laboratory.",
+    "limitations": "An exact replication requires the complete objects, naming schedule and test procedure. The available methods summary does not establish an exact eight-session schedule or a particular numerical increase in vocabulary.",
     "references": [
       {
         "title": "Object name learning provides on-the-job training for attention (2002)",
@@ -714,25 +714,25 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Remembering a demonstrated action after a delay",
-    "experiment": "Adapted imitation task: show a novel action, remove the object, then test whether the child reproduces the action after a specified delay.",
-    "findings": "Published research demonstrates deferred imitation in infancy; the exact 18-month, one-hour documentary protocol was not verified.",
-    "concept": "Memory for observed actions",
+    "experiment": "To explore memory for something a child has watched, show an unfamiliar action on a toy, put the toy away, then see whether the child performs the action after a delay. This is an adaptation of laboratory imitation tasks.",
+    "findings": "Infant studies show that babies can remember and later reproduce observed actions.",
+    "concept": "Remembering an action after watching it",
     "source": "Infant imitation and memory: nine-month-olds in immediate and deferred tests (1988)",
     "kind": "experiment",
     "materials": [
-      "Infant-safe novel object with a reproducible action",
+      "Infant-safe unfamiliar object with a reproducible action",
       "Demonstration script",
       "Timer and video recording",
-      "No-demonstration control"
+      "Comparison group that has not watched the action"
     ],
     "procedure": [
-      "Choose an action the object does not strongly invite by itself, and measure baseline spontaneous performance in a control group.",
+      "Choose an action the object does not strongly suggest by itself. In a comparison group, measure how often children perform it without watching a demonstration.",
       "Demonstrate the action a fixed number of times while the infant watches without practising it.",
       "Remove the object for the predetermined delay and record what occurs during the interval.",
-      "Return it without demonstrating again or giving an action instruction; code whether the target action occurs within the same test period across groups."
+      "Return it without demonstrating again or giving an action instruction; record whether the target action occurs within the same test period across groups."
     ],
-    "measure": "Target-action reproduction compared with a no-demonstration baseline.",
-    "limitations": "Adapted protocol; exact repetitions, delay and scoring must be prespecified. The linked primary paper tested nine-month-olds with immediate or 24-hour tests, not the documentary’s age/delay. Imitation is influenced by motor ability, attention and object design.",
+    "measure": "Whether the child performs the demonstrated action more often than children who did not watch it.",
+    "limitations": "Choose the number of demonstrations, delay and scoring rules before beginning. The linked study tested nine-month-olds immediately or after twenty-four hours; it does not establish the exact eighteen-month, one-hour version. Attention, movement skills and toy design also affect performance.",
     "references": [
       {
         "title": "Infant imitation and memory: nine-month-olds in immediate and deferred tests (1988)",
@@ -752,24 +752,24 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Emerging word combinations",
-    "experiment": "Adapted language diary or structured caregiver report, rather than a simple laboratory experiment.",
-    "findings": "Vocabulary and word-combination skills vary widely at the same age; production and comprehension require separate measures.",
-    "concept": "Individual differences in early language",
+    "experiment": "To observe how a child begins combining words, keep examples of phrases they use spontaneously during everyday routines over several days. This is an informal adaptation of structured caregiver reports.",
+    "findings": "Children of the same age vary widely in vocabulary and word combinations. Understanding speech and producing it are separate abilities.",
+    "concept": "Beginning to combine words",
     "source": "Variability in early communicative development (1994)",
     "kind": "observation",
     "materials": [
       "Language diary",
       "Consistent observation intervals",
-      "Optional validated language inventory"
+      "Optional language questionnaire tested for the child’s age and language"
     ],
     "procedure": [
-      "Record spontaneous words or combinations in ordinary routines over several days.",
-      "Use consistent definitions: count a word form once, distinguish comprehension from production, and record meaningful use rather than prompted repetition.",
-      "If formal comparison is required, use a validated inventory appropriate for the child’s language and age, following its manual.",
+      "Record unprompted words or combinations in ordinary routines over several days.",
+      "Use consistent definitions: count a word form once, distinguish understanding from speaking, and record meaningful use rather than prompted repetition.",
+      "For a formal comparison, use a language questionnaire validated for the child’s age and language, following its manual.",
       "Compare repeated observations with the child’s earlier samples rather than setting a single pass/fail word target."
     ],
-    "measure": "Counts and examples of spontaneously produced words or word combinations; comprehension recorded separately.",
-    "limitations": "The linked normative research supports variation, not the original fixed claims of 50–100 words, 70% nouns, or 300 spoken/1,000 understood words for every child. Diary instructions here are adapted; formal inventory scoring requires the appropriate manual.",
+    "measure": "Counts and examples of words or word combinations the child uses without prompting, with understanding recorded separately.",
+    "limitations": "This diary is adapted for everyday observation. Formal comparisons require a validated questionnaire for the child’s language and age and its scoring manual. A single word or phrase count should not be treated as a universal deadline.",
     "references": [
       {
         "title": "Variability in early communicative development (1994)",
@@ -789,9 +789,9 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Rate of vocabulary growth",
-    "experiment": "Adapted repeated word diary: chart newly used words over equal observation intervals instead of assuming a universal vocabulary explosion.",
-    "findings": "Analyses do not support treating a sudden vocabulary spurt as an obligatory stage for every child.",
-    "concept": "Variation in vocabulary-growth trajectories",
+    "experiment": "To explore how quickly vocabulary grows, record newly used words at regular intervals and chart the total over time. This diary activity is adapted from research that examines patterns in children’s word learning.",
+    "findings": "A sudden vocabulary spurt is not an obligatory stage for every child; growth can follow different patterns.",
+    "concept": "Different patterns of vocabulary growth",
     "source": "Reexamining the vocabulary spurt (2004)",
     "kind": "observation",
     "materials": [
@@ -801,12 +801,12 @@ export const studies: Study[] = [
     ],
     "procedure": [
       "Choose a regular reporting interval and use the same definition of a newly acquired word throughout.",
-      "Record meaningful spontaneous uses, avoiding double-counting inflected forms under the chosen inventory rules.",
-      "Plot cumulative distinct words and words added per interval; record gaps in observation.",
+      "Record meaningful uses that occur without prompting. Decide in advance how to count forms of the same word, such as plurals, and apply that rule consistently.",
+      "Plot the running total of different words and the number added during each interval. Record any gaps in observation.",
       "Interpret gradual or irregular growth alongside sampling and language exposure, rather than treating one fast week as a universal transition."
     ],
     "measure": "Change in vocabulary count across comparable intervals.",
-    "limitations": "Adapted observation. Removed unsupported claims of one new word every 90 minutes and a required bedtime rehearsal phase. The existence and definition of spurts depend on measurement and modelling.",
+    "limitations": "The pattern depends on how often words are recorded, how a new word is defined and how growth is analysed. An informal diary gives an incomplete sample of what a child knows.",
     "references": [
       {
         "title": "Reexamining the vocabulary spurt (2004)",
@@ -822,24 +822,24 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Early signed-word communication",
-    "experiment": "Adapted longitudinal observation of infants with natural exposure to a signed language; distinguish gestures, repetitive manual forms and meaningful signs.",
-    "findings": "Manual babbling has been reported in deaf infants exposed to signing, supporting comparison of language development across modalities.",
-    "concept": "Language across signed and spoken modalities",
+    "experiment": "To observe how a child uses meaningful signs, record everyday interaction with a familiar fluent signer. Distinguish conventional signs from repeated hand patterns and other gestures. This activity adapts research on early signing.",
+    "findings": "Research on manual babbling shows early language-like hand patterns in deaf infants exposed to signing, offering a comparison with spoken-language babbling.",
+    "concept": "Communicating with meaningful signs",
     "source": "Babbling in the manual mode: evidence for the ontogeny of language (1991)",
     "kind": "observation",
     "materials": [
-      "Consented natural-play videos",
-      "Fluent signer for coding",
+      "Videos of ordinary play made with permission",
+      "Fluent signer to identify and record the hand movements",
       "Notes on language exposure"
     ],
     "procedure": [
       "Record ordinary interaction with a familiar fluent signer, keeping samples comparable in duration.",
-      "Annotate repetitive hand forms separately from communicative gestures and conventional signs.",
-      "Ask a second fluent coder to independently classify examples; record ambiguous forms rather than forcing a category.",
-      "Repeat over time and compare the same child’s repertoire in context."
+      "Label and record repetitive hand forms separately from communicative gestures and conventional signs.",
+      "Ask a second fluent observer to independently classify examples; record ambiguous forms rather than forcing a category.",
+      "Repeat over time and compare the same child’s range of signs and gestures in context."
     ],
-    "measure": "Coded manual forms, conventional signs and communicative uses over repeated observations.",
-    "limitations": "Adapted observation, not an imitation test or a claim that all movements are linguistic. The cited paper concerns manual babbling; it does not independently establish the documentary’s specific 20-month vocabulary examples.",
+    "measure": "Recorded hand patterns, conventional signs and communicative uses over repeated observations.",
+    "limitations": "The linked paper focuses on manual babbling, rather than a specific vocabulary milestone at twenty months. Interpretation requires a fluent signer and attention to context; not every repeated hand movement is a sign.",
     "references": [
       {
         "title": "Babbling in the manual mode: evidence for the ontogeny of language (1991)",
@@ -854,10 +854,10 @@ export const studies: Study[] = [
       "value": 24,
       "unit": "months"
     },
-    "name": "Generalising object labels by shape: follow-up",
-    "experiment": "Research description: repeated naming of unfamiliar object categories organised by shape, followed by tests with new shape, colour and material matches.",
-    "findings": "A nine-week study beginning at 17 months found increased shape-based label generalisation and vocabulary growth during training.",
-    "concept": "Experience in learning object names",
+    "name": "Using shape to extend a new object name",
+    "experiment": "To explore whether a toddler uses shape when learning a new name, name an unfamiliar object and offer new objects matching its shape, colour or material. This follow-up activity draws on research using repeated naming practice.",
+    "findings": "A nine-week study beginning at seventeen months found greater use of shape to extend object names and vocabulary growth during training.",
+    "concept": "Using shape to learn object names",
     "source": "Object name learning provides on-the-job training for attention (2002)",
     "kind": "experiment",
     "materials": [
@@ -867,13 +867,13 @@ export const studies: Study[] = [
       "Vocabulary records"
     ],
     "procedure": [
-      "Assign children to labelled shape-organised training or the study’s comparison conditions.",
-      "Across repeated weekly visits, play with named category examples that share shape while other properties vary.",
-      "Test extension of a newly introduced label to new examples matching shape versus other features.",
-      "Record outside-laboratory vocabulary consistently before and during training; compare change across conditions."
+      "Assign children to practice naming objects grouped by shape or to the study’s comparison groups.",
+      "During repeated weekly visits, play with named examples that share a shape while colour or material varies.",
+      "Introduce a new object name, then test whether the child gives that name to other objects matching its shape or other features.",
+      "Use the same method to record vocabulary outside the laboratory before and during training, then compare changes between groups."
     ],
-    "measure": "Shape-based label-extension choices and reported object-name vocabulary growth.",
-    "limitations": "The publication describes a nine-week study, not a verified independent 24-month follow-up. The exact eight-session account, test schedule and claim of more than threefold growth were not established from the accessible methods summary. A complete replication requires the full stimuli and protocol.",
+    "measure": "Choices of objects to give the same name, and growth in object names reported outside the laboratory.",
+    "limitations": "The linked study is the same training research described in the earlier shape-learning entry. It does not establish a separate follow-up at twenty-four months or a verified threefold vocabulary increase. Exact replication requires the full training and testing protocol.",
     "references": [
       {
         "title": "Object name learning provides on-the-job training for attention (2002)",
@@ -889,24 +889,24 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Expressive vocabulary profile",
-    "experiment": "Adapted language diary or structured caregiver report, rather than a simple laboratory experiment.",
-    "findings": "Vocabulary and word-combination skills vary widely at the same age; production and comprehension require separate measures.",
-    "concept": "Individual differences in early language",
+    "experiment": "To describe a two-year-old’s vocabulary, keep examples of words they say in everyday situations and record understanding separately. A validated caregiver questionnaire can provide a more structured profile.",
+    "findings": "Children of the same age can differ widely in vocabulary. Speaking and understanding are separate abilities.",
+    "concept": "Building a vocabulary profile",
     "source": "Variability in early communicative development (1994)",
     "kind": "observation",
     "materials": [
       "Language diary",
       "Consistent observation intervals",
-      "Optional validated language inventory"
+      "Optional language questionnaire tested for the child’s age and language"
     ],
     "procedure": [
-      "Record spontaneous words or combinations in ordinary routines over several days.",
-      "Use consistent definitions: count a word form once, distinguish comprehension from production, and record meaningful use rather than prompted repetition.",
-      "If formal comparison is required, use a validated inventory appropriate for the child’s language and age, following its manual.",
+      "Record unprompted words or combinations in ordinary routines over several days.",
+      "Use consistent definitions: count a word form once, distinguish understanding from speaking, and record meaningful use rather than prompted repetition.",
+      "For a formal comparison, use a language questionnaire validated for the child’s age and language, following its manual.",
       "Compare repeated observations with the child’s earlier samples rather than setting a single pass/fail word target."
     ],
-    "measure": "Counts and examples of spontaneously produced words or word combinations; comprehension recorded separately.",
-    "limitations": "The linked normative research supports variation, not the original fixed claims of 50–100 words, 70% nouns, or 300 spoken/1,000 understood words for every child. Diary instructions here are adapted; formal inventory scoring requires the appropriate manual.",
+    "measure": "Counts and examples of words or word combinations the child uses without prompting, with understanding recorded separately.",
+    "limitations": "This everyday diary is an adaptation, not a clinical assessment. Formal interpretation requires a validated questionnaire for the child’s language and age and its manual. Fixed word totals should not be used as universal targets.",
     "references": [
       {
         "title": "Variability in early communicative development (1994)",
@@ -921,24 +921,24 @@ export const studies: Study[] = [
       "value": 3,
       "unit": "months"
     },
-    "name": "Responses to emotional music during EEG recording",
-    "experiment": "Laboratory recording of infant EEG and heart rate during affective music; the matching publication tested infants at 3, 6, 9 and 12 months.",
-    "findings": "Physiological responses to music varied with age. This publication does not establish that infant responses mirror the mother or predict attachment security.",
-    "concept": "Physiological responses to affective music",
+    "name": "Brain and heart responses to emotional music",
+    "experiment": "This study examines how babies’ brain activity and heart rate change while listening to music with different emotional qualities. Infants were tested at 3, 6, 9 and 12 months.",
+    "findings": "Responses to music varied with age. These measurements do not show whether a baby shares a parent’s feelings or has a secure attachment.",
+    "concept": "Developing responses to music",
     "source": "Development of frontal EEG and heart-rate responses to affective musical stimuli (2003)",
     "kind": "experiment",
     "materials": [
-      "Infant EEG/ECG equipment",
-      "Calibrated audio playback",
+      "Equipment for recording brain electrical activity (EEG) and heart rate (ECG)",
+      "Audio equipment set to the study’s sound levels",
       "Recorded music excerpts"
     ],
     "procedure": [
-      "Research-laboratory description: obtain baseline EEG/ECG while the infant is settled, then present the selected affective musical excerpts.",
-      "Use the publication’s electrode montage, excerpt durations, preprocessing and artifact rejection; these technical details are needed for replication and are not specified here.",
-      "Compare EEG power and heart-rate responses across music and baseline periods and across age groups."
+      "In a specialist laboratory, record brain activity and heart rate while the settled baby hears no music.",
+      "Play the selected music excerpts. Follow the paper for sensor positions, excerpt lengths and ways to remove signals caused by movement or poor contact.",
+      "Compare responses during music with the initial quiet period, and compare patterns across age groups."
     ],
-    "measure": "Artifact-cleaned EEG spectral power and heart rate, not inferred attachment quality.",
-    "limitations": "Related publication verified; the original video’s mother–infant synchrony interpretation and exact musical protocol are unverified. Requires specialist equipment.",
+    "measure": "Changes in brain electrical activity and heart rate.",
+    "limitations": "This is a specialist recording procedure. Exact recording and playback details require the paper. It does not assess attachment or parent–infant emotional synchrony.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/12812802/",
     "references": [
       {
@@ -957,24 +957,24 @@ export const studies: Study[] = [
       "value": 36,
       "unit": "months"
     },
-    "name": "Waiting for a reward and cooperating with an adult",
-    "experiment": "Two separate paradigms: waiting before touching a reward, and coordinating complementary actions with an adult partner.",
-    "findings": "Waiting behavior varies with task demands and experience. In the cooperation study, 18–24-month-olds coordinated activities and sometimes tried to reengage a partner who stopped.",
-    "concept": "Self-regulation and cooperative action",
+    "name": "Waiting for a reward and working with an adult",
+    "experiment": "These two activities explore a child’s ability to wait and to work with another person toward a shared result.",
+    "findings": "Waiting depends on the task and the child’s experience. In the cooperation study, 18–24-month-olds worked with an adult and sometimes tried to get the adult to resume after stopping.",
+    "concept": "Waiting and cooperation",
     "source": "Cooperative activities in young children and chimpanzees (2006)",
     "kind": "experiment",
     "materials": [
-      "Safe attractive toy",
-      "Simple apparatus requiring two complementary actions",
+      "An appealing, safe toy",
+      "Equipment that needs separate actions by a child and an adult to produce a result",
       "Video camera"
     ],
     "procedure": [
-      "Adapted waiting observation: place a safe toy in view, briefly ask the child to wait, then allow access; record the actual delay and adult prompts.",
-      "For the published cooperation paradigm, use an apparatus requiring child and adult roles to achieve a shared effect; demonstrate the action before testing.",
-      "Compare ordinary joint activity with trials in which the adult stops participating; record whether the child waits, attempts alone, or recruits the adult."
+      "For an adapted waiting observation, put a safe toy in view, briefly ask the child to wait, then allow access. Record the waiting time and adult prompts.",
+      "For the published cooperation task, demonstrate how the adult and child each contribute to making the equipment work.",
+      "Compare normal joint activity with trials when the adult stops. Record whether the child waits, tries alone or asks the adult to continue."
     ],
-    "measure": "Waiting latency, successful joint actions and attempts to reengage the partner.",
-    "limitations": "The reward and cooperation tasks are distinct. Exact video waiting protocol was not verified; do not infer a fixed sex difference or individual developmental diagnosis.",
+    "measure": "Time spent waiting, successful joint actions and attempts to bring the adult back into the activity.",
+    "limitations": "The waiting observation is an adaptation; the source supports the cooperation task. These tasks do not diagnose an individual child’s development or establish a fixed difference between boys and girls.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/16686793/",
     "references": [
       {
@@ -993,24 +993,24 @@ export const studies: Study[] = [
       "value": 36,
       "unit": "months"
     },
-    "name": "Pretend play and coordination with a peer",
-    "experiment": "Observe functional and pretend play, then compare how two children coordinate a shared goal.",
-    "findings": "Play and peer coordination become more elaborate with experience; a published peer task found age-related increases across the second and third years.",
-    "concept": "Symbolic play and peer coordination",
+    "name": "Pretend play and working with another child",
+    "experiment": "These activities explore how children use objects in pretend play and coordinate their actions with another child.",
+    "findings": "Pretend play and cooperation generally become more elaborate with experience. The peer study found increased coordination across the second and third years.",
+    "concept": "Pretending and coordinating with a playmate",
     "source": "Becoming a social partner with peers (2006)",
     "kind": "observation",
     "materials": [
-      "Child-safe pretend food and dolls",
-      "Two-handle cooperative toy or equivalent research apparatus",
+      "Safe pretend food and dolls",
+      "A two-handle toy or research device that needs coordinated actions",
       "Camera"
     ],
     "procedure": [
-      "Adapted play observation: offer the same toy set in a quiet space and record an equal observation period at each visit.",
-      "Code actions as exploration, conventional object use, self-directed pretense, other-directed pretense or linked pretend sequences.",
-      "The related peer experiment used paired handles to operate a mechanical toy; compare pulling together with a version requiring a sequence of actions. Record whether children monitor the partner."
+      "For an adapted play observation, offer the same toys in a quiet space for the same length of time at each visit.",
+      "Record exploration, ordinary object use, pretending to do something oneself, pretending with a doll or another person, and linked pretend actions.",
+      "The peer experiment used two handles to operate a mechanical toy. Compare pulling together with actions that must happen in sequence; record whether children watch and respond to their partner."
     ],
-    "measure": "Frequency and complexity of pretend actions; coordinated attempts, partner monitoring and successful activations.",
-    "limitations": "The documentary examples are not one standardized protocol. The cited peer study involved 19-, 23- and 27-month-olds; it does not support categorical claims that all two-year-olds fail and all three-year-olds succeed.",
+    "measure": "Types of pretend actions, coordinated attempts, attention to the partner and successful toy activations.",
+    "limitations": "These are separate play and cooperation activities. The cited peer study tested 19-, 23- and 27-month-olds; it does not set a universal age when children begin cooperating.",
     "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3351034/",
     "references": [
       {
@@ -1033,25 +1033,25 @@ export const studies: Study[] = [
       "value": 30,
       "unit": "months"
     },
-    "name": "Body-as-obstacle and miniature-object scale errors",
-    "experiment": "A child tries to push a cart attached to the mat beneath their feet; in a separate task, miniature objects replace familiar full-size play objects.",
-    "findings": "Performance on the body-as-obstacle task improves with age. Some 18–30-month-olds attempt actions on miniatures that cannot accommodate their bodies.",
-    "concept": "Body self-awareness and perception–action coordination",
+    "name": "Recognizing the body as an obstacle and judging miniature toys",
+    "experiment": "These tasks explore whether children account for their own bodies when moving objects or trying to use toys of different sizes.",
+    "findings": "Success at moving a cart improves with age. Some 18–30-month-olds make serious attempts to use miniature objects that are too small for their bodies.",
+    "concept": "Body awareness and judging possible actions",
     "source": "The development of body self-awareness (2007)",
     "kind": "experiment",
     "materials": [
-      "Cart with attached mat",
-      "Separate weighted-mat control",
-      "Full-size and miniature slide, chair and car",
+      "A cart with a mat attached behind it",
+      "A separate weight for the comparison condition",
+      "Full-size and miniature play slides, chairs and cars",
       "Camera"
     ],
     "procedure": [
-      "Cart task: after familiarizing the child with pushing, attach a mat behind the cart so pushing requires standing on it; ask the child to push toward a caregiver.",
-      "Compare with a condition in which a separate heavy object, rather than the child, obstructs the mat; record stepping off or removing the obstacle.",
-      "Scale-error task: permit play with full-size objects, replace them with miniature counterparts while the child is absent, then observe spontaneous attempts. Distinguish genuine attempted use from pretense."
+      "First let the child practise pushing the cart. Attach a mat behind it so the child stands on the mat when reaching the handle, then ask them to push toward a caregiver.",
+      "Compare this with a condition where a separate heavy object blocks the mat. Record whether the child steps off or removes the object.",
+      "In the separate miniature-toy task, let the child play with full-size objects, replace them with miniatures while the child is absent, then observe. Distinguish serious attempts to use the toys from pretending."
     ],
-    "measure": "Successful removal of the obstacle; serious attempts to sit, enter or slide on miniatures.",
-    "limitations": "Two separate studies, not an all-or-none 18-month milestone. The scale-error finding does not show that emotion overrides size perception.",
+    "measure": "Successful removal of the obstacle and serious attempts to sit on, enter or slide on miniature toys.",
+    "limitations": "These are two separate studies. Performance does not change at one fixed age, and miniature-toy errors do not show that emotion has overridden size perception.",
     "sourceUrl": "https://doi.org/10.1111/j.1532-7078.2007.tb00220.x",
     "references": [
       {
@@ -1074,24 +1074,24 @@ export const studies: Study[] = [
       "value": 18,
       "unit": "months"
     },
-    "name": "Separation–reunion behavior and social advice on slopes",
-    "experiment": "A standardized attachment assessment observes separation and reunion; a separate locomotion experiment varies slope difficulty and caregiver advice.",
-    "findings": "Reunion behavior contributes to attachment classification under standardized conditions. Experienced walkers in the slope study used advice most at slopes near their individual action limits.",
-    "concept": "Attachment behavior and social referencing",
+    "name": "Responses to separation, reunion and advice on slopes",
+    "experiment": "These separate assessments explore how children respond when a caregiver returns and how they use caregiver advice when deciding whether to walk down a slope.",
+    "findings": "Reunion behavior contributes to a trained assessment of attachment. In the slope study, experienced walkers relied most on advice when the slope was close to the limit of their ability.",
+    "concept": "Caregiver relationships and using social advice",
     "source": "Attachment, exploration, and separation in one-year-olds (1970)",
     "kind": "assessment",
     "materials": [
-      "Standardized assessment room and trained coders",
-      "Laboratory adjustable walkway with spotter",
+      "An assessment room and trained observers",
+      "An adjustable laboratory walkway with a trained person preventing falls",
       "Video recording"
     ],
     "procedure": [
-      "Professional assessment only: the Strange Situation uses a prescribed sequence of caregiver presence, stranger introduction, brief separations and reunions; score behavior using a trained coding system.",
-      "Slope research: first establish each infant’s safe, borderline and risky slopes using repeated supervised trials.",
-      "Compare encouragement and discouragement at each risk level, with a trained experimenter preventing falls."
+      "A trained assessor conducts the Strange Situation: a fixed sequence of caregiver presence, an unfamiliar adult’s arrival, brief separations and reunions. Behavior is scored using the assessment’s established method.",
+      "For the separate slope experiment, supervised trials establish which slopes each child can walk down reliably and which are uncertain or too difficult.",
+      "Compare encouragement and discouragement at each difficulty level while a trained experimenter prevents falls."
     ],
-    "measure": "Proximity seeking, contact maintenance and exploration during reunion; slope attempts, refusals and alternatives.",
-    "limitations": "These procedures are not home tests. Attachment cannot be classified from one separation episode; the slope study tested 18-month-old walkers, not the entire listed age range.",
+    "measure": "Seeking and maintaining contact, exploration after reunion, and decisions to attempt or avoid slopes.",
+    "limitations": "These require professional assessment or laboratory supervision. One separation episode cannot establish attachment security. The slope study tested 18-month-old walkers; the whole displayed age range was not tested in that study.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/5490680/",
     "references": [
       {
@@ -1114,24 +1114,24 @@ export const studies: Study[] = [
       "value": 18,
       "unit": "months"
     },
-    "name": "Distinguishing unwilling, unable and accidental actions",
-    "experiment": "Separate tasks examine toy offers that fail through refusal or inability, and imitation of actions marked intentional or accidental.",
-    "findings": "Infants aged 9, 12 and 18 months responded differently to unwilling and unable toy offers. In a separate study, 14–18-month-olds copied more intentional than accidental actions.",
-    "concept": "Goal-directed action understanding",
+    "name": "Understanding refusal, inability and accidental actions",
+    "experiment": "These tasks explore whether babies respond differently when an adult refuses to give a toy, cannot give it, or performs an action accidentally.",
+    "findings": "Babies aged 9, 12 and 18 months responded differently to refusal and inability. In another study, 14–18-month-olds copied more actions marked as intentional than accidental.",
+    "concept": "Understanding the purpose of others’ actions",
     "source": "Unwilling versus unable: infants’ understanding of intentional action (2005)",
     "kind": "experiment",
     "materials": [
-      "Attractive toys",
-      "Objects producing an interesting two-step effect",
+      "Appealing toys",
+      "Objects that produce an interesting result through two actions",
       "Camera"
     ],
     "procedure": [
-      "Toy-offer task: establish a routine of passing toys, then intersperse unsuccessful offers involving refusal, teasing or an accidental failure.",
-      "Balance unsuccessful trial types and record reaching, disengagement and waiting instead of assuming an emotion from a single gesture.",
-      "Imitation task: model two-step actions, marking one as intended and another as accidental; offer the object and record which actions the infant reproduces."
+      "Establish a routine of passing toys to the child, then include unsuccessful offers where the adult refuses, teases or accidentally fails to pass the toy.",
+      "Balance the different unsuccessful offers. Record reaching, waiting and looking away without assigning an emotion from one gesture alone.",
+      "In the separate imitation task, demonstrate two actions, marking one as intended and the other as accidental. Give the child the object and record which actions they copy."
     ],
-    "measure": "Reaching and looking away during unsuccessful offers; proportion of modeled actions copied.",
-    "limitations": "These are separate published paradigms; this entry does not reconstruct the unidentified goal-tracking video or claim full adult-like theory of mind.",
+    "measure": "Reaching and looking away during toy offers, and the proportion of intended and accidental actions copied.",
+    "limitations": "These are separate tasks. Different responses suggest sensitivity to purpose and context; they do not establish an adult-like understanding of another person’s mind.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/15769189/",
     "references": [
       {
@@ -1151,23 +1151,23 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Cruising across gaps in hand and foot support",
-    "experiment": "Laboratory cruising task contrasts an adjustable gap in a handrail with an adjustable gap in the floor beneath a continuous handrail.",
-    "findings": "Cruisers adjusted attempts to handrail gaps more accurately than to floor gaps, showing that learning about support can be posture- and task-specific.",
-    "concept": "Affordances for cruising",
+    "experiment": "This study asks how babies who move sideways while holding furniture judge gaps in the support for their hands and feet.",
+    "findings": "Babies adjusted their attempts more accurately to gaps in the handrail than to gaps in the floor. Learning about support may be specific to a way of moving.",
+    "concept": "Judging support while moving sideways with a handhold",
     "source": "Developmental continuity? Crawling, cruising, and walking (2011)",
     "kind": "experiment",
     "materials": [
-      "Adjustable handrail and floor-gap apparatus",
-      "Safety mats and trained spotter",
+      "An adjustable handrail and floor-gap apparatus",
+      "Safety mats and a trained person to prevent falls",
       "Camera"
     ],
     "procedure": [
-      "Laboratory procedure only: document cruising experience and place the infant at one end of the supported walkway.",
-      "Vary handrail gaps with the floor continuous, and floor gaps with the handrail continuous; use supervised trials to estimate the largest gap crossed successfully.",
-      "Code attempts, refusals, success and exploratory hand/foot movements; the spotter prevents an actual fall."
+      "In a supervised laboratory, record the baby’s experience of moving with a handhold and position them at one end of the walkway.",
+      "Change the gap in the handrail while keeping the floor continuous. Then change the floor gap while keeping the handrail continuous.",
+      "Estimate the largest gap crossed successfully and record attempts, refusals and exploratory hand or foot movements. A trained adult prevents actual falls."
     ],
-    "measure": "Attempt probability relative to successful cruising threshold in each support condition.",
-    "limitations": "The original summary incorrectly described simple handrail presence/absence and actual falls. Do not recreate gaps or precipices at home.",
+    "measure": "How often babies attempt gaps of different sizes compared with the sizes they can cross successfully.",
+    "limitations": "This setup needs laboratory protection against falls and should not be recreated at home. Results concern this specific movement task, rather than a general understanding of danger.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21399716/",
     "references": [
       {
@@ -1186,25 +1186,25 @@ export const studies: Study[] = [
       "value": 9,
       "unit": "months"
     },
-    "name": "Locomotor experience and wariness of heights",
-    "experiment": "Compare locomotor experience with responses to apparent depth; a related randomized study gave precrawlers powered-mobility experience.",
-    "findings": "Powered-mobility experience increased visual proprioception and wariness of heights compared with controls. Depth perception and avoidance are distinct measures.",
-    "concept": "Self-produced movement and height avoidance",
+    "name": "Movement experience and caution around heights",
+    "experiment": "This study explores whether experience controlling one’s own movement changes babies’ responses to apparent drop-offs.",
+    "findings": "Babies given experience driving a powered mobility device became more cautious around heights and more responsive to visual signals of their own movement than the comparison group.",
+    "concept": "Learning about movement and heights",
     "source": "The epigenesis of wariness of heights (2013)",
     "kind": "experiment",
     "materials": [
-      "Safety-glass visual cliff or research depth display",
-      "Powered mobility device",
-      "Visual-proprioception apparatus",
+      "A safety-glass visual cliff or protected depth display",
+      "A powered mobility device",
+      "Equipment measuring responses to visual signals of movement",
       "Camera"
     ],
     "procedure": [
-      "Laboratory description: record age and locomotor experience; assess responses on a protected apparent-depth display.",
-      "In the intervention study, randomly assign precrawlers to controlled powered-mobility experience or a comparison condition.",
-      "Use the publication’s training schedule and standardized visual-proprioception/height measures; compare groups rather than diagnosing individual fear."
+      "In a protected laboratory setup, record the baby’s age and movement experience and assess their response to apparent depth.",
+      "Randomly assign babies who are not yet crawling to powered-mobility practice or a comparison condition.",
+      "Follow the paper’s training schedule and separate tests of height responses and sensitivity to visual movement. Compare the groups."
     ],
-    "measure": "Crossing/avoidance and independently measured visual proprioception.",
-    "limitations": "The exact eight-session documentary protocol is unverified. A visible drop-off requires laboratory protection; avoidance does not mark the first appearance of depth perception.",
+    "measure": "Crossing or avoidance, and responses to visual signals that make a person feel they are moving.",
+    "limitations": "The exact training schedule and equipment must come from the paper. A protected laboratory setup is essential. Avoiding a drop-off and being able to see depth are different abilities.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/23722981/",
     "references": [
       {
@@ -1223,24 +1223,24 @@ export const studies: Study[] = [
       "value": 5,
       "unit": "months"
     },
-    "name": "The emergence of directed reaching",
-    "experiment": "Repeatedly observe infants reaching toward a toy while quantifying movement paths around the onset of successful reaching.",
-    "findings": "Directed reaching emerges through changes in movement control and experience; infants do not all pass through a fixed inability-at-four-months rule.",
-    "concept": "Development of coordinated reaching",
+    "name": "Learning to reach for a toy",
+    "experiment": "Repeated observations explore how babies learn to direct their arms toward a toy and grasp it.",
+    "findings": "Reaching develops through changes in movement control and experience. The timing and movement patterns differ between babies.",
+    "concept": "Developing coordinated reaching",
     "source": "The transition to reaching: mapping intention and intrinsic dynamics (1993)",
     "kind": "observation",
     "materials": [
-      "Age-appropriate toy",
-      "Supported infant seating",
-      "Camera or motion-capture system"
+      "An age-appropriate graspable toy",
+      "Comfortable supported seating",
+      "Camera or movement-tracking equipment"
     ],
     "procedure": [
-      "Adapted longitudinal observation: support the infant comfortably and present the same graspable toy within reach.",
-      "Offer repeated opportunities from a consistent position at each visit; record attempted reaches, contacts and grasps without moving the infant’s limbs.",
-      "The related original study followed four infants weekly and analyzed movements around each infant’s first extended-arm reach."
+      "For an adapted repeated observation, seat the baby comfortably with support and present the same toy within reach.",
+      "At each visit, offer several opportunities from a consistent position. Record reaches, contacts and grasps without guiding the baby’s limbs.",
+      "The linked study followed four infants weekly, analyzing movement before and after each infant’s first extended-arm reach."
     ],
-    "measure": "Reach onset, contact/grasp success and movement trajectories.",
-    "limitations": "Exact foot-reaching and arm-restriction video protocols were not verified. Avoid the earlier claim that all four-month-olds cannot reach with their hands.",
+    "measure": "When directed reaching first appears, how often the baby touches or grasps the toy, and the path of the arm movement.",
+    "limitations": "These steps describe an adapted observation. The study’s detailed movement analysis requires its equipment and methods. A small study does not set a fixed age when every baby should reach.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/8404257/",
     "references": [
       {
@@ -1259,24 +1259,24 @@ export const studies: Study[] = [
       "value": 6,
       "unit": "months"
     },
-    "name": "Body mechanics in infant stepping and contingency learning",
-    "experiment": "Two separate paradigms examine how supported stepping changes with mechanical conditions, and how leg kicks can control an overhead mobile.",
-    "findings": "Reducing effective leg load can increase stepping; mobile-linked kicking demonstrates learning of an action–effect contingency rather than proving a general concept of agency.",
-    "concept": "Dynamic motor control and contingency learning",
+    "name": "How body mechanics affect stepping and learning from kicks",
+    "experiment": "These separate tasks explore how the body’s weight affects supported stepping and how babies learn that kicking can make a mobile move.",
+    "findings": "Reducing the load on the legs can increase stepping. Mobile-linked kicking shows that babies can learn a link between an action and its effect.",
+    "concept": "Body mechanics and learning cause and effect",
     "source": "The relationship between physical growth and a newborn reflex (1984)",
     "kind": "experiment",
     "materials": [
-      "Laboratory supported-stepping equipment",
-      "Temperature-controlled research water setup",
-      "Research mobile apparatus and movement recording"
+      "Supported-stepping equipment",
+      "A temperature-controlled research water setup",
+      "A research mobile and equipment for recording movement"
     ],
     "procedure": [
-      "Professional laboratory description: compare supported stepping under standardized conditions, including the published manipulation reducing leg loading.",
-      "Count steps from video and monitor behavioral state so arousal differences are not mistaken for mechanical effects.",
-      "For the separate mobile paradigm, record baseline kicking, a period when kicks move the mobile and a nonreinforced test; use the original apparatus and supervision."
+      "In a professional laboratory, compare supported stepping under consistent conditions, including a condition that reduces the weight the legs must lift.",
+      "Count steps from video and record the baby’s level of alertness or agitation, which can also affect movement.",
+      "For the separate mobile task, compare kicking before the link is introduced, while kicks move the mobile, and during a test when the link is removed. Use the study’s equipment and supervision."
     ],
-    "measure": "Steps per observation interval; kicking rate relative to baseline and noncontingent comparison.",
-    "limitations": "Water immersion and limb attachments are research procedures, not home activities. The stepping and mobile studies have different protocols; the exact documentary mobile attribution is unverified.",
+    "measure": "Steps per observation period and changes in kicking rate compared with the initial rate and comparison condition.",
+    "limitations": "Water immersion and limb attachments require specialist supervision. The linked source concerns stepping; the exact mobile protocol is not established here. Learning one action–effect link does not demonstrate a general understanding of personal control.",
     "sourceUrl": "https://doi.org/10.1016/S0163-6383(84)80007-7",
     "references": [
       {
@@ -1291,25 +1291,25 @@ export const studies: Study[] = [
       "value": 14,
       "unit": "months"
     },
-    "name": "Walking under changed body loads",
-    "experiment": "A laboratory load-carriage experiment assessed 14-month-olds walking with additional weight in shoulder packs.",
-    "findings": "Additional loads changed walking and balance control. Responses reflect the fit between the child’s current skill, body and task.",
-    "concept": "Adaptation to changing body mechanics",
+    "name": "Adjusting walking when carrying added weight",
+    "experiment": "This study examines how a change in body load affects the walking and balance of 14-month-olds.",
+    "findings": "Added weight changed walking and balance. Responses depended on the child’s skills, body and the task.",
+    "concept": "Adapting walking to changes in body load",
     "source": "Baby carriage: infants walking with loads (2007)",
     "kind": "experiment",
     "materials": [
-      "Laboratory walkway",
+      "A laboratory walkway",
       "Research shoulder packs",
-      "Video or gait measurement",
-      "Trained spotter"
+      "Video or equipment for measuring walking",
+      "A trained person to prevent falls"
     ],
     "procedure": [
-      "Laboratory description only: measure baseline walking without a load.",
-      "The verified study compared walking with shoulder-pack loads equal to 15% of body weight; use its exact pack placement and trial protocol for research replication.",
-      "Record changes in steps and balance, comparing each infant with their own baseline."
+      "In a supervised laboratory, measure the child’s walking without added weight.",
+      "Compare this with walking while wearing research shoulder packs carrying 15% of the child’s body weight. Follow the paper for pack placement and trial details.",
+      "Record changes in steps and balance, comparing each child with their own unloaded walking."
     ],
-    "measure": "Gait and balance changes between unloaded and loaded conditions.",
-    "limitations": "The original entry’s 25% figure was incorrect for the linked study. Combining slopes and load carriage into one protocol was not verified; do not add weights to a child for a home demonstration.",
+    "measure": "Changes in walking pattern and balance with and without the added load.",
+    "limitations": "This is a supervised research procedure. Do not add weights to a child for a home demonstration. The study described here concerns load carriage rather than a combined slope-and-load task.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/17381796/",
     "references": [
       {
@@ -1328,24 +1328,24 @@ export const studies: Study[] = [
       "value": 36,
       "unit": "months"
     },
-    "name": "Social and emotional development observation framework",
-    "experiment": "Use the California infant/toddler foundations to organize observations of interactions, emotional expression, relationships and regulation.",
-    "findings": "The framework describes typical patterns around reference ages; it is not a single experiment or a pass/fail developmental test.",
+    "name": "Observing social and emotional development",
+    "experiment": "This framework helps adults describe changes in children’s interactions, emotions, relationships and ways of managing feelings.",
+    "findings": "The framework gives examples of common patterns around reference ages, allowing for individual variation. It is descriptive guidance rather than a pass/fail test.",
     "concept": "Social and emotional development",
     "source": "California Infant/Toddler Learning & Development Foundations (2009)",
     "kind": "framework",
     "materials": [
-      "Published framework",
+      "The published framework",
       "Dated observation notes",
       "Familiar play materials"
     ],
     "procedure": [
-      "Choose one domain, such as interactions with peers or expression of emotion.",
-      "Observe ordinary routines on several occasions and record concrete actions, context and adult support.",
-      "Compare observations with the framework’s examples near the child’s age, noting variation rather than assigning a stage from one event."
+      "Choose one area, such as interactions with other children or ways of expressing emotion.",
+      "Observe ordinary routines on several occasions. Record what the child did, the situation and any adult support.",
+      "Compare the observations with examples near the child’s age, noting variation and changes across visits."
     ],
-    "measure": "Descriptive examples of behavior across contexts and visits.",
-    "limitations": "The 8-, 18- and 36-month anchors belong to the 2009 framework and are approximate. The current second edition has a revised structure; the existing source video does not establish an experimental finding.",
+    "measure": "Concrete examples of behavior across different situations and visits.",
+    "limitations": "The approximate 8-, 18- and 36-month reference points come from the 2009 framework. Later editions have a different structure. A single observation cannot establish a developmental stage.",
     "sourceUrl": "https://www.cde.ca.gov/sp/cd/re/documents/itfoundations2009.pdf",
     "references": [
       {
@@ -1364,23 +1364,23 @@ export const studies: Study[] = [
       "value": 36,
       "unit": "months"
     },
-    "name": "Relationships with familiar adults across routines",
-    "experiment": "Observe how a child seeks help, maintains contact and explores with familiar caregivers during everyday routines.",
-    "findings": "The foundation describes increasing complexity in reciprocal interaction and use of familiar adults as support, with substantial contextual variation.",
-    "concept": "Caregiver relationships and secure-base behavior",
+    "name": "Relationships with familiar adults during everyday routines",
+    "experiment": "This observation explores how children seek help, check back with caregivers and explore during familiar routines.",
+    "findings": "The framework describes increasingly complex exchanges with adults and growing use of familiar caregivers for support. Behavior varies with the situation.",
+    "concept": "Seeking support while exploring",
     "source": "California Infant/Toddler Learning & Development Foundations (2009)",
     "kind": "framework",
     "materials": [
-      "Published relationships framework",
-      "Observation log"
+      "The published relationships framework",
+      "An observation log"
     ],
     "procedure": [
-      "Adapted observation: select familiar routines such as arrival, play and a naturally occurring request for help.",
-      "Record what happened before the behavior, the child’s actions and the adult response; do not create distress or separation to obtain a response.",
-      "Repeat across days and adults, comparing patterns rather than isolated actions."
+      "For an adapted observation, choose ordinary routines such as arrival, play or a naturally occurring request for help.",
+      "Record what happened first, what the child did and how the adult responded. Use naturally occurring events rather than creating distress or separation.",
+      "Repeat across days and adults to look for patterns in the child’s responses."
     ],
-    "measure": "Frequency and context of help seeking, checking back, reciprocal interaction and independent exploration.",
-    "limitations": "Framework guidance does not classify attachment security. The listed benchmark ages are descriptive, not compulsory deadlines.",
+    "measure": "When and how often children seek help, check back, exchange responses with adults and explore independently.",
+    "limitations": "These observations describe everyday relationships and do not classify attachment security. The framework’s ages are approximate reference points.",
     "sourceUrl": "https://www.cde.ca.gov/sp/cd/re/documents/itfoundations2009.pdf",
     "references": [
       {
@@ -1399,23 +1399,23 @@ export const studies: Study[] = [
       "value": 2,
       "unit": "months"
     },
-    "name": "Clinical observation of newborn reflexes",
-    "experiment": "A clinician examines reflex responses as part of a broader newborn neurological examination.",
-    "findings": "Reflex presence, symmetry and quality contribute to clinical interpretation; individual reflexes have different developmental time courses.",
-    "concept": "Newborn neurological assessment",
+    "name": "Checking newborn reflexes",
+    "experiment": "A clinician checks automatic responses as part of examining a newborn’s movement and nervous system.",
+    "findings": "The presence, strength and balance of reflex responses help a clinician interpret the wider examination. Different reflexes change at different ages.",
+    "concept": "Newborn movement and nervous-system examination",
     "source": "Stanford Medicine: Newborn examination",
     "kind": "assessment",
     "materials": [
-      "Clinical examination setting",
-      "Qualified clinician"
+      "A clinical examination setting",
+      "A qualified clinician"
     ],
     "procedure": [
-      "Clinical description: the examiner first observes spontaneous movement, posture and alertness.",
-      "Within the professional newborn examination, assess sucking, hand/foot grasp and Moro responses with appropriate support and interpret symmetry and quality in context.",
-      "Record the examination conditions and any concern for clinical follow-up."
+      "The clinician begins by observing the baby’s natural movements, posture and alertness.",
+      "During the newborn examination, assess sucking, hand and foot grasp, and the Moro startle response while supporting the baby appropriately. Compare responses on both sides.",
+      "Record the conditions of the examination and any concerns requiring follow-up."
     ],
-    "measure": "Clinician-rated presence, symmetry and quality of responses.",
-    "limitations": "Not a home experiment. Never suspend an infant by the grasp, drop an infant or provoke a startle for testing; the earlier body-weight and sudden-drop statements were unsafe and misleading.",
+    "measure": "The clinician’s assessment of whether responses are present, similar on both sides and appropriate in quality.",
+    "limitations": "This is a clinical assessment. Do not suspend a baby by their grasp, drop them or provoke a startle to test a reflex at home.",
     "sourceUrl": "https://med.stanford.edu/newborns/clinical-rotations/students/students-newborn-exam.html",
     "references": [
       {
@@ -1434,24 +1434,24 @@ export const studies: Study[] = [
       "value": 18,
       "unit": "months"
     },
-    "name": "Open-ended exploration of movable furniture",
-    "experiment": "A teaching-video observation describes toddlers experimenting with chairs; no matching controlled study was identified.",
-    "findings": "The clip can illustrate persistence and problem solving, but does not establish that a particular caregiver style caused those behaviors.",
-    "concept": "Exploration, persistence and spontaneous coordination",
+    "name": "Exploring movable play furniture",
+    "experiment": "This observation explores how toddlers experiment with movable objects, persist after difficulty and coordinate with a playmate.",
+    "findings": "Observed play can illustrate persistence and problem solving. It cannot establish that a particular style of adult supervision caused those behaviors.",
+    "concept": "Exploration, persistence and spontaneous cooperation",
     "source": "Original teaching video; matching publication unverified",
     "kind": "observation",
     "materials": [
-      "Stable child-safe lightweight play furniture",
-      "Clear supervised play area",
-      "Observation log"
+      "Stable, safe, lightweight play furniture",
+      "A clear play area with close supervision",
+      "An observation log"
     ],
     "procedure": [
-      "Adapted observation: offer safe movable play objects in a clear area under close supervision.",
-      "Allow spontaneous exploration; record actions, repeated attempts, changes in strategy and interactions with a peer.",
-      "Note adult prompts and intervention so supported and independent behavior are distinguishable."
+      "For an adapted observation, offer safe movable play objects in a clear area under close adult supervision.",
+      "Allow the child to explore. Record repeated attempts, changes in approach and interactions with a playmate.",
+      "Note adult prompts or help so actions completed independently can be distinguished from supported actions."
     ],
-    "measure": "Description and duration of attempts, strategy changes and peer exchanges.",
-    "limitations": "The exact video sample, trial duration and publication are unverified. This is a repeatable observation format, not a reproduction of a validated experiment.",
+    "measure": "The types and duration of attempts, changes in approach and exchanges between children.",
+    "limitations": "No matching published experiment has been verified. This is a repeatable observation format; its exact duration and materials are not a validated assessment.",
     "references": []
   },
   {
@@ -1464,24 +1464,24 @@ export const studies: Study[] = [
       "value": 24,
       "unit": "months"
     },
-    "name": "Manual babbling in sign-exposed infants",
-    "experiment": "Video analysis compares repetitive hand movements of infants exposed to a signed language with movements of comparison infants.",
-    "findings": "The published study reported organized manual babbling in sign-exposed infants, supporting the view that early language patterning can occur in a manual modality.",
-    "concept": "Early language patterning across modalities",
+    "name": "Early language-like hand movements in sign-exposed babies",
+    "experiment": "This study explores whether repetitive hand movements in babies learning a signed language have patterns resembling early vocal babbling.",
+    "findings": "The study reported organized manual babbling in sign-exposed babies, supporting the idea that early language patterns can develop through the hands as well as the voice.",
+    "concept": "Early language patterns in movement",
     "source": "Babbling in the manual mode (1991)",
     "kind": "observation",
     "materials": [
-      "Video recordings of natural interaction",
-      "Sign-language expert coders",
-      "Defined coding categories"
+      "Video recordings of everyday interaction",
+      "Observers with sign-language expertise",
+      "Clearly defined categories for classifying movements"
     ],
     "procedure": [
-      "Observe ordinary caregiver–infant interaction across multiple visits, documenting signed and spoken-language exposure.",
-      "Identify repetitive hand movements and distinguish communicative signs, ordinary gestures and candidate manual babbling.",
-      "Have trained coders assess handshape, location and movement organization and compare groups using the publication’s criteria."
+      "Record ordinary caregiver–infant interactions over several visits and document each baby’s exposure to signed and spoken language.",
+      "Identify repetitive hand movements, distinguishing established signs, ordinary gestures and possible manual babbling.",
+      "Using the paper’s criteria, trained observers classify handshape, location and movement patterns and compare groups."
     ],
-    "measure": "Frequency and organization of candidate babbling forms relative to other hand movements.",
-    "limitations": "Not all repetitive hand movements are manual babbling. The original entry overstated identical development and simultaneous milestones for all bilingual children; exact video child examples are unnecessary.",
+    "measure": "How often possible manual babbling occurs and how its patterns differ from other hand movements.",
+    "limitations": "Repetitive hand movements alone do not establish manual babbling. The findings do not mean every child learning signed and spoken languages reaches all milestones simultaneously.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/2006424/",
     "references": [
       {
@@ -1500,24 +1500,24 @@ export const studies: Study[] = [
       "value": 24,
       "unit": "months"
     },
-    "name": "Persistence during fine-motor play",
-    "experiment": "Observe repeated attempts at a manageable object task, such as placing large shapes in matching openings.",
-    "findings": "The original clip illustrates engagement and persistence; it does not isolate the causal effect of praise or establish a universal response to praise.",
-    "concept": "Fine-motor problem solving and task engagement",
+    "name": "Persistence during hand-and-eye play",
+    "experiment": "This observation explores how toddlers keep trying and change their approach during tasks such as fitting shapes into matching openings.",
+    "findings": "The activity can reveal engagement and persistence, but observation alone cannot establish the effect of praise.",
+    "concept": "Hand-and-eye coordination and persistence",
     "source": "Original teaching video; matching publication unverified",
     "kind": "observation",
     "materials": [
-      "Large age-appropriate shape sorter or stacking objects",
-      "Camera or timer",
-      "Observation sheet"
+      "A large, age-appropriate shape sorter or stacking objects",
+      "A camera or timer",
+      "An observation sheet"
     ],
     "procedure": [
-      "Adapted observation: present one familiar and one moderately challenging safe task, with equal observation time.",
-      "Record attempts, successful placements, strategy changes, requests for help and adult language.",
-      "For repeated observations, keep materials and adult prompting comparable; describe praise without claiming an experimental effect."
+      "For an adapted observation, offer one familiar task and one safe task that is moderately challenging, allowing equal time for each.",
+      "Record attempts, successful placements, changes in approach, help requests and adult comments.",
+      "At later visits, keep the materials and level of adult prompting similar so the observations can be compared."
     ],
-    "measure": "Time engaged, attempts before stopping, independent successes and help requests.",
-    "limitations": "No matching published protocol was verified for the supplied teaching-video description. This is observational and cannot separate praise effects from task difficulty, familiarity or adult assistance.",
+    "measure": "Time spent engaged, attempts before stopping, independent successes and requests for help.",
+    "limitations": "No matching published protocol has been verified. Task difficulty, familiarity and adult help can all affect behavior, so this observation cannot isolate the effects of praise.",
     "references": []
   },
   {
@@ -1530,24 +1530,24 @@ export const studies: Study[] = [
       "value": 20,
       "unit": "months"
     },
-    "name": "Following gaze behind an occluding barrier",
-    "experiment": "Infants observe an adult looking toward a location hidden from the infant’s initial viewpoint.",
-    "findings": "In the verified study, 12- and 18-month-olds moved to gain a view of locations behind barriers, consistent with spatially informed gaze following.",
-    "concept": "Joint attention and spatial gaze following",
+    "name": "Following someone’s gaze behind a barrier",
+    "experiment": "This study asks whether babies move to see what an adult is looking at when a barrier blocks their own view.",
+    "findings": "In the study, 12- and 18-month-olds moved to look behind barriers, suggesting that they followed where the adult was looking rather than just copying a head turn.",
+    "concept": "Sharing attention and following another person’s gaze",
     "source": "12- and 18-month-old infants follow gaze to spaces behind barriers (2004)",
     "kind": "experiment",
     "materials": [
-      "Opaque barrier",
-      "Adult seated with clear view of hidden location",
+      "A barrier that cannot be seen through",
+      "An adult positioned to see behind the barrier",
       "Camera"
     ],
     "procedure": [
-      "Seat or position the child where an opaque barrier hides a target location but allows the adult to see it.",
-      "After obtaining attention, the adult turns to look behind the barrier; compare with control looks specified in the publication.",
-      "Record whether the infant moves around the barrier to inspect the target location, not merely whether their head turns."
+      "Position the child so the barrier hides a target location from them but not from the adult.",
+      "Get the child’s attention, then have the adult look toward the hidden location. Use the comparison looks specified in the paper.",
+      "Record whether the child moves to a position where the target location can be seen."
     ],
-    "measure": "Proportion of trials with movement to the correct viewing position.",
-    "limitations": "The linked study does not establish a universal onset at 9 months, a categorical human–chimpanzee difference, or the separate activity-categorization task in the original video summary.",
+    "measure": "The proportion of trials in which the child moves to the correct viewing position.",
+    "limitations": "The published sample was 12 and 18 months old, within a narrower range than the calendar entry. It does not establish a universal age when gaze following begins or a categorical difference between humans and chimpanzees.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/15323111/",
     "references": [
       {
@@ -1566,24 +1566,24 @@ export const studies: Study[] = [
       "value": 11,
       "unit": "months"
     },
-    "name": "Detecting boundaries in continuous human action",
-    "experiment": "Infants view everyday action videos with pauses at action boundaries or within an unfinished action.",
-    "findings": "Ten- to eleven-month-olds differentiated disruptions aligned with action boundaries from disruptions within actions.",
-    "concept": "Segmentation of ongoing action",
+    "name": "Recognizing the ends of everyday actions",
+    "experiment": "This study explores whether babies notice when a video pauses in the middle of an action rather than after the action is complete.",
+    "findings": "Ten- to eleven-month-olds responded differently to pauses at action boundaries and pauses within unfinished actions.",
+    "concept": "Breaking continuous activity into meaningful actions",
     "source": "Infants parse dynamic action (2001)",
     "kind": "experiment",
     "materials": [
-      "Standardized action videos",
-      "Display",
-      "Looking-time recording"
+      "Consistently recorded everyday-action videos",
+      "A screen",
+      "A way to record where and how long the baby looks"
     ],
     "procedure": [
-      "Present the same continuous action stream during familiarization, controlling scene and timing.",
-      "At test, insert pauses either at completed action units or during an ongoing unit, using counterbalanced versions.",
-      "Compare looking to the disrupted sequences with trained observers unaware of the condition where possible."
+      "Let babies watch the same continuous action sequence, keeping the scene and timing consistent.",
+      "At test, pause either after an action has been completed or while it is still underway. Balance the different versions across infants.",
+      "Compare looking times using trained observers who do not know the condition, where possible."
     ],
-    "measure": "Looking-time response to boundary versus within-action interruptions.",
-    "limitations": "This publication supports action parsing; the floating-person/box demonstration and point-light description were not verified and should not be treated as parts of this protocol. Exact video timings require the paper.",
+    "measure": "How long babies look at sequences interrupted at an action boundary compared with sequences interrupted midway.",
+    "limitations": "The paper is needed for exact video content, pause timing and presentation rules. The findings concern action boundaries, rather than all aspects of understanding another person’s intentions.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11405577/",
     "references": [
       {
@@ -1602,24 +1602,24 @@ export const studies: Study[] = [
       "value": 10,
       "unit": "months"
     },
-    "name": "Learning regularities in action sequences",
-    "experiment": "Infants view continuous actions whose transitions form predictable units, then see intact versus less predictable test units.",
-    "findings": "A verified study found that 7–9-month-olds distinguished intact units from part-units, consistent with learning transitional probabilities.",
-    "concept": "Statistical learning of event structure",
+    "name": "Learning which actions usually happen together",
+    "experiment": "This study explores whether babies learn repeating patterns in a continuous stream of actions and notice when those patterns are broken up.",
+    "findings": "Seven- to nine-month-olds distinguished familiar action groups from groups that crossed a pattern boundary. This is consistent with learning how likely one action is to follow another.",
+    "concept": "Learning patterns in sequences of events",
     "source": "Infants segment continuous events using transitional probabilities (2014)",
     "kind": "experiment",
     "materials": [
-      "Standardized novel-agent action animation",
-      "Screen",
-      "Looking-time measurement"
+      "The study’s animation of an unfamiliar agent performing actions",
+      "A screen",
+      "Looking-time recording equipment"
     ],
     "procedure": [
-      "Published-paradigm description: familiarize infants with continuous actions arranged into statistically coherent units while avoiding transitional movements that reveal the next action.",
-      "Present intact units and part-units made across unit boundaries, controlling how often test sequences occurred during familiarization.",
-      "Counterbalance sequence assignments and compare looking time at test."
+      "Show a continuous action sequence in which some actions reliably follow each other. Avoid extra movements that reveal what comes next.",
+      "At test, show action groups that preserve the learned pattern and groups formed across its boundaries. Keep their earlier frequency comparable.",
+      "Balance which sequences are assigned to each condition and compare looking times."
     ],
-    "measure": "Looking time to intact units versus part-units.",
-    "limitations": "The exact documentary blow/feel/rattle protocol is unverified; this is a linked infant analogue, not a claim to reproduce that clip. The listed 5–10-month calendar span is broader than the verified 7–9-month sample.",
+    "measure": "Looking time to groups that preserve the learned pattern compared with groups that cross its boundaries.",
+    "limitations": "The linked study tested 7–9-month-olds, a narrower range than the calendar entry. Exact animations and presentation rules require the paper.",
     "sourceUrl": "https://doi.org/10.1111/cdev.12247",
     "references": [
       {
@@ -1638,24 +1638,24 @@ export const studies: Study[] = [
       "value": 3,
       "unit": "months"
     },
-    "name": "Learning and losing control of an audiovisual effect",
-    "experiment": "Infants learn that an arm movement triggers an audiovisual event; researchers then temporarily remove the contingency.",
-    "findings": "Published work found increased responding and negative expressions during extinction after contingency learning. This does not independently date social-smile onset.",
-    "concept": "Contingency learning and frustration",
+    "name": "Learning that an arm movement controls a display",
+    "experiment": "This study explores how babies learn to make a sound-and-picture display respond to their movements and react when that control is removed.",
+    "findings": "After learning the movement–display link, babies increased their responding and showed more negative expressions when the expected event stopped occurring.",
+    "concept": "Learning cause and effect and responding to frustration",
     "source": "Violation of expectancy, loss of control, and anger expressions (1990)",
     "kind": "experiment",
     "materials": [
-      "Research arm-movement detector",
-      "Controlled audiovisual display",
-      "Facial-expression video"
+      "Equipment for detecting arm movements",
+      "A controlled sound-and-picture display",
+      "Video recording of facial expressions"
     ],
     "procedure": [
-      "Laboratory description: record baseline arm movements, then provide an audiovisual response contingent on the movement.",
-      "Compare contingent learning with an appropriate noncontingent condition, then briefly omit the expected event under an approved stopping protocol.",
-      "Code movement rates and facial behavior separately during baseline, learning and extinction."
+      "In a supervised laboratory, record arm movements before the display responds, then make the display activate after the selected movement.",
+      "Compare this with a condition where the display is not controlled by the baby. Briefly remove the expected response using the study’s approved stopping rules.",
+      "Record movement rates and facial expressions separately before learning, during learning and after the response is removed."
     ],
-    "measure": "Movement rate relative to baseline; coded facial expressions during loss of contingency.",
-    "limitations": "Exact three-month documentary settings are unverified; related published samples covered multiple ages. Wrist attachments and distress induction require research oversight, not a home exercise.",
+    "measure": "Changes in movement rate and facial expressions when the display stops responding.",
+    "limitations": "The research includes several age groups; exact equipment and timings require the paper. Wrist attachments and deliberately induced frustration need research supervision. This task does not establish the age when social smiling begins.",
     "sourceUrl": "https://doi.org/10.1037/0012-1649.26.5.745",
     "references": [
       {
@@ -1674,24 +1674,24 @@ export const studies: Study[] = [
       "value": 18,
       "unit": "weeks"
     },
-    "name": "Matching familiar facial and vocal emotions",
-    "experiment": "Infants view happy and sad facial expressions paired with vocal expressions, comparing familiar and unfamiliar people.",
-    "findings": "Familiarity can facilitate matching emotional information across face and voice. Responses do not support fixed mother/female-stranger/father deadlines for every infant.",
-    "concept": "Multisensory emotion perception",
+    "name": "Matching emotions in familiar faces and voices",
+    "experiment": "This study explores whether familiarity helps babies connect the emotion in a voice with a matching facial expression.",
+    "findings": "Familiarity can make it easier to match emotions across faces and voices. The results do not set fixed ages for recognizing emotions in mothers, fathers or unfamiliar adults.",
+    "concept": "Connecting emotional information across sight and sound",
     "source": "The role of person familiarity in emotion perception (2001)",
     "kind": "experiment",
     "materials": [
-      "Consented parent and unfamiliar-person face/voice recordings",
-      "Display and audio",
-      "Looking-time camera"
+      "Face and voice recordings of consenting parents and unfamiliar adults",
+      "A screen and audio playback",
+      "A camera for recording looking"
     ],
     "procedure": [
-      "Record matched emotional expressions under comparable conditions and present paired expressions with a sound-specified emotion.",
-      "Counterbalance side, emotion and familiar/unfamiliar identity; measure visual attention to the face corresponding with the voice.",
-      "Keep expression intensity and recording conditions comparable; use the original study’s timing for replication."
+      "Record comparable happy and sad expressions. Present paired faces while playing a voice expressing one of those emotions.",
+      "Balance screen side, emotion and familiar or unfamiliar identity. Measure attention to the face whose emotion matches the voice.",
+      "Keep expression intensity and recording conditions similar; follow the paper for presentation timing."
     ],
-    "measure": "Looking toward the affectively corresponding face and coded smiling.",
-    "limitations": "The jack-in-the-box temperament demonstration is a separate protocol and is not reconstructed here. Original 12-week starting ages remain visible in the label; calendar normalization is not a scientific age equivalence.",
+    "measure": "Looking toward the face that matches the voice’s emotion, along with recorded smiling.",
+    "limitations": "Matching can be affected by familiarity and the quality of the recordings. The starting age has been rounded to three calendar months for scheduling; the original research ages were measured in weeks.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11333071/",
     "references": [
       {
@@ -1714,24 +1714,24 @@ export const studies: Study[] = [
       "value": 35,
       "unit": "months"
     },
-    "name": "Repeated assessment of temperament and frontal EEG",
-    "experiment": "A longitudinal research program combines behavior in unfamiliar situations with recordings of frontal EEG asymmetry.",
-    "findings": "Some temperament patterns show continuity, but trajectories also change; EEG asymmetry is a group-level correlate, not a deterministic label for an individual child.",
-    "concept": "Temperament continuity and change",
+    "name": "Changes in temperament and brain activity over time",
+    "experiment": "This repeated assessment explores how responses to unfamiliar situations relate to patterns of electrical activity at the front of the brain.",
+    "findings": "Some patterns of caution or outgoing behavior persist, while others change. Brain-activity differences seen across groups do not determine an individual child’s personality.",
+    "concept": "Continuity and change in temperament",
     "source": "Continuity and discontinuity of behavioral inhibition and exuberance (2001)",
     "kind": "assessment",
     "materials": [
-      "Research EEG system",
-      "Standardized unfamiliar stimuli",
-      "Behavior-coding videos"
+      "Equipment for recording brain electrical activity (EEG)",
+      "Consistent unfamiliar objects and situations",
+      "Video recording and trained observers"
     ],
     "procedure": [
-      "Professional research description: record baseline EEG with a standardized montage and artifact procedure.",
-      "At repeated ages, observe responses to predefined unfamiliar people, objects or situations with caregiver support and approved distress stopping rules.",
-      "Use blinded coding of approach, avoidance, motor activity and affect; relate these measures across visits rather than classifying a child from one episode."
+      "In a specialist setting, record brain activity during a quiet starting period, following the paper’s sensor placement and signal-quality methods.",
+      "At repeated ages, observe responses to selected unfamiliar people, objects or situations, with caregiver support and clear rules for stopping distress.",
+      "Have observers who do not know the child’s earlier results record approach, avoidance, movement and emotional expression. Compare patterns across visits."
     ],
-    "measure": "Frontal EEG asymmetry and repeated behavioral inhibition/exuberance scores.",
-    "limitations": "The exact nine-month puppet/mask and toddler robot sequence was not verified. The linked longitudinal sample supports continuity and discontinuity, not fixed left/right personality types.",
+    "measure": "Differences in left- and right-frontal brain activity, alongside repeated scores for caution and outgoing behavior.",
+    "limitations": "This is a professional research assessment. The paper provides the exact activities and scoring rules. A single episode or brain recording cannot classify a child’s personality.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/11280472/",
     "references": [
       {
@@ -1750,24 +1750,24 @@ export const studies: Study[] = [
       "value": 10,
       "unit": "months"
     },
-    "name": "Using caregiver emotion in an ambiguous situation",
-    "experiment": "The visual-cliff social-referencing paradigm varies the caregiver’s displayed emotion while the infant considers an apparent drop-off protected by safety glass.",
-    "findings": "In the original study, caregiver emotional displays influenced crossing at an ambiguous apparent depth. Findings vary with setup and locomotor experience.",
-    "concept": "Social referencing under uncertainty",
+    "name": "Using a caregiver’s expression when deciding whether to cross",
+    "experiment": "This study explores whether babies use a caregiver’s emotional expression to guide their behavior when an apparent drop-off is difficult to judge.",
+    "findings": "Caregiver expressions influenced crossing in the study’s uncertain-depth setup. Results vary with the equipment and the baby’s movement experience.",
+    "concept": "Using another person’s emotion for guidance",
     "source": "Maternal emotional signaling and visual-cliff behavior (1985)",
     "kind": "experiment",
     "materials": [
-      "Research safety-glass visual cliff",
-      "Standardized caregiver expressions",
-      "Camera and timer"
+      "A laboratory visual cliff covered by safety glass",
+      "Clearly specified caregiver expressions",
+      "A camera and timer"
     ],
     "procedure": [
-      "Laboratory description only: set a protected apparent drop-off to an ambiguous depth rather than exposing the child to a real fall.",
-      "Position the caregiver across the display and ask them to show an assigned emotion when the infant looks toward them.",
-      "Record referencing, crossing and crossing latency under standardized trial limits; counterbalance conditions as specified in the paper."
+      "In a protected laboratory, set the apparent drop-off at a depth that creates uncertainty. Safety glass prevents an actual fall.",
+      "Position the caregiver across the display and have them show the assigned emotion when the baby looks toward them.",
+      "Record looks toward the caregiver, crossing and time taken to cross, following the paper’s time limits and condition order."
     ],
-    "measure": "Crossing probability and latency after the emotional signal.",
-    "limitations": "The original sample was 12 months, not the listed documentary 9–10-month range. The dangerous-plant prohibition clip was not verified; do not recreate it or infer immediate compliance from temperament.",
+    "measure": "How often babies cross and how long they take after seeing the caregiver’s expression.",
+    "limitations": "The published study tested 12-month-olds; the calendar currently shows a younger 9–10-month range. This setup needs laboratory protection and should not be recreated at home.",
     "sourceUrl": "https://doi.org/10.1037/0012-1649.21.1.195",
     "references": [
       {
@@ -1786,24 +1786,24 @@ export const studies: Study[] = [
       "value": 30,
       "unit": "months"
     },
-    "name": "Observing regulation during frustration",
-    "experiment": "Research assessments code reactions and self-regulatory behavior during brief standardized challenges.",
-    "findings": "Reactivity and regulation vary across infants and ages. Looking away, self-comforting and communication can serve different functions depending on context.",
-    "concept": "Developing regulation and coping",
+    "name": "How babies respond to and manage frustration",
+    "experiment": "This assessment explores how babies react to a brief challenge and what they do to comfort themselves or seek help.",
+    "findings": "Responses vary between babies and across ages. Looking away, self-comforting and communicating may serve different purposes in different situations.",
+    "concept": "Developing ways to manage feelings",
     "source": "The regulation of negative reactivity in infancy (1995)",
     "kind": "assessment",
     "materials": [
-      "Standardized research challenge materials",
+      "Consistent research challenge materials",
       "Video recording",
-      "Trained behavioral coders"
+      "Trained observers"
     ],
     "procedure": [
-      "Professional research description: observe baseline interaction, then use an approved brief challenge with predefined distress stopping criteria.",
-      "The linked study used arm restraint at five months and toy removal at ten months, coding behavior in ten-second intervals.",
-      "Code intensity and timing of distress alongside gaze avoidance, orienting, self-comforting and communication; compare patterns across visits."
+      "In a professional research setting, observe ordinary interaction before a brief approved challenge, using clear rules for stopping distress.",
+      "The linked study used arm restraint at five months and toy removal at ten months, recording behavior in ten-second intervals.",
+      "Record the timing and intensity of distress, looking away, redirecting attention, self-comforting and communication. Compare patterns across visits."
     ],
-    "measure": "Latency and intensity of crying plus frequency and timing of regulatory behaviors.",
-    "limitations": "The exact six/nine-month, tarantula and sealed-bag documentary protocols were not verified; do not deliberately ignore distress or restrain limbs as a home activity. The listed age span covers several distinct observations.",
+    "measure": "Time before crying begins, crying intensity, and the timing and frequency of behaviors used to manage distress.",
+    "limitations": "The published study tested five- and ten-month-olds; the broad calendar range includes other observations. Deliberately restraining limbs or ignoring distress is unsuitable as a home activity.",
     "sourceUrl": "https://doi.org/10.1037/0012-1649.31.3.448",
     "references": [
       {
@@ -1822,25 +1822,25 @@ export const studies: Study[] = [
       "value": 36,
       "unit": "months"
     },
-    "name": "Mirror self-recognition and responses to task outcomes",
-    "experiment": "A mirror-mark task examines self-directed responses to a discreet facial mark; a separate study observes behavior after success or failure on tasks.",
-    "findings": "Self-directed mark touching becomes more common during the second year. Task outcomes can elicit pride- or shame-like displays, but facial/body behavior alone does not prove an internal emotion.",
-    "concept": "Self-recognition and self-evaluative emotion",
+    "name": "Recognizing oneself in a mirror and responding to success",
+    "experiment": "These separate tasks explore whether a child uses a mirror to notice a mark on their own face and how children express themselves after success or failure.",
+    "findings": "Touching a mark on one’s own face becomes more common during the second year. Success and failure can prompt pride- or shame-like behavior, but visible behavior alone does not prove what a child feels.",
+    "concept": "Self-recognition and feelings about one’s own performance",
     "source": "Mirror self-image reactions before age two (1972)",
     "kind": "experiment",
     "materials": [
-      "Mirror",
-      "Skin-safe removable mark with consent",
+      "A mirror",
+      "A skin-safe removable mark, used with consent",
       "Age-appropriate puzzles",
       "Camera"
     ],
     "procedure": [
-      "Adapted mark observation: establish ordinary mirror behavior, apply a small removable mark unobtrusively if tolerated, then present the mirror.",
-      "Distinguish touching the own-face mark from touching the reflection; include a no-mirror comparison to check whether the mark itself is felt.",
-      "The separate success/failure paradigm varies task difficulty and completion outcome, with trained coders assessing posture, gaze and expression; do not engineer humiliating failure at home."
+      "For an adapted mirror observation, first observe normal mirror behavior, then apply a small removable mark without drawing attention to it, if tolerated. Present the mirror again.",
+      "Record whether the child touches their own marked face or the reflection. Include a no-mirror comparison to check whether they can feel the mark.",
+      "The separate task-outcome study varies difficulty and success, with trained observers recording posture, gaze and expression. Do not create humiliating failure as a home activity."
     ],
-    "measure": "Self-directed mark touches; coded behavior after task success and failure.",
-    "limitations": "No universal 18-month pass date. Mirror recognition does not establish that embarrassment is impossible beforehand; the two paradigms are not one experiment.",
+    "measure": "Touching the mark on one’s own face and recorded expressions and posture after success or failure.",
+    "limitations": "There is no universal age for passing the mirror task. Mirror recognition does not determine whether embarrassment is possible. The two activities use different procedures and should be interpreted separately.",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/4679817/",
     "references": [
       {
@@ -1863,24 +1863,24 @@ export const studies: Study[] = [
       "value": 60,
       "unit": "months"
     },
-    "name": "Preschool curriculum and classroom observation",
-    "experiment": "Observe classroom organisation and teaching within a preschool curriculum; this is a curriculum framework rather than a short developmental test.",
-    "findings": "The original video description does not establish effectiveness. A federal evaluation randomly assigned preschool settings to curricula; the 2013 evidence review found no discernible effects for the fourth edition on the academic domains reviewed.",
+    "name": "Observing a preschool classroom",
+    "experiment": "Explore how a classroom’s activity areas and adult support shape children’s opportunities to take part and learn.",
+    "findings": "A federal evaluation compared preschools using different teaching programmes. Its 2013 evidence review found no clear effect of the fourth edition of this curriculum on the academic skills it assessed.",
     "concept": "Classroom environment and guided learning",
     "source": "Effects of Preschool Curriculum Programs on School Readiness (PCER, 2008)",
     "kind": "framework",
     "materials": [
       "Classroom observation sheet",
-      "Description of the curriculum edition",
-      "Consented classroom observation"
+      "Information about the curriculum edition",
+      "Permission to observe the classroom"
     ],
     "procedure": [
-      "Adapted observation: select a normal classroom period and record its duration, available activity areas and teacher-led versus child-selected activities.",
-      "Record concrete examples of adult support, child participation and use of materials without grading individual children.",
-      "Repeat in comparable periods; evaluating curriculum effectiveness requires a comparison design and the published assessment instruments."
+      "Choose a normal classroom period. Note how long you observe, which activity areas are open, and which activities adults or children choose.",
+      "Write down examples of adults helping, children joining activities, and children using materials. Describe what happens without grading individual children.",
+      "Observe similar periods on other days. To test whether a curriculum improves learning, use a comparison group and the assessment tools described in the published evaluation."
     ],
-    "measure": "Descriptions of classroom practices; causal effectiveness requires outcomes from intervention and comparison groups.",
-    "limitations": "No matching publication was established for the supplied video. Do not infer improved learning from a well-organised classroom alone; findings depend on curriculum edition and outcome.",
+    "measure": "The activities and support available to children, and how children take part.",
+    "limitations": "This is a simplified classroom observation, not a test of curriculum effectiveness. The linked evaluation concerns a particular edition and particular learning outcomes; an organised classroom alone does not show that children learned more.",
     "references": [
       {
         "title": "Effects of Preschool Curriculum Programs on School Readiness (PCER, 2008)",
@@ -1903,26 +1903,26 @@ export const studies: Study[] = [
       "value": 24,
       "unit": "months"
     },
-    "name": "Hidden-object search and posture-dependent learning",
-    "experiment": "This course entry combines hidden-object search, locomotor learning and developmental theories; the reproducible component below is an adapted A-not-B search task.",
-    "findings": "Infants may return to a previously rewarded hiding place despite seeing an object moved. Search depends on delay, prior reaches and task context; an error alone does not show absence of object knowledge.",
-    "concept": "Search, memory and action history",
+    "name": "Finding a toy after its hiding place changes",
+    "experiment": "Explore whether a baby searches where a toy was last seen or returns to a place where it was found before.",
+    "findings": "Babies sometimes return to a previously successful hiding place even after watching the toy move. The pause before searching, earlier attempts and the setup can all affect their choice.",
+    "concept": "Remembering a hiding place and changing a search habit",
     "source": "The task dynamics of the A-not-B error (1999)",
     "kind": "experiment",
     "materials": [
-      "Two identical opaque covers",
+      "Two identical covers that hide the toy",
       "One large toy",
-      "Table within comfortable reach",
-      "Video or trial sheet"
+      "A table within comfortable reach",
+      "Video or a trial record sheet"
     ],
     "procedure": [
-      "Adapted demonstration: seat a willing infant securely with two covers equally reachable; show the toy and hide it under cover A in full view.",
-      "Allow retrieval, repeat at A, then visibly hide it at B while keeping cover positions unchanged.",
-      "Record the first reach after the same brief pause on every trial; log the number of A repetitions and delay rather than assuming one universal protocol.",
-      "Compare first choices before and after the switch; stop when the infant disengages."
+      "Seat a willing baby securely with both covers equally easy to reach. Show the toy, then hide it under cover A while the baby watches.",
+      "Let the baby find the toy. Repeat at A, then hide it under cover B in full view without moving the covers.",
+      "Use the same brief pause before each search. Record the first reach, the pause length, and how many times the toy was previously found at A.",
+      "Compare choices before and after the hiding place changes. Stop when the baby loses interest."
     ],
-    "measure": "First search location, retrieval success, delay and prior trial history.",
-    "limitations": "The 0–24-month label is a course coverage span, not a validated task window. Universal grammar and sensorimotor stage theory are not outcomes of this experiment. Precipice tasks need laboratory safeguards.",
+    "measure": "Where the baby first searches, whether the toy is found, and how previous attempts and pauses affect the choice.",
+    "limitations": "This is a simplified version of the published task. The displayed 0–24-month range is broad background coverage, not a validated testing window. A wrong search does not by itself show that a baby believes the toy has stopped existing.",
     "references": [
       {
         "title": "The task dynamics of the A-not-B error (1999)",
@@ -1945,10 +1945,10 @@ export const studies: Study[] = [
       "value": 72,
       "unit": "months"
     },
-    "name": "Conservation, perspective and guided participation",
-    "experiment": "The original entry combines unrelated preschool tasks and cross-cultural observations; below is an adapted liquid-conservation demonstration.",
-    "findings": "Responses to conservation questions depend on wording, context and task demands. Cross-cultural guided-participation research documents variation, rather than a simple contrast between all Mayan and all US children.",
-    "concept": "Conservation and interpretation of social instructions",
+    "name": "Judging whether the amount stays the same",
+    "experiment": "Explore whether a child thinks the amount of water changes when it is poured into a taller, narrower cup.",
+    "findings": "Children’s answers to questions about unchanged amounts can vary with wording, context and the way the task is presented. Separate research on learning with adults also finds differences within and across communities.",
+    "concept": "Understanding unchanged amounts and interpreting questions",
     "source": "Conservation accidents (1974; related number/length task)",
     "kind": "framework",
     "materials": [
@@ -1958,13 +1958,13 @@ export const studies: Study[] = [
       "Tray"
     ],
     "procedure": [
-      "Adapted demonstration: put visibly equal amounts of water in the identical cups and ask whether the amounts are equal.",
-      "In full view pour one amount into the tall cup without adding or spilling water.",
-      "Ask once whether either cup has more and invite an explanation; record the exact wording and response.",
-      "Keep this separate from perspective-taking tasks and from observations of caregiver guidance."
+      "Put visibly equal amounts of water in two identical cups. Ask the child whether the amounts are the same.",
+      "While the child watches, pour one cup into a taller cup without adding or spilling any water.",
+      "Ask once whether either cup has more water and invite the child to explain. Record the exact question and answer.",
+      "Treat this as a separate activity from tasks about another person’s viewpoint or observations of how adults guide learning."
     ],
-    "measure": "Judgement before and after transfer and the child’s explanation.",
-    "limitations": "The source of the space-station task and exact liquid protocol was not verified. The linked conservation paper studied number and length, not this liquid adaptation. The guided-participation paper involved 12–24-month-olds, outside this row’s preschool span.",
+    "measure": "Whether the child judges the amounts as equal before and after pouring, and the explanation given.",
+    "limitations": "This is an adapted demonstration. The linked conservation paper tested unchanged numbers and lengths, rather than this water activity. The separate paper on learning with adults studied 12–24-month-olds, outside the displayed preschool range.",
     "references": [
       {
         "title": "Conservation accidents (1974; related number/length task)",
@@ -1987,10 +1987,10 @@ export const studies: Study[] = [
       "value": 72,
       "unit": "months"
     },
-    "name": "Preschool drawing and body-proportion observation",
-    "experiment": "Observe drawing and comfortable self-directed movements over time; this is not a validated assessment of myelination.",
-    "findings": "Drawing and motor control vary with practice, opportunities, task demands and development. The supplied claims that an opposite-ear reach is achieved at age three and that squiggles directly measure incomplete myelination were not verified.",
-    "concept": "Fine-motor development and individual variation",
+    "name": "How drawing changes over time",
+    "experiment": "Explore how a child’s grip, marks and control change through repeated opportunities to draw.",
+    "findings": "Drawing can change with practice, materials, interest and development. Drawing marks or reaching for an ear cannot directly show how the brain’s nerve coverings are developing.",
+    "concept": "Hand control and individual differences",
     "source": "Original course/video observation; matching publication not established",
     "kind": "observation",
     "materials": [
@@ -1999,12 +1999,12 @@ export const studies: Study[] = [
       "Dated observation notes"
     ],
     "procedure": [
-      "Adapted observation: offer paper and crayons during a brief voluntary drawing period with the same materials at later visits.",
-      "Ask the child to draw freely; record grip, marks, effort and any explanation without directing the hand.",
-      "Compare dated samples over weeks or months and describe observable changes. Do not force an arm over the head or score an ear-touch manoeuvre as a developmental pass/fail."
+      "Offer paper and suitable crayons for a short, voluntary drawing session. Use the same materials when observing again.",
+      "Let the child draw freely. Record grip, marks, effort and anything the child says, without guiding the hand.",
+      "Compare dated samples over weeks or months and describe changes. Keep movements comfortable; do not force an arm over the head or use an ear-touch movement as a pass-or-fail test."
     ],
-    "measure": "Observable mark-making, grip changes and task engagement.",
-    "limitations": "No matching published experimental protocol was identified from the supplied course title. This activity cannot measure brain myelination or diagnose developmental stage.",
+    "measure": "Changes in grip, marks, control and willingness to keep drawing.",
+    "limitations": "This is a general observation activity with no verified matching published experiment. It cannot measure myelination—the development of protective coverings around nerve fibres—or determine a child’s developmental stage.",
     "references": []
   },
   {
@@ -2017,10 +2017,10 @@ export const studies: Study[] = [
       "value": 72,
       "unit": "months"
     },
-    "name": "Social participation during preschool play",
-    "experiment": "Use time-sampled observation to describe how a child participates in free play. Parenting-style and gender-role claims from the original composite entry require separate evidence.",
-    "findings": "Children can show solitary, parallel and collaborative play within the same period. These categories describe participation and should not be treated as a fixed ladder every child passes through on schedule.",
-    "concept": "Social play and context",
+    "name": "How children join in with play",
+    "experiment": "Explore how a child plays alone, alongside others or together with them during ordinary free play.",
+    "findings": "A child may play alone, alongside peers and cooperatively within the same session. These describe different ways of taking part, rather than a fixed sequence that every child follows at set ages.",
+    "concept": "Taking part in social play",
     "source": "Social play among preschool children (1933)",
     "kind": "observation",
     "materials": [
@@ -2029,13 +2029,13 @@ export const studies: Study[] = [
       "Observation sheet"
     ],
     "procedure": [
-      "Published-method summary: observe each child during normal free play in one-minute samples across multiple days.",
-      "Code whether the child is unoccupied, watching others, playing alone, alongside peers, associating with peers, or coordinating shared activity.",
-      "Record materials, group size and adult involvement; use the same definitions for every observation.",
-      "Summarise the frequency of each category across samples rather than classifying the child from one episode."
+      "Observe each child during normal free play in one-minute samples across several days, following the published observation approach.",
+      "For each sample, note whether the child is unoccupied, watching others, playing alone, playing alongside peers, sharing an activity, or working towards a shared goal.",
+      "Record the toys, group size and adult involvement. Use the same category definitions each time.",
+      "Count how often each type of play appears across the samples. Avoid judging a child from a single episode."
     ],
-    "measure": "Proportion of observation samples in each play category.",
-    "limitations": "This is observational, not evidence that parenting style caused play behaviour. The supplied gender-role interview and parenting claims lacked a matching protocol and have been removed from the findings.",
+    "measure": "The share of observation samples spent in each type of play.",
+    "limitations": "Observation describes behaviour but cannot show that a parenting style caused it. The linked play study does not provide evidence for a separate parenting assessment or gender-role interview.",
     "references": [
       {
         "title": "Social play among preschool children (1933)",
@@ -2054,25 +2054,25 @@ export const studies: Study[] = [
       "value": 3,
       "unit": "months"
     },
-    "name": "Tracking face-like visual patterns",
-    "experiment": "Compare visual tracking of face-like, scrambled and blank patterns; the precise demonstration in the supplied video is not verified.",
-    "findings": "Published work found newborn preferential tracking of some face-like patterns, with changes over subsequent months. Behaviour alone does not establish a sharp transition from subcortical to cortical control.",
-    "concept": "Visual orientation and pattern preference",
+    "name": "Following face-like patterns with the eyes",
+    "experiment": "Explore whether a baby follows a face-like pattern differently from a scrambled pattern or a blank card.",
+    "findings": "Published research found that newborns followed some face-like patterns more than comparison patterns, with responses changing over the following months. These movements alone cannot identify which brain areas control attention.",
+    "concept": "Looking towards and following visual patterns",
     "source": "Newborns’ preferential tracking of face-like stimuli and its subsequent decline (1991)",
     "kind": "experiment",
     "materials": [
-      "Matched face-like and scrambled high-contrast cards",
-      "Blank control card",
+      "Matching high-contrast face-like and scrambled-pattern cards",
+      "Blank comparison card",
       "Camera"
     ],
     "procedure": [
-      "Adapted demonstration: when the infant is awake and calm, present a card centrally at a comfortable viewing distance.",
-      "Move each card slowly through the same horizontal path without touching or turning the infant’s head.",
-      "Vary presentation order and match card size and contrast; record how far the eyes or head follow and whether the infant is attentive.",
-      "Repeat under comparable conditions; exact distances, speeds and trial counts require the original article."
+      "For this simplified activity, present a card centrally at a comfortable viewing distance while the baby is awake and calm.",
+      "Move each card slowly along the same horizontal path. Do not touch or turn the baby’s head.",
+      "Vary the order of the cards and match their size and contrast. Record how far or how long the eyes or head follow, and whether the baby is attentive.",
+      "Repeat under similar conditions. Use the published article for the exact distances, speeds and number of presentations needed to repeat the study."
     ],
-    "measure": "Tracking distance or duration by stimulus type.",
-    "limitations": "The linked experiments are related original research, not confirmation of the named video infants or its 10-day/6-week contrast. Sensory state, contrast and positioning affect responses.",
+    "measure": "How far or how long the baby follows each kind of card.",
+    "limitations": "The linked research does not establish a precise change between 10 days and six weeks, or a sharp switch between brain systems. Alertness, contrast and card position can affect responses. The activity above is adapted from the research.",
     "references": [
       {
         "title": "Newborns’ preferential tracking of face-like stimuli and its subsequent decline (1991)",
@@ -2091,25 +2091,25 @@ export const studies: Study[] = [
       "value": 8,
       "unit": "months"
     },
-    "name": "Hidden objects: looking and search",
-    "experiment": "Compare looking at possible and apparently impossible occlusion events; separate this from the motor task of retrieving a toy.",
-    "findings": "The original rabbit studies reported longer looking at certain unexpected events around 3.5 months. Looking and manual search place different demands on infants and do not establish one universal object-permanence age.",
-    "concept": "Occlusion expectations and manual search",
+    "name": "Expecting a hidden object to reappear",
+    "experiment": "Explore whether a baby expects a tall figure to be visible through a window as it moves behind a screen. Searching for a hidden toy is a separate activity.",
+    "findings": "In the rabbit studies, babies around 3.5 months looked longer at certain unexpected events. Looking at an event and reaching for a hidden toy require different skills, so they do not establish one universal age for understanding hidden objects.",
+    "concept": "Expectations about hidden objects and searching",
     "source": "Object permanence in young infants: further evidence (1991)",
     "kind": "experiment",
     "materials": [
-      "Matched tall and short figures",
-      "Opaque screen with a high window",
-      "Controlled stage and video coding"
+      "Matching tall and short figures",
+      "A screen with a high window",
+      "Controlled stage and video recording"
     ],
     "procedure": [
-      "Published-paradigm summary: familiarise infants with a tall and short figure travelling behind a screen.",
-      "Present a windowed screen through which the tall figure would normally be visible; use controlled staging so it fails to appear.",
-      "Compare looking at tall-figure and short-figure events, balancing order and matching timing.",
-      "For a separate adapted search observation, visibly cover a reachable toy with a cloth and record the first search action; never combine this response with looking time into one pass/fail score."
+      "In the published approach, let babies watch a tall and a short figure travelling behind a screen.",
+      "Use a screen with a window high enough that the tall figure should be visible. Arrange the stage so that it unexpectedly fails to appear.",
+      "Compare how long babies look at events involving the tall and short figures. Vary the presentation order and keep the timing the same.",
+      "For a separate, simplified search activity, visibly cover a reachable toy with a cloth and record the baby’s first search action. Record search and looking responses separately."
     ],
-    "measure": "Looking duration to occlusion outcomes; separately, search attempts and retrieval success.",
-    "limitations": "The 2.5–8-month label combines several demonstrations; the verified rabbit paper does not support every age or the 18-month shell-game claim. Exact habituation and trial criteria require the paper.",
+    "measure": "Time spent looking at each event; separately, attempts to search and success finding a toy.",
+    "limitations": "The displayed age range covers several types of demonstration, rather than one verified protocol. The rabbit paper does not support every age in that range. Repeating the experiment requires the paper’s rules for repeated viewing, ending trials and scoring looking.",
     "references": [
       {
         "title": "Object permanence in young infants: further evidence (1991)",
@@ -2132,26 +2132,26 @@ export const studies: Study[] = [
       "value": 9,
       "unit": "months"
     },
-    "name": "Small-number outcomes behind a screen",
-    "experiment": "Infants watch objects added to or removed from a hidden set, then view an expected or unexpected final display.",
-    "findings": "The original study reported longer looking at some unexpected small-set outcomes. This is compatible with object tracking and does not by itself establish adult-like arithmetic or innate mathematical laws.",
-    "concept": "Small-set expectations and object tracking",
+    "name": "Watching objects added or removed behind a screen",
+    "experiment": "Explore whether babies look differently when the number of objects revealed behind a screen fits what they just watched.",
+    "findings": "Babies in the study looked longer at some unexpected results involving small groups of objects. Tracking individual objects could help explain this response; the result alone does not establish adult-like arithmetic or inborn mathematical laws.",
+    "concept": "Expectations about small groups of objects",
     "source": "Addition and subtraction by human infants (1992)",
     "kind": "experiment",
     "materials": [
       "Two identical figures",
-      "Occluding screen",
+      "A screen that hides the figures",
       "Controlled stage",
-      "Video looking-time coding"
+      "Video for measuring looking time"
     ],
     "procedure": [
-      "Published-paradigm summary: display one figure, raise a screen and visibly add a second figure behind it.",
-      "Lower the screen to reveal one or two figures while holding movement and timing constant.",
-      "In a separate subtraction condition begin with two figures, screen them and visibly remove one.",
-      "Alternate one- and two-object outcomes across six test presentations; counterbalance initial outcome and score looking without knowledge of condition."
+      "Show one figure, raise the screen, and visibly add a second figure behind it.",
+      "Lower the screen to reveal one or two figures. Keep the movements and timing the same across these outcomes.",
+      "In a separate subtraction version, start with two figures, hide them behind the screen and visibly remove one.",
+      "Alternate one- and two-figure outcomes across six test presentations. Vary which outcome comes first, and have someone unaware of the condition measure looking time."
     ],
-    "measure": "Looking duration for expected versus unexpected outcomes.",
-    "limitations": "The landmark paper tested five-month-olds, whereas the supplied row says six to nine months. The separate ramp/barrier demonstration remains unmatched; it is not reproduced by this number task.",
+    "measure": "Time spent looking at outcomes that match or differ from the visible addition or removal.",
+    "limitations": "The landmark paper tested five-month-olds, while this calendar entry spans six to nine months. A looking-time difference is a research finding across participants, not an arithmetic test for an individual baby.",
     "references": [
       {
         "title": "Addition and subtraction by human infants (1992)",
@@ -2174,26 +2174,26 @@ export const studies: Study[] = [
       "value": 30,
       "unit": "months"
     },
-    "name": "Quantity discrimination, counting and cloth-tool exploration",
-    "experiment": "This composite entry contains three different tasks; the strongest verified link is large-set visual discrimination in six-month-olds.",
-    "findings": "Six-month-olds distinguished arrays of 8 versus 16 objects under controlled conditions but not 8 versus 12. Reciting a number list is different from understanding cardinal quantity; successful cloth pulling also depends on experience and setup.",
-    "concept": "Quantity, cardinality and means–end action",
+    "name": "Noticing quantities, giving a number and using a cloth",
+    "experiment": "Explore three different skills: noticing a change in a group of dots, giving a requested number of objects, and pulling a cloth to bring a toy closer.",
+    "findings": "Under controlled conditions, six-month-olds distinguished 8 from 16 objects but not 8 from 12. Saying number words differs from knowing how many objects a word represents. Cloth pulling also depends on experience and the setup.",
+    "concept": "Noticing quantity, understanding how many, and using a means to reach a goal",
     "source": "Large number discrimination in 6-month-old infants (2000)",
     "kind": "experiment",
     "materials": [
-      "Controlled dot-array images",
-      "Video looking-time setup",
+      "Controlled images of dot groups",
+      "Video for measuring looking time",
       "Large safe counters",
       "Cloth and large toy"
     ],
     "procedure": [
-      "Published-paradigm summary: familiarise infants with repeated arrays of one numerosity, varying object size and arrangement.",
-      "Test familiar and novel numerosities while controlling total area, element size, density and other continuous cues; compare looking.",
-      "Separate adapted counting observation: ask a willing toddler for a small number of counters and record the number given without coaching.",
-      "Separate adapted cloth observation: place a toy on a reachable cloth and record whether the child pulls the cloth to retrieve it; record any demonstration given."
+      "For the published dot task, show repeated images containing the same number of dots while varying dot size and arrangement.",
+      "Test a familiar and a new number of dots. Control total area, individual dot size, spacing and other visible differences, then compare looking time.",
+      "For a separate adapted counting activity, ask a willing toddler to give a small number of counters. Record how many are given without coaching.",
+      "For a separate adapted cloth activity, place a toy on a reachable cloth. Record whether the child pulls the cloth to get the toy, and whether an adult demonstrated first."
     ],
-    "measure": "Looking to novel arrays; separately, number given and spontaneous versus demonstrated tool retrieval.",
-    "limitations": "This is not one unified protocol. A two-to-one visual ratio is a finding under particular controls, not a universal infant threshold. Sources for the exact cracker and 8-/11-month cloth demonstrations were not established.",
+    "measure": "Looking at changed dot quantities; separately, the number of counters given and whether cloth pulling happens before or after a demonstration.",
+    "limitations": "These are separate activities. The two-to-one difference in quantity was detectable under particular research controls, not a universal threshold. The exact counting and eight-/eleven-month cloth demonstrations have no verified matching sources here; those activities are labelled as adaptations.",
     "references": [
       {
         "title": "Large number discrimination in 6-month-old infants (2000)",
@@ -2212,10 +2212,10 @@ export const studies: Study[] = [
       "value": 19,
       "unit": "months"
     },
-    "name": "Planning a spoon grasp",
-    "experiment": "Present a handled spoon with alternating orientations and observe whether the child plans an efficient grasp.",
-    "findings": "Age groups differed in how they grasped and corrected the spoon; older children more often selected an efficient orientation in advance. This does not imply that every child changes strategy at the same age.",
-    "concept": "Motor planning and tool orientation",
+    "name": "Choosing a useful grip on a spoon",
+    "experiment": "Explore whether a child chooses a grip that makes a spoon easy to use before picking it up.",
+    "findings": "Older children in the study more often chose a useful spoon position in advance, while younger children more often adjusted it after grasping. Children do not all change strategy at the same age.",
+    "concept": "Planning a hand movement before using a tool",
     "source": "Problem solving in infancy: the emergence of an action plan (1999)",
     "kind": "experiment",
     "materials": [
@@ -2224,13 +2224,13 @@ export const studies: Study[] = [
       "Table and video recording"
     ],
     "procedure": [
-      "Published-paradigm summary: seat the child comfortably and present the spoon containing food with its handle oriented alternately left and right.",
-      "Allow a spontaneous grasp without positioning the child’s hand.",
-      "Record hand chosen, where the spoon is grasped, whether the bowl is oriented towards the mouth and any later correction.",
-      "Use comparable left- and right-handle presentations; consult the paper for exact trial sequence."
+      "Seat the child comfortably and present a spoon containing food, with its handle pointing alternately left and right.",
+      "Let the child choose a grip without positioning the hand.",
+      "Record the hand used, the part of the spoon grasped, whether the bowl points towards the mouth, and any adjustments afterwards.",
+      "Offer comparable left- and right-handle presentations. Use the paper for the exact number and order of trials."
     ],
-    "measure": "Initial grip orientation, hand selection, later reorientation and successful use.",
-    "limitations": "The published spoon task involved 9-, 14- and 19-month-olds. The original row’s flexible-handrail task is a distinct laboratory study not verified here; do not attempt elevated bridge tests at home.",
+    "measure": "The first grip, hand chosen, later adjustments, and whether the spoon is used successfully.",
+    "limitations": "The published task compared 9-, 14- and 19-month-olds. The exact number and order of trials must come from the paper. Differences between groups do not set a deadline for an individual child.",
     "references": [
       {
         "title": "Problem solving in infancy: the emergence of an action plan (1999)",
@@ -2249,10 +2249,10 @@ export const studies: Study[] = [
       "value": 18,
       "unit": "months"
     },
-    "name": "Responding to another person’s food preference",
-    "experiment": "An adult expresses enjoyment for one food and dislike for another, then asks the child to offer some food.",
-    "findings": "In the original study, 18-month-olds were more likely than 14-month-olds to offer the food the adult had enjoyed even when it differed from their own preference. This supports early sensitivity to another person’s desire under those conditions.",
-    "concept": "Desire attribution and preference differences",
+    "name": "Offering food that another person likes",
+    "experiment": "Explore whether a child offers food according to an adult’s expressed preference, even when the child prefers something else.",
+    "findings": "Eighteen-month-olds were more likely than fourteen-month-olds to offer the food the adult had enjoyed, including when the adult’s preference differed from their own. This supports early awareness that another person can want something different.",
+    "concept": "Understanding different preferences",
     "source": "Early reasoning about desires: evidence from 14- and 18-month-olds (1997)",
     "kind": "experiment",
     "materials": [
@@ -2261,13 +2261,13 @@ export const studies: Study[] = [
       "Video or choice record"
     ],
     "procedure": [
-      "Published-paradigm summary: establish which of the two foods the child prefers.",
-      "Have the adult taste both and express clear enjoyment for one and dislike for the other; compare conditions where this agrees or conflicts with the child’s preference.",
-      "Place both foods within reach and have the adult make the same general request for some food without naming either food.",
-      "Record the first food offered, any refusal and the adult’s exact expressions and request."
+      "First establish which of two foods the child prefers.",
+      "Have the adult taste both foods and clearly show enjoyment for one and dislike for the other. Compare situations where the adult agrees or disagrees with the child’s preference.",
+      "Place both foods within reach. Have the adult make the same general request for some food without naming either option.",
+      "Record the first food offered, any refusal, and the adult’s exact words and expressions."
     ],
-    "measure": "First offered food relative to adult and child preferences.",
-    "limitations": "The verified study compared 14 and 18 months; the original row’s 5–18-month span and cloth-gesture component combine unrelated tasks. Food choice, familiarity and social cues affect performance; use suitable foods and usual feeding supervision.",
+    "measure": "Which food the child first offers compared with the adult’s and child’s preferences.",
+    "limitations": "The verified study compared fourteen- and eighteen-month-olds, rather than the full displayed five-to-eighteen-month range. Familiarity, food choice and social cues can affect performance; use suitable foods with usual feeding supervision.",
     "references": [
       {
         "title": "Early reasoning about desires: evidence from 14- and 18-month-olds (1997)",
@@ -2286,26 +2286,26 @@ export const studies: Study[] = [
       "value": 7.25,
       "unit": "months"
     },
-    "name": "Remembering a mobile with periodic reminders",
-    "experiment": "In a longitudinal laboratory paradigm, infants learned that kicking moved a mobile and received reminders before later retention tests.",
-    "findings": "With reminders, some infants retained the trained association over several months. This shows retention under a supported learning history, not how long an unprompted everyday memory lasts.",
-    "concept": "Longitudinal memory and reminders",
+    "name": "Remembering a mobile after reminders",
+    "experiment": "Explore how long babies remember that kicking can move a mobile when they receive reminders over several months.",
+    "findings": "Some babies remembered the trained connection over several months when reminders were provided. This describes memory supported by repeated reminders, rather than how long an everyday event is remembered without reminders.",
+    "concept": "Memory over time and the effect of reminders",
     "source": "Long-term maintenance of infant memory (1999)",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/10461123/",
     "kind": "experiment",
     "materials": [
-      "Research mobile apparatus",
-      "Response recording",
-      "Scheduled reminder and test visits"
+      "Supervised research mobile equipment",
+      "Equipment for recording kicks",
+      "Schedule for reminders and test visits"
     ],
     "procedure": [
-      "Published-method summary: measure baseline kicking before contingent training with an overhead mobile.",
-      "Train the association between kicking and mobile movement; at retention tests record responding when the contingency is absent.",
-      "In the longitudinal experiment beginning at two months, provide reminders every three weeks through 6.5 months and test finally at 7.25 months.",
-      "Compare responding with original baseline and appropriate untrained or reminder controls; use the paper for exact training and reminder durations."
+      "Measure how often babies kick before teaching them that kicks make an overhead mobile move.",
+      "Teach the connection, then later test memory by recording kicks while kicking no longer controls the mobile.",
+      "In the experiment beginning at two months, give reminders every three weeks through 6.5 months and test again at 7.25 months.",
+      "Compare later kicking with the baby’s initial rate and with suitable groups that did not receive the same training or reminders. Use the paper for the exact training and reminder lengths."
     ],
-    "measure": "Kicking rate relative to baseline and retention across scheduled visits.",
-    "limitations": "The reminder and control schedule matters. This is a supervised research apparatus, not instructions for attaching a ribbon to a baby or cot at home. Exact apparatus and scoring details require the paper.",
+    "measure": "Changes in kicking rate from before training, and how long the learned response lasts across visits.",
+    "limitations": "The timing and type of reminders affect the result. This procedure uses supervised research equipment: do not attach a ribbon to a baby or cot at home. The paper provides the exact equipment and scoring details.",
     "references": [
       {
         "title": "Long-term maintenance of infant memory (1999)",
@@ -2323,26 +2323,26 @@ export const studies: Study[] = [
       "value": 4,
       "unit": "months"
     },
-    "name": "Supported reaching with sticky mittens",
-    "experiment": "Pre-reaching infants explored light objects using mittens that temporarily attached to prepared toys, then completed an object-exploration assessment.",
-    "findings": "The original experienced group showed more object engagement and exploration than the comparison group. Later work has found variable motor effects; this is not an established developmental treatment.",
-    "concept": "Experience, reaching and exploration",
+    "name": "Exploring objects with sticky mittens",
+    "experiment": "Explore whether helping babies pick up light toys before they can grasp them independently changes their later interest in objects.",
+    "findings": "Babies who used sticky mittens in the study showed more interest in and exploration of objects than the comparison group. Later studies found varying effects on movement skills, so this is not an established developmental treatment.",
+    "concept": "Learning through early reaching and exploration",
     "source": "A pick-me-up for infants’ exploratory skills (2002)",
     "sourceUrl": "https://doi.org/10.1016/S0163-6383(02)00097-8",
     "kind": "experiment",
     "materials": [
-      "Research mittens and prepared lightweight toys",
-      "Supported seated setup",
-      "Video and session log"
+      "Research mittens and matching lightweight toys",
+      "Supported seating",
+      "Video and session record"
     ],
     "procedure": [
-      "Published-method summary: give the infant 10–14 supervised play sessions of ten minutes with mittens and matching toys.",
-      "Allow contact to bring toys within reach rather than forcing arm movements; record completed sessions.",
-      "After training, present comparable exploration tasks to trained and age-matched untrained infants.",
-      "Code looking, contacting and exploration from video using consistent definitions; match posture and toy availability."
+      "Give babies 10–14 supervised play sessions lasting ten minutes, using the research mittens and matching toys.",
+      "Allow contact with a toy to bring it within reach. Do not force arm movements, and record completed sessions.",
+      "After the sessions, offer the same exploration tasks to babies who used the mittens and babies of the same age who did not.",
+      "From video, record looking, touching and ways of exploring. Use the same definitions, seating and toy access for both groups."
     ],
-    "measure": "Object-directed looking, contact and exploration strategies after the training period.",
-    "limitations": "Exact mitten design and outcome coding require the article. Contact-aided grasping differs from ordinary grasping; follow-up findings do not support promising that this accelerates normal development.",
+    "measure": "Looking at, touching and exploring objects after the play sessions.",
+    "limitations": "Use the article for the mitten design and exact scoring method. Picking up a toy through a sticky contact differs from grasping it with the hand. The evidence does not support promising that mittens speed up normal development.",
     "references": [
       {
         "title": "A pick-me-up for infants’ exploratory skills (2002)",
@@ -2356,27 +2356,27 @@ export const studies: Study[] = [
       "value": 4,
       "unit": "months"
     },
-    "name": "Perceiving a partly hidden object as a whole",
-    "experiment": "Infants see a rod whose middle is obscured, then view complete and separated versions after familiarisation.",
-    "findings": "Four-month-olds in some motion conditions responded as though the visible ends belonged to one object. Stationary aligned parts did not produce the same evidence in the original experiments.",
-    "concept": "Object unity and motion cues",
+    "name": "Seeing two visible parts as one hidden object",
+    "experiment": "Explore whether a baby treats the visible ends of a moving rod as parts of one object when its middle is hidden.",
+    "findings": "In some movement conditions, four-month-olds responded as if the rod’s visible ends belonged to one object. The study did not find the same evidence when the aligned parts stayed still.",
+    "concept": "Using movement to recognise a whole object",
     "source": "Perception of partly occluded objects in infancy (1983)",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/6641127/",
     "kind": "experiment",
     "materials": [
-      "Rod or controlled rod animation",
-      "Central occluder",
-      "Whole-rod and broken-rod test displays",
-      "Video coding"
+      "Rod or controlled animation of a rod",
+      "Block hiding the rod’s middle",
+      "Complete-rod and separated-piece displays",
+      "Video for measuring looking time"
     ],
     "procedure": [
-      "Published-paradigm summary: show the top and bottom of a rod moving together laterally behind a stationary central block.",
-      "Continue to the paper’s habituation criterion, recording looking throughout.",
-      "Remove the occluder and present complete-rod and separated-piece test displays with matched motion.",
-      "Counterbalance test order and compare novelty responses; include comparison conditions with different motion relationships."
+      "Show the top and bottom of a rod moving sideways together behind a stationary block.",
+      "Keep recording looking time as the baby becomes familiar with the display. Use the paper’s rule for when looking has decreased enough to begin testing.",
+      "Remove the block and show a complete rod and two separated pieces, using matching movement.",
+      "Vary which test display comes first and compare the response to each. Include comparison displays in which the visible parts move differently."
     ],
-    "measure": "Looking-time recovery to a complete rod versus separated pieces.",
-    "limitations": "Exact sizes, movement speed and habituation rules are necessary for replication and must be taken from the article. Looking-time differences are group evidence, not an individual vision test.",
+    "measure": "The increase in looking when the baby sees a complete rod or separated pieces after familiarisation.",
+    "limitations": "Repeating the research requires the article’s exact sizes, movement speed and rules for measuring decreasing attention. Differences across a group of babies do not provide an individual vision test.",
     "references": [
       {
         "title": "Perception of partly occluded objects in infancy (1983)",
@@ -2390,26 +2390,26 @@ export const studies: Study[] = [
       "value": 5,
       "unit": "months"
     },
-    "name": "Learning rhythm through matching sights and sounds",
-    "experiment": "Compare responses to a rhythm change after synchronous audiovisual, unimodal or asynchronous presentation of a tapping event.",
-    "findings": "Five-month-olds detected a rhythm change after synchronous audiovisual familiarisation; unimodal and asynchronous conditions did not show the same evidence in these experiments.",
-    "concept": "Multisensory rhythm learning",
+    "name": "Learning a rhythm from matching sights and sounds",
+    "experiment": "Explore whether seeing and hearing taps together helps babies notice a change in rhythm.",
+    "findings": "Five-month-olds noticed a rhythm change after seeing and hearing taps that matched in time. The experiments did not find the same evidence when taps were only seen, only heard, or seen and heard out of time.",
+    "concept": "Learning from sight and sound together",
     "source": "Intersensory redundancy guides attentional selectivity and perceptual learning in infancy (2000)",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/10749076/",
     "kind": "experiment",
     "materials": [
-      "Controlled hammer-tapping film and soundtracks",
-      "Synchronized playback",
-      "Video looking-time coding"
+      "Controlled video and sound recordings of a toy hammer tapping",
+      "Playback that can keep sound and picture in time",
+      "Video for measuring looking time"
     ],
     "procedure": [
-      "Published-paradigm summary: habituate an infant to a film of a toy hammer tapping one rhythm.",
-      "Assign separate groups to matching sight-and-sound, sight-only, sound-only or asynchronous conditions.",
-      "After habituation and no-change trials, introduce a new rhythm while retaining other event features.",
-      "Compare visual recovery at test with posthabituation looking; use the original stimuli and trial-ending rules for replication."
+      "Show a baby a film of a toy hammer tapping one rhythm until looking has decreased enough to meet the paper’s familiarisation rule.",
+      "Give different groups matching sights and sounds, sight alone, sound alone, or sights and sounds that do not match in time.",
+      "After familiarisation and trials with no change, introduce a different rhythm while keeping the other event features the same.",
+      "Compare looking at the changed rhythm with looking just before the change. Use the study’s recordings and rules for ending trials to repeat the experiment."
     ],
-    "measure": "Increase in looking at the changed rhythm relative to no-change baseline.",
-    "limitations": "A spontaneous response to everyday clapping is an adaptation, not this controlled test. Sound level, synchrony and habituation criteria must be controlled.",
+    "measure": "How much looking increases when the rhythm changes.",
+    "limitations": "Everyday clapping is a simpler adaptation of this controlled experiment. Sound level, timing between sound and picture, and the rules for familiarisation need to be controlled for the published test.",
     "references": [
       {
         "title": "Intersensory redundancy guides attentional selectivity and perceptual learning in infancy (2000)",
@@ -2427,26 +2427,26 @@ export const studies: Study[] = [
       "value": 9,
       "unit": "months"
     },
-    "name": "Discriminating human and monkey faces",
-    "experiment": "Different age groups are familiarised with a face and then view that face paired with a new face of the same species.",
-    "findings": "Six-month-olds showed discrimination of individuals from both species; nine-month-olds and adults showed evidence for human faces only under the tested conditions.",
-    "concept": "Experience and perceptual narrowing",
+    "name": "Telling human and monkey faces apart",
+    "experiment": "Explore whether babies recognise a face they have already seen when it appears beside a different face.",
+    "findings": "Six-month-olds showed evidence of telling individuals apart in both human and monkey photographs. Nine-month-olds and adults showed evidence for human faces only in the conditions tested.",
+    "concept": "How experience shapes recognition of faces",
     "source": "Is face processing species-specific during the first year of life? (2002)",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/12016317/",
     "kind": "experiment",
     "materials": [
-      "Matched human and monkey face photographs",
-      "Controlled paired display",
-      "Looking-time recording"
+      "Matching sets of human and monkey face photographs",
+      "Controlled side-by-side display",
+      "Video for measuring looking time"
     ],
     "procedure": [
-      "Published-paradigm summary: test human and monkey identities in separate controlled conditions.",
-      "Familiarise the observer with one face, then present it beside a novel face of the same species.",
-      "Counterbalance the novel face’s side and compare looking at novel and familiar faces.",
-      "Compare results across six-month, nine-month and adult groups; use the paper’s exposure durations and photo sets for exact replication."
+      "Use separate human-face and monkey-face conditions.",
+      "Let the observer become familiar with one face, then show it beside a new face of the same species.",
+      "Vary which side the new face appears on. Compare time spent looking at the familiar and new faces.",
+      "Compare six-month-old, nine-month-old and adult groups. Use the paper’s photographs and exposure times to repeat the test exactly."
     ],
-    "measure": "Novel-face looking as a proportion of total face looking.",
-    "limitations": "This is a cross-sectional comparison, not evidence that each tested infant lost an ability. Exposure history and stimulus details matter; the age list is not a continuous developmental deadline.",
+    "measure": "The share of total face-looking time spent looking at the new face.",
+    "limitations": "The study compared different age groups, rather than following the same babies as they grew. Face exposure and photograph details matter; the ages do not set a deadline for an individual baby.",
     "references": [
       {
         "title": "Is face processing species-specific during the first year of life? (2002)",
@@ -2460,26 +2460,26 @@ export const studies: Study[] = [
       "value": 8,
       "unit": "months"
     },
-    "name": "Finding repeated syllable groups in speech",
-    "experiment": "Infants listen to an artificial speech stream and then hear syllable sequences with different statistical histories.",
-    "findings": "After two minutes, eight-month-olds responded differently to familiar word-like units and comparison sequences, consistent with learning distributional regularities.",
-    "concept": "Speech segmentation and statistical learning",
+    "name": "Finding repeated groups of speech sounds",
+    "experiment": "Explore whether babies can pick out recurring syllable groups from a stream of made-up speech with no pauses between words.",
+    "findings": "After two minutes, eight-month-olds listened differently to familiar word-like groups and to comparison groups. This suggests they learned which syllables tended to occur together.",
+    "concept": "Learning sound patterns that may help identify words",
     "source": "Statistical learning by 8-month-old infants (1996)",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/8943209/",
     "kind": "experiment",
     "materials": [
-      "Original artificial-language recordings",
-      "Quiet listening setup",
-      "Head-turn preference apparatus or coded looking video"
+      "The study’s made-up-language recordings",
+      "Quiet listening area",
+      "Head-turn recording setup or suitable video"
     ],
     "procedure": [
-      "Published-method summary: play a continuous artificial speech stream for two minutes with no pauses marking word boundaries.",
-      "At test, present repeated three-syllable units from the stream and comparison units spanning boundaries, keeping acoustic presentation comparable.",
-      "Use the head-turn preference procedure to measure how long the infant maintains orientation while each sequence plays.",
-      "Counterbalance artificial-language assignment and test order; use original recordings and stopping rules for replication."
+      "Play two minutes of continuous made-up speech with no pauses marking word boundaries.",
+      "At test, play recurring three-syllable groups and comparison groups that cross the boundaries between them. Keep other sound features comparable.",
+      "Measure how long the baby stays turned towards the sound while each sequence plays, using the study’s head-turn preference method.",
+      "Vary which made-up language each baby hears and the order of test items. Use the recordings and rules for ending trials from the study."
     ],
-    "measure": "Listening duration for trained units versus boundary-spanning comparison units.",
-    "limitations": "Casual listening does not reproduce the controlled phonetic and probability structure. Group preference is evidence of learning, not proof of vocabulary comprehension.",
+    "measure": "Listening time for recurring syllable groups compared with groups that cross word boundaries.",
+    "limitations": "The recordings carefully control speech sounds and the chance of syllables occurring together. Ordinary listening does not repeat those controls. A group difference in listening does not show that babies understand the meaning of words.",
     "references": [
       {
         "title": "Statistical learning by 8-month-old infants (1996)",
@@ -2497,27 +2497,27 @@ export const studies: Study[] = [
       "value": 15,
       "unit": "months"
     },
-    "name": "Following joint attention and communication over time",
-    "experiment": "Follow the same infants across repeated visits, observing shared engagement, gestures and emerging communication.",
-    "findings": "The study tracked a group of 24 infants from nine to fifteen months. Shared engagement and language following the infant’s attention were associated with early communication; association does not establish causation.",
-    "concept": "Longitudinal social communication",
+    "name": "Following shared attention and communication over time",
+    "experiment": "Explore how sharing attention with a caregiver relates to emerging gestures and words across repeated visits with the same babies.",
+    "findings": "The study followed 24 babies from nine to fifteen months. More shared engagement and caregiver talk about the baby’s current focus were linked with early communication skills. These links alone do not show cause and effect.",
+    "concept": "Sharing attention, gestures and early communication",
     "source": "Social cognition, joint attention, and communicative competence from 9 to 15 months of age (1998)",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/9835078/",
     "kind": "observation",
     "materials": [
-      "Consented caregiver–infant play sessions",
-      "Standard toys",
-      "Video and coding sheet",
-      "Repeated-visit schedule"
+      "Permission for caregiver–baby play observations",
+      "Standard set of toys",
+      "Video and observation sheet",
+      "Schedule for repeated visits"
     ],
     "procedure": [
-      "Adapted observation informed by the published longitudinal study: record a comparable caregiver–infant play period at regular ages.",
-      "Code episodes where caregiver and infant attend to the same object, shifts between object and partner, and gestures such as showing or pointing.",
-      "Record whether caregiver speech concerns the infant’s current focus and document emerging gestures and words separately.",
-      "Use the same definitions and observation duration at later visits; the original task battery and coding manual are required for exact replication."
+      "For this simplified observation, record similar caregiver–baby play periods at regular ages.",
+      "Record times when both attend to the same object, when the baby looks between an object and the caregiver, and when the baby shows or points to something.",
+      "Note whether caregiver speech concerns what the baby is already attending to. Record new gestures and words separately.",
+      "Use the same definitions and observation length at later visits. To repeat the full study, use its complete set of tasks and scoring instructions."
     ],
-    "measure": "Joint-engagement duration, gaze/gesture behaviours and later communication measures.",
-    "limitations": "The simplified play observation is not the complete original battery. A single missed point or gaze shift is not a developmental diagnosis.",
+    "measure": "Time spent sharing attention, looking and pointing behaviours, and later gestures and words.",
+    "limitations": "This simplified play observation covers only part of the study’s assessment. A single missed point or change of gaze cannot diagnose a developmental difficulty.",
     "references": [
       {
         "title": "Social cognition, joint attention, and communicative competence from 9 to 15 months of age (1998)",
@@ -2531,26 +2531,26 @@ export const studies: Study[] = [
       "value": 14,
       "unit": "months"
     },
-    "name": "Choosing whether to copy a head action",
-    "experiment": "An adult switches on a light using the forehead, either with hands free or while holding a blanket; infants later encounter the light.",
-    "findings": "More infants reproduced the head action after the hands-free demonstration. This has been interpreted as sensitivity to constraints, but attention and distraction offer alternative explanations.",
-    "concept": "Selective imitation and action context",
+    "name": "Deciding whether to copy an unusual action",
+    "experiment": "Explore whether babies copy an adult’s forehead press to switch on a light differently when the adult’s hands are free or occupied.",
+    "findings": "More babies copied the forehead action after seeing the adult’s hands free. They may have noticed whether the adult could use their hands, but differences in attention and distraction could also explain the result.",
+    "concept": "Choosing which actions to copy",
     "source": "Rational imitation in preverbal infants (2002)",
     "sourceUrl": "https://doi.org/10.1038/415755a",
     "kind": "experiment",
     "materials": [
-      "Research light-box activated by contact",
+      "Research light-box that switches on when touched",
       "Blanket",
-      "Video coding"
+      "Video recording"
     ],
     "procedure": [
-      "Published-method summary: assign fourteen-month-olds to see a forehead press when the demonstrator’s hands are free or occupied holding a blanket.",
-      "Keep the light outcome and head action comparable across conditions.",
-      "One week later offer the light-box and record whether the infant performs a forehead press or manual action.",
-      "Score actions consistently across conditions; use the paper for demonstration counts and test duration."
+      "Have fourteen-month-olds watch an adult switch on a light-box with the forehead. In one condition the adult’s hands are free; in the other they hold a blanket.",
+      "Keep the head action and resulting light as similar as possible in both conditions.",
+      "One week later, offer the light-box and record whether the baby presses with the forehead or uses a hand.",
+      "Use the same scoring rules for both conditions. Follow the paper for the number of demonstrations and test length."
     ],
-    "measure": "Occurrence of the demonstrated head action and alternative manual actions.",
-    "limitations": "A household lamp is not equivalent to the research apparatus. Interpretation is debated and head imitation is not a necessary milestone.",
+    "measure": "Whether babies use the demonstrated forehead action or a hand action.",
+    "limitations": "The task needs the research light-box, rather than a household lamp. Researchers disagree about how best to explain the result. Copying a head action is not a required milestone.",
     "references": [
       {
         "title": "Rational imitation in preverbal infants (2002)",
@@ -2568,27 +2568,27 @@ export const studies: Study[] = [
       "value": 15,
       "unit": "months"
     },
-    "name": "Watching an actor search with outdated information",
-    "experiment": "Infants watch an actor hide a toy and later search after events that leave the actor with accurate or outdated information.",
-    "findings": "Looking patterns in the original study were consistent with expectations based on the actor’s information. They do not independently demonstrate adult-like belief reasoning.",
-    "concept": "Social expectations and belief attribution",
+    "name": "Expecting someone to search where they think a toy is",
+    "experiment": "Explore whether babies expect an adult to search according to what the adult has seen, even when the baby knows the toy has moved.",
+    "findings": "Babies’ looking patterns matched expectations based on the adult’s information about the toy. The result alone does not show that babies reason about beliefs in the same way as adults.",
+    "concept": "Expectations about another person’s knowledge",
     "source": "Do 15-month-old infants understand false beliefs? (2005)",
     "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3357322/",
     "kind": "experiment",
     "materials": [
-      "Two distinct boxes",
+      "Two different boxes",
       "Toy",
-      "Controlled actor stage",
-      "Video looking-time coding"
+      "Controlled stage with an adult performer",
+      "Video for measuring looking time"
     ],
     "procedure": [
-      "Published-method summary: familiarise the infant with an actor placing and retrieving a toy from one box.",
-      "Move the toy while varying what the actor can see, creating true-information and false-information conditions.",
-      "At test have the actor reach into one box and pause; compare looking at searches consistent or inconsistent with the actor’s information.",
-      "Control event timing, prior reaches and test side; the original script and supplementary methods are needed for replication."
+      "Let the baby become familiar with an adult placing and retrieving a toy from one box.",
+      "Move the toy, changing whether the adult can see the move. This gives the adult either current or outdated information about its location.",
+      "Have the adult reach into one box and pause. Compare looking at searches that match or differ from the adult’s information.",
+      "Keep event timing and earlier reaches consistent, and vary the search side. Use the paper’s script and extra methods information to repeat the study."
     ],
-    "measure": "Looking duration after the actor’s test reach.",
-    "limitations": "The published task tested fifteen-month-olds. Looking time has multiple explanations, and this is not equivalent to a verbal false-belief test or an individual diagnostic assessment.",
+    "measure": "Time spent looking after the adult reaches into a box.",
+    "limitations": "The published task tested fifteen-month-olds. Looking time can have several explanations; it does not replace a spoken question about a person’s mistaken belief or provide a diagnosis for an individual baby.",
     "references": [
       {
         "title": "Do 15-month-old infants understand false beliefs? (2005)",
@@ -2603,9 +2603,9 @@ export const studies: Study[] = [
       "unit": "months"
     },
     "name": "Helping an adult retrieve an object",
-    "experiment": "Observe whether a toddler helps an adult who unsuccessfully reaches for a dropped object, compared with a control where retrieval is not needed.",
-    "findings": "Eighteen-month-olds helped in several of the original situations more often when the adult needed assistance. Helping varies across tasks and is not an all-or-none measure of altruism.",
-    "concept": "Early helping and goal understanding",
+    "experiment": "Explore whether a toddler returns a dropped object when an adult needs help, compared with a situation where the adult has deliberately put it aside.",
+    "findings": "Eighteen-month-olds helped more often in several situations where the adult needed assistance. Helping varies across tasks, so a single response cannot establish how caring a child is.",
+    "concept": "Noticing another person’s goal and helping",
     "source": "Altruistic helping in human infants and young chimpanzees (2006)",
     "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/16513986/",
     "kind": "experiment",
@@ -2615,13 +2615,13 @@ export const studies: Study[] = [
       "Video or observation sheet"
     ],
     "procedure": [
-      "Published-paradigm summary: let a toddler see an adult accidentally drop an object out of the adult’s reach.",
-      "Have the adult try unsuccessfully to reach it while leaving it accessible to the child; avoid requesting help or promising a reward.",
-      "Compare with a control in which the adult deliberately discards the object and shows no retrieval goal.",
-      "Record spontaneous retrieval and return, latency and any adult prompting; use the paper’s timings and full task set for replication."
+      "Let the toddler watch an adult accidentally drop an object beyond the adult’s reach.",
+      "Have the adult unsuccessfully try to reach it while keeping it accessible to the toddler. Do not ask for help or promise a reward.",
+      "Compare with a situation where the adult deliberately discards the object and shows no wish to retrieve it.",
+      "Record whether the toddler retrieves and returns it, how long this takes, and any adult prompting. Use the paper for the timing and complete set of tasks."
     ],
-    "measure": "Unprompted helping frequency and latency in need versus control conditions.",
-    "limitations": "This summary covers the out-of-reach task, not all ten original situations. Do not interpret refusal as a lack of empathy; attention, confidence and familiarity can affect participation.",
+    "measure": "How often and how quickly toddlers help without being asked, compared with the situation where help is not needed.",
+    "limitations": "This describes the out-of-reach activity, one of ten situations in the study. Attention, confidence and familiarity can affect participation; refusal alone does not show a lack of empathy.",
     "references": [
       {
         "title": "Altruistic helping in human infants and young chimpanzees (2006)",
